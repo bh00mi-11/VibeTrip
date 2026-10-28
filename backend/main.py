@@ -760,6 +760,7 @@ def delete_interest(interest_id: int, user: User = Depends(get_current_user), db
     return {"message": "Interest deleted successfully"}
 
 @app.get("/api/buddy-matches/{destination}")
+@app.get("/api/buddies/{destination}")
 def get_travelers_for_destination(
     destination: str,
     user: Optional[User] = Depends(get_optional_user),
@@ -866,7 +867,8 @@ def get_travelers_for_destination(
     return {
         "destination": destination,
         "count": header_count,
-        "travelers": travelers
+        "travelers": travelers,
+        "buddies": travelers
     }
 
 
