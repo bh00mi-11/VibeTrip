@@ -1,0 +1,51 @@
+destination,state,region,category,best_time_to_visit,top_attractions,description,image_folder,min_photos,max_photos
+Agra,Uttar Pradesh,North,Heritage,Oct-Mar,Taj Mahal|Agra Fort|Fatehpur Sikri|Itmad-ud-Daulah,Home of the Taj Mahal and a cluster of Mughal-era forts and tombs.,images/Agra,5,8
+Jaipur,Rajasthan,North,Heritage,Oct-Mar,Hawa Mahal|Amber Fort|City Palace Jaipur|Jantar Mantar Jaipur,The Pink City known for palaces and hilltop forts.,images/Jaipur,5,8
+Udaipur,Rajasthan,North,Heritage,Sep-Mar,City Palace Udaipur|Lake Pichola|Jag Mandir|Saheliyon Ki Bari,The City of Lakes with palaces on the water.,images/Udaipur,5,8
+Jodhpur,Rajasthan,North,Heritage,Oct-Mar,Mehrangarh Fort|Umaid Bhawan Palace|Jaswant Thada|Sardar Market Clock Tower,The Blue City dominated by Mehrangarh Fort.,images/Jodhpur,5,8
+Jaisalmer,Rajasthan,North,Desert,Nov-Feb,Jaisalmer Fort|Sam Sand Dunes|Patwon Ki Haveli|Gadisar Lake,The Golden City with a living fort and Thar Desert dunes.,images/Jaisalmer,5,8
+Delhi,Delhi,North,Heritage,Oct-Mar,India Gate|Red Fort|Qutub Minar|Humayun's Tomb,Capital city mixing Mughal monuments and colonial boulevards.,images/Delhi,5,8
+Varanasi,Uttar Pradesh,North,Spiritual,Oct-Mar,Dashashwamedh Ghat|Kashi Vishwanath Temple|Assi Ghat|Sarnath,One of the oldest living cities with ghats along the Ganga.,images/Varanasi,5,8
+Amritsar,Punjab,North,Spiritual,Oct-Mar,Golden Temple|Jallianwala Bagh|Wagah border|Gobindgarh Fort,Holy city of the Sikhs and home of the Golden Temple.,images/Amritsar,5,8
+Rishikesh,Uttarakhand,North,Adventure/Spiritual,Sep-Nov and Feb-May,Laxman Jhula|Ram Jhula|Triveni Ghat Rishikesh|Beatles Ashram,Yoga capital on the Ganga with rafting and suspension bridges.,images/Rishikesh,5,8
+Haridwar,Uttarakhand,North,Spiritual,Oct-Mar,Har Ki Pauri|Mansa Devi Temple|Chandi Devi Temple|Ganga Aarti Haridwar,Pilgrim town where the Ganga leaves the mountains.,images/Haridwar,5,8
+Manali,Himachal Pradesh,North,Mountains,Mar-Jun and Oct-Feb (snow),Rohtang Pass|Solang Valley|Hadimba Temple|Old Manali,Himalayan hill town for snow and adventure sports.,images/Manali,5,8
+Shimla,Himachal Pradesh,North,Hill Station,Mar-Jun and Dec-Jan (snow),The Ridge Shimla|Mall Road Shimla|Jakhu Temple|Christ Church Shimla,Colonial-era hill station and former summer capital.,images/Shimla,5,8
+Leh,Ladakh,North,Mountains,May-Sep,Pangong Lake|Shanti Stupa|Leh Palace|Thiksey Monastery,High-altitude desert town with monasteries and blue lakes.,images/Leh,5,8
+Srinagar,Jammu and Kashmir,North,Lakes/Gardens,Apr-Oct,Dal Lake|Shalimar Bagh|Nishat Bagh|Hazratbal Shrine,City of Dal Lake houseboats and Mughal gardens.,images/Srinagar,5,8
+Darjeeling,West Bengal,East,Hill Station,Mar-May and Oct-Nov,Tiger Hill|Darjeeling Himalayan Railway|Batasia Loop|Happy Valley Tea Estate,Tea-growing hill town with views of Kanchenjunga.,images/Darjeeling,5,8
+Kolkata,West Bengal,East,Heritage/Culture,Oct-Mar,Victoria Memorial|Howrah Bridge|Dakshineswar Kali Temple|Indian Museum Kolkata,Cultural capital with colonial buildings and street food.,images/Kolkata,5,8
+Gangtok,Sikkim,East,Mountains,Mar-Jun and Oct-Dec,Tsomgo Lake|Rumtek Monastery|MG Marg|Nathula Pass,Sikkim's capital with monasteries and high mountain lakes.,images/Gangtok,5,8
+Shillong,Meghalaya,Northeast,Nature,Oct-May,Umiam Lake|Elephant Falls|Ward's Lake|Living Root Bridge Cherrapunji,The Scotland of the East with waterfalls and root bridges.,images/Shillong,5,8
+Khajuraho,Madhya Pradesh,Central,Heritage,Oct-Mar,Kandariya Mahadeva Temple|Lakshmana Temple Khajuraho|Western Group of Temples Khajuraho|Chaturbhuj Temple Khajuraho,UNESCO temple complex known for intricate sculpture.,images/Khajuraho,5,8
+Mumbai,Maharashtra,West,City,Nov-Feb,Gateway of India|Marine Drive Mumbai|Chhatrapati Shivaji Terminus|Elephanta Caves,Coastal metropolis with colonial landmarks and island caves.,images/Mumbai,5,8
+Goa,Goa,West,Beach,Nov-Feb,Baga Beach|Basilica of Bom Jesus|Fort Aguada|Dudhsagar Falls,Beaches plus Portuguese-era churches and forts.,images/Goa,5,8
+Hampi,Karnataka,South,Heritage,Oct-Feb,Virupaksha Temple Hampi|Vittala Temple|Stone Chariot Hampi|Matanga Hill,Boulder-strewn ruins of the Vijayanagara empire.,images/Hampi,5,8
+Mysore,Karnataka,South,Heritage,Oct-Mar,Mysore Palace|Chamundi Hill|Brindavan Gardens|St. Philomena's Cathedral Mysore,Palace city famous for the Dasara festival.,images/Mysore,5,8
+Coorg,Karnataka,South,Nature,Oct-Mar,Abbey Falls|Raja's Seat Madikeri|Dubare Elephant Camp|Namdroling Monastery,Coffee-estate hills with waterfalls and misty viewpoints.,images/Coorg,5,8
+Hyderabad,Telangana,South,Heritage/City,Oct-Feb,Charminar|Golconda Fort|Hussain Sagar|Chowmahalla Palace,City of pearls with Nizam-era monuments.,images/Hyderabad,5,8
+Kochi,Kerala,South,Heritage/Coastal,Oct-Mar,Chinese fishing nets Fort Kochi|Mattancherry Palace|Santa Cruz Basilica Kochi|Jew Town Kochi,Port city layered with Portuguese Dutch and British history.,images/Kochi,5,8
+Munnar,Kerala,South,Hill Station,Sep-Mar,Eravikulam National Park|Mattupetty Dam|Tea plantations Munnar|Top Station Munnar,Rolling tea plantations high in the Western Ghats.,images/Munnar,5,8
+Alleppey,Kerala,South,Backwaters,Nov-Feb,Alappuzha backwaters|Houseboat Alappuzha|Marari Beach|Vembanad Lake,Backwater canals and houseboat cruises.,images/Alleppey,5,8
+Ooty,Tamil Nadu,South,Hill Station,Oct-Jun,Ooty Lake|Nilgiri Mountain Railway|Government Botanical Garden Ooty|Doddabetta,Nilgiri hill station with toy train and gardens.,images/Ooty,5,8
+Madurai,Tamil Nadu,South,Spiritual,Oct-Mar,Meenakshi Temple|Thirumalai Nayak Palace|Gandhi Memorial Museum Madurai|Vandiyur Mariamman Teppakulam,Temple city centred on the Meenakshi Amman Temple.,images/Madurai,5,8
+Pondicherry,Puducherry,South,Coastal,Oct-Mar,Promenade Beach Pondicherry|Auroville Matrimandir|French Quarter Pondicherry|Paradise Beach Pondicherry,Former French colony with yellow streets and seafront.,images/Pondicherry,5,8
+Havelock Island,Andaman and Nicobar Islands,Islands,Beach,Nov-May,Radhanagar Beach|Elephant Beach Havelock|Kalapathar Beach|Neil Island,Island with white-sand beaches and coral reefs.,images/Havelock Island,5,8
+Port Blair,Andaman and Nicobar Islands,Islands,Coastal,Oct-May,Cellular Jail|Ross Island|Corbyn's Cove|Chidiya Tapu,Capital of the Andaman Islands known for its colonial history.,images/Port Blair,5,8
+Pune,Maharashtra,West,City,Oct-Mar,Shaniwar Wada|Aga Khan Palace|Dagdusheth Halwai Ganpati Temple|Sinhagad Fort,Cultural capital of Maharashtra with a mix of history and modern life.,images/Pune,5,8
+Ahmedabad,Gujarat,West,Heritage,Oct-Mar,Sabarmati Ashram|Adalaj Stepwell|Kankaria Lake|Jama Masjid Ahmedabad,India's first UNESCO World Heritage City.,images/Ahmedabad,5,8
+Rann of Kutch,Gujarat,West,Desert,Nov-Feb,Great Rann of Kutch|Kala Dungar|Mandvi Beach|Dholavira,Vast white salt desert famous for the Rann Utsav.,images/Rann of Kutch,5,8
+Mahabaleshwar,Maharashtra,West,Hill Station,Oct-Jun,Pratapgad Fort|Venna Lake|Elephant's Head Point|Arthur's Seat Mahabaleshwar,A picturesque hill station in the Western Ghats known for strawberries.,images/Mahabaleshwar,5,8
+Bhopal,Madhya Pradesh,Central,Lakes/Heritage,Oct-Mar,Upper Lake Bhopal|Taj-ul-Masajid|Sanchi Stupa|Bhimbetka rock shelters,The City of Lakes with deep historical roots.,images/Bhopal,5,8
+Ujjain,Madhya Pradesh,Central,Spiritual,Oct-Mar,Mahakaleshwar Jyotirlinga|Kal Bhairav Temple|Ram Ghat Ujjain|Harsiddhi Temple,Ancient city on the banks of the Kshipra River.,images/Ujjain,5,8
+Pachmarhi,Madhya Pradesh,Central,Hill Station,Oct-Jun,Bee Falls|Jata Shankar Caves|Dhoopgarh|Pandav Caves,The Queen of Satpura known for waterfalls and ancient caves.,images/Pachmarhi,5,8
+Puri,Odisha,East,Spiritual/Beach,Oct-Mar,Jagannath Temple Puri|Puri Beach|Chilika Lake|Konark Sun Temple,Holy city and coastal destination on the Bay of Bengal.,images/Puri,5,8
+Bhubaneswar,Odisha,East,Heritage,Oct-Mar,Lingaraja Temple|Udayagiri and Khandagiri Caves|Nandankanan Zoological Park|Muktesvara Temple,The Temple City of India.,images/Bhubaneswar,5,8
+Bodh Gaya,Bihar,East,Spiritual,Oct-Mar,Mahabodhi Temple|Bodhi Tree|Great Buddha Statue Bodhgaya|Vishnupad Temple,Sacred Buddhist pilgrimage site where Gautama Buddha attained enlightenment.,images/Bodh Gaya,5,8
+Tawang,Arunachal Pradesh,Northeast,Mountains,Mar-Jun and Sep-Oct,Tawang Monastery|Sela Pass|Madhuri Lake|Nuranang Falls,High-altitude town known for its large Buddhist monastery.,images/Tawang,5,8
+Kaziranga,Assam,Northeast,Nature,Nov-Apr,Kaziranga National Park|Orchid And Biodiversity Park|Majuli|Kakochang Waterfalls,Home to the world's largest population of one-horned rhinoceroses.,images/Kaziranga,5,8
+Cherrapunji,Meghalaya,Northeast,Nature,Oct-May,Nohkalikai Falls|Double Decker Living Root Bridge|Mawsmai Cave|Seven Sisters Falls,One of the wettest places on earth with stunning waterfalls.,images/Cherrapunji,5,8
+Kanyakumari,Tamil Nadu,South,Coastal,Oct-Mar,Vivekananda Rock Memorial|Thiruvalluvar Statue|Kanyakumari Beach|Padmanabhapuram Palace,The southernmost tip of the Indian subcontinent.,images/Kanyakumari,5,8
+Mahabalipuram,Tamil Nadu,South,Heritage,Oct-Mar,Shore Temple|Pancha Rathas|Descent of the Ganges|Krishna's Butterball,Ancient port city known for rock-cut monuments.,images/Mahabalipuram,5,8
+Wayanad,Kerala,South,Nature,Oct-May,Edakkal Caves|Chembra Peak|Banasura Sagar Dam|Soochipara Falls,Lush green district with waterfalls and spice plantations.,images/Wayanad,5,8
+Auli,Uttarakhand,North,Mountains,Nov-Mar,Auli Ski Resort|Gurso Bugyal|Kwani Bugyal|Trishul Peak,Premier ski destination in India with panoramic Himalayan views.,images/Auli,5,8

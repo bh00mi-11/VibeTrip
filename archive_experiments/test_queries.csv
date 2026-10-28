@@ -1,0 +1,13 @@
+query_id,query_text,target_dims_json
+q01,"peaceful nature getaway, avoid crowds","{""nature"": ""high"", ""peacefulness"": ""high"", ""crowd_match"": ""high""}"
+q02,adventure-packed offbeat trip,"{""adventure"": ""high"", ""crowd_match"": ""high""}"
+q03,visually stunning iconic landmarks,"{""visual_atmosphere"": ""high"", ""crowd_match"": ""low""}"
+q04,relaxing coastal vacation with scenic beaches,"{""nature"": ""high"", ""peacefulness"": ""high"", ""adventure"": ""low""}"
+q05,deep spiritual journey to calm the mind,"{""peacefulness"": ""high"", ""nature"": ""high""}"
+q06,action-packed mountain climbing and skiing,"{""nature"": ""high"", ""adventure"": ""high""}"
+q07,bustling chaotic city with rich heritage,"{""peacefulness"": ""low"", ""crowd_match"": ""low"", ""visual_atmosphere"": ""high""}"
+q08,serene backwaters away from everyone,"{""nature"": ""high"", ""peacefulness"": ""high"", ""crowd_match"": ""high""}"
+q09,popular highly-visited heritage forts and palaces,"{""visual_atmosphere"": ""high"", ""crowd_match"": ""low""}"
+q10,offbeat wildlife and nature exploration,"{""nature"": ""high"", ""crowd_match"": ""high""}"
+q11,visually photogenic ancient temples and ruins,"{""visual_atmosphere"": ""high""}"
+q12,hidden gems for adventure sports and hiking,"{""adventure"": ""high"", ""crowd_match"": ""high""}"
