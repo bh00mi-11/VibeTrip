@@ -12,6 +12,10 @@ export default function AuthModal({ initialTab = 'login', onClose, onSuccess }) 
   const [name, setName] = useState('');
   const [role, setRole] = useState('tourist');
   const [homeCity, setHomeCity] = useState('');
+  const [licenseNumber, setLicenseNumber] = useState('');
+  const [upiId, setUpiId] = useState('');
+  const [dailyRate, setDailyRate] = useState('');
+  const [specialtyBio, setSpecialtyBio] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +34,10 @@ export default function AuthModal({ initialTab = 'login', onClose, onSuccess }) 
           name,
           role,
           home_city: homeCity,
+          bio: specialtyBio,
+          license_number: licenseNumber,
+          upi_id: upiId,
+          daily_rate: dailyRate,
         });
         onSuccess(res.user);
         onClose();
@@ -43,6 +51,7 @@ export default function AuthModal({ initialTab = 'login', onClose, onSuccess }) 
 
   const quickDemoAccounts = [
     { label: 'Demo Tourist', role: 'tourist', email: 'tourist.demo@vibetrip.com', pass: 'DemoTourist2026!', badge: 'Tourist (Mumbai)', color: '#38bdf8' },
+    { label: "Captain Rajesh", role: 'guide', email: 'rajesh.guide@vibetrip.pro', pass: 'DemoPass123!', badge: 'Certified Guide (Goa)', color: '#059669' },
     { label: "Rohan (Goa)", role: 'local', email: 'rohan.goa@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Goa Host', color: '#10b981' },
     { label: 'Sunita (Manali)', role: 'local', email: 'sunita.manali@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Manali Guide', color: '#8b5cf6' },
     { label: 'Vikram (Rishikesh)', role: 'local', email: 'vikram.rishikesh@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Rishikesh Host', color: '#f59e0b' },
@@ -159,21 +168,84 @@ export default function AuthModal({ initialTab = 'login', onClose, onSuccess }) 
                 >
                   <option value="tourist">Tourist (Discover destinations & match with buddies)</option>
                   <option value="local">Local Contributor (Share hidden gems & authentic spots)</option>
+                  <option value="guide">Certified Tour Guide (Direct traveler bookings & tours)</option>
                 </select>
               </div>
 
               <div>
                 <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.3rem', color: 'var(--text-secondary)' }}>
-                  Home City (optional)
+                  {role === 'guide' ? 'Base Destination / City *' : 'Home City (optional)'}
                 </label>
                 <input
                   type="text"
+                  required={role === 'guide'}
                   className="input-field"
-                  placeholder="e.g. Bangalore, Mumbai, Delhi"
+                  placeholder={role === 'guide' ? 'e.g. Manali, Goa, Rishikesh, Jaipur' : 'e.g. Bangalore, Mumbai, Delhi'}
                   value={homeCity}
                   onChange={(e) => setHomeCity(e.target.value)}
                 />
               </div>
+
+              {role === 'guide' && (
+                <>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.3rem', color: 'var(--text-secondary)' }}>
+                        License / Badge ID *
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        className="input-field"
+                        placeholder="e.g. ASI-TOU-8821"
+                        value={licenseNumber}
+                        onChange={(e) => setLicenseNumber(e.target.value)}
+                      />
+                    </div>
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.3rem', color: 'var(--text-secondary)' }}>
+                        Daily Rate (INR) *
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        className="input-field"
+                        placeholder="e.g. INR 3,000/day"
+                        value={dailyRate}
+                        onChange={(e) => setDailyRate(e.target.value)}
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.3rem', color: 'var(--text-secondary)' }}>
+                      Direct Payout UPI ID *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      className="input-field"
+                      placeholder="e.g. name@upi"
+                      value={upiId}
+                      onChange={(e) => setUpiId(e.target.value)}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.3rem', color: 'var(--text-secondary)' }}>
+                      Guide Bio & Tour Specialties
+                    </label>
+                    <textarea
+                      rows={2}
+                      className="input-field"
+                      placeholder="e.g. High altitude trek lead, heritage palace historian..."
+                      value={specialtyBio}
+                      onChange={(e) => setSpecialtyBio(e.target.value)}
+                      style={{ resize: 'vertical' }}
+                    />
+                  </div>
+                </>
+              )}
             </>
           )}
 

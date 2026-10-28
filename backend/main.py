@@ -103,10 +103,14 @@ class SignupRequest(BaseModel):
     name: str
     email: str
     password: str
-    role: str # tourist or local
+    role: str # tourist, local, or guide
     home_city: Optional[str] = ""
     bio: Optional[str] = ""
     interest_tags: Optional[str] = ""
+    contact_info: Optional[str] = ""
+    license_number: Optional[str] = ""
+    upi_id: Optional[str] = ""
+    daily_rate: Optional[str] = ""
 
 class LoginRequest(BaseModel):
     email: str
@@ -118,8 +122,8 @@ def signup(req: SignupRequest, db: Session = Depends(get_db)):
         raise HTTPException(status_code=400, detail="Password must be at least 8 characters long.")
     
     clean_role = req.role.strip().lower()
-    if clean_role not in ("tourist", "local"):
-        raise HTTPException(status_code=400, detail="Role must be either 'tourist' or 'local'. Admin cannot be created via signup.")
+    if clean_role not in ("tourist", "local", "guide"):
+        raise HTTPException(status_code=400, detail="Role must be 'tourist', 'local', or 'guide'. Admin cannot be created via signup.")
     
     clean_email = req.email.strip().lower()
     existing = db.query(User).filter(User.email == clean_email).first()
@@ -137,13 +141,25 @@ def signup(req: SignupRequest, db: Session = Depends(get_db)):
     db.add(new_user)
     db.flush()
 
+    # Build formatted contact & payout string for guides if provided
+    contact_payout = sanitize_text(req.contact_info)
+    if clean_role == "guide":
+        upi = req.upi_id.strip() if req.upi_id else "direct.upi@vibetrip"
+        rate = req.daily_rate.strip() if req.daily_rate else "INR 3,000/day"
+        lic = req.license_number.strip() if req.license_number else "VERIFIED-GUIDE"
+        contact_payout = f"Direct UPI: {upi} | Daily Rate: {rate} | License: {lic}"
+
+    guide_bio = sanitize_text(req.bio)
+    if clean_role == "guide" and "[Licensed Guide" not in guide_bio:
+        guide_bio = f"{guide_bio} [Licensed Guide - Direct Payout Enabled]" if guide_bio else "Certified Tour & Trek Guide [Licensed Guide - Direct Payout Enabled]"
+
     profile = TravelerProfile(
         user_id=new_user.id,
         home_city=sanitize_text(req.home_city),
-        bio=sanitize_text(req.bio),
+        bio=guide_bio,
         interest_tags=sanitize_text(req.interest_tags),
-        visibility="destination_only",
-        contact_info=""
+        visibility="destination_only" if clean_role != "guide" else "public",
+        contact_info=contact_payout
     )
     db.add(profile)
     db.commit()
