@@ -1,0 +1,2707 @@
+{
+  "decompositions": {
+    "Agra": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -26.945,
+        "image_contribution": -17.233,
+        "predicted_score": 24.65,
+        "oof_score": 34.9,
+        "ground_truth": 10.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -14.303,
+        "image_contribution": -10.716,
+        "predicted_score": 13.14,
+        "oof_score": 14.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -22.792,
+        "image_contribution": -13.384,
+        "predicted_score": 34.59,
+        "oof_score": 48.9,
+        "ground_truth": 20.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -19.812,
+        "image_contribution": -12.732,
+        "predicted_score": 23.74,
+        "oof_score": 34.3,
+        "ground_truth": 10.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 1.434,
+        "image_contribution": -0.907,
+        "predicted_score": 84.02,
+        "oof_score": 69.9,
+        "ground_truth": 100.0
+      }
+    },
+    "Jaipur": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -22.904,
+        "image_contribution": -14.308,
+        "predicted_score": 31.62,
+        "oof_score": 31.3,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -11.493,
+        "image_contribution": -9.127,
+        "predicted_score": 17.54,
+        "oof_score": 15.2,
+        "ground_truth": 20.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -21.188,
+        "image_contribution": -11.116,
+        "predicted_score": 38.46,
+        "oof_score": 42.9,
+        "ground_truth": 40.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -17.4,
+        "image_contribution": -9.995,
+        "predicted_score": 28.89,
+        "oof_score": 31.8,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -3.794,
+        "image_contribution": -2.771,
+        "predicted_score": 76.92,
+        "oof_score": 67.0,
+        "ground_truth": 80.0
+      }
+    },
+    "Udaipur": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -16.358,
+        "image_contribution": -9.622,
+        "predicted_score": 42.85,
+        "oof_score": 39.5,
+        "ground_truth": 50.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.788,
+        "image_contribution": -8.795,
+        "predicted_score": 18.57,
+        "oof_score": 17.4,
+        "ground_truth": 20.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -9.011,
+        "image_contribution": -8.097,
+        "predicted_score": 53.66,
+        "oof_score": 52.3,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -4.535,
+        "image_contribution": -8.359,
+        "predicted_score": 43.39,
+        "oof_score": 44.8,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -3.547,
+        "image_contribution": -2.773,
+        "predicted_score": 77.17,
+        "oof_score": 68.5,
+        "ground_truth": 90.0
+      }
+    },
+    "Jodhpur": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -17.546,
+        "image_contribution": -18.156,
+        "predicted_score": 33.13,
+        "oof_score": 33.3,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.648,
+        "image_contribution": -11.677,
+        "predicted_score": 15.83,
+        "oof_score": 15.4,
+        "ground_truth": 20.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -12.731,
+        "image_contribution": -13.902,
+        "predicted_score": 44.13,
+        "oof_score": 45.6,
+        "ground_truth": 50.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -7.698,
+        "image_contribution": -11.689,
+        "predicted_score": 36.9,
+        "oof_score": 33.2,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -3.385,
+        "image_contribution": -4.175,
+        "predicted_score": 75.93,
+        "oof_score": 66.5,
+        "ground_truth": 80.0
+      }
+    },
+    "Jaisalmer": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 2.253,
+        "image_contribution": -3.374,
+        "predicted_score": 67.71,
+        "oof_score": 67.6,
+        "ground_truth": 70.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 8.009,
+        "image_contribution": -2.019,
+        "predicted_score": 44.15,
+        "oof_score": 40.9,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -4.688,
+        "image_contribution": -2.857,
+        "predicted_score": 63.22,
+        "oof_score": 65.9,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -6.239,
+        "image_contribution": -2.629,
+        "predicted_score": 47.42,
+        "oof_score": 47.2,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 1.102,
+        "image_contribution": -0.32,
+        "predicted_score": 84.27,
+        "oof_score": 81.5,
+        "ground_truth": 80.0
+      }
+    },
+    "Delhi": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -28.628,
+        "image_contribution": -18.29,
+        "predicted_score": 21.91,
+        "oof_score": 31.6,
+        "ground_truth": 10.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -14.211,
+        "image_contribution": -11.446,
+        "predicted_score": 12.5,
+        "oof_score": 13.2,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -27.554,
+        "image_contribution": -14.673,
+        "predicted_score": 28.54,
+        "oof_score": 44.2,
+        "ground_truth": 10.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -22.204,
+        "image_contribution": -13.141,
+        "predicted_score": 20.94,
+        "oof_score": 31.5,
+        "ground_truth": 10.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -6.366,
+        "image_contribution": -3.015,
+        "predicted_score": 74.11,
+        "oof_score": 66.7,
+        "ground_truth": 70.0
+      }
+    },
+    "Varanasi": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -18.693,
+        "image_contribution": -14.546,
+        "predicted_score": 35.59,
+        "oof_score": 40.3,
+        "ground_truth": 30.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.635,
+        "image_contribution": -12.093,
+        "predicted_score": 15.43,
+        "oof_score": 16.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -20.956,
+        "image_contribution": -11.905,
+        "predicted_score": 37.9,
+        "oof_score": 52.3,
+        "ground_truth": 20.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -18.334,
+        "image_contribution": -12.036,
+        "predicted_score": 25.92,
+        "oof_score": 40.4,
+        "ground_truth": 10.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.526,
+        "image_contribution": -5.867,
+        "predicted_score": 77.1,
+        "oof_score": 67.2,
+        "ground_truth": 90.0
+      }
+    },
+    "Amritsar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -23.619,
+        "image_contribution": -17.63,
+        "predicted_score": 27.58,
+        "oof_score": 33.6,
+        "ground_truth": 20.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.86,
+        "image_contribution": -13.647,
+        "predicted_score": 13.65,
+        "oof_score": 16.2,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -13.709,
+        "image_contribution": -12.162,
+        "predicted_score": 44.89,
+        "oof_score": 45.1,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -14.942,
+        "image_contribution": -13.792,
+        "predicted_score": 27.55,
+        "oof_score": 32.0,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -4.427,
+        "image_contribution": -5.16,
+        "predicted_score": 73.9,
+        "oof_score": 66.4,
+        "ground_truth": 80.0
+      }
+    },
+    "Rishikesh": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -1.075,
+        "image_contribution": -1.062,
+        "predicted_score": 66.69,
+        "oof_score": 60.0,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 14.016,
+        "image_contribution": -1.946,
+        "predicted_score": 50.23,
+        "oof_score": 27.7,
+        "ground_truth": 90.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -9.16,
+        "image_contribution": -3.77,
+        "predicted_score": 57.84,
+        "oof_score": 62.5,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -8.811,
+        "image_contribution": -5.614,
+        "predicted_score": 41.86,
+        "oof_score": 49.0,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -1.705,
+        "image_contribution": -4.737,
+        "predicted_score": 77.05,
+        "oof_score": 74.1,
+        "ground_truth": 80.0
+      }
+    },
+    "Haridwar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -7.904,
+        "image_contribution": -10.5,
+        "predicted_score": 50.43,
+        "oof_score": 51.8,
+        "ground_truth": 50.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -0.52,
+        "image_contribution": -11.768,
+        "predicted_score": 25.87,
+        "oof_score": 30.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -14.999,
+        "image_contribution": -9.497,
+        "predicted_score": 46.27,
+        "oof_score": 58.2,
+        "ground_truth": 30.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -13.111,
+        "image_contribution": -10.447,
+        "predicted_score": 32.73,
+        "oof_score": 44.3,
+        "ground_truth": 20.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -1.975,
+        "image_contribution": -7.142,
+        "predicted_score": 74.37,
+        "oof_score": 73.1,
+        "ground_truth": 70.0
+      }
+    },
+    "Manali": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 6.163,
+        "image_contribution": 6.531,
+        "predicted_score": 81.53,
+        "oof_score": 72.3,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 16.515,
+        "image_contribution": 5.846,
+        "predicted_score": 60.52,
+        "oof_score": 46.2,
+        "ground_truth": 80.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -6.72,
+        "image_contribution": 2.756,
+        "predicted_score": 66.8,
+        "oof_score": 68.2,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -10.172,
+        "image_contribution": 1.297,
+        "predicted_score": 47.41,
+        "oof_score": 56.6,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 1.074,
+        "image_contribution": -0.106,
+        "predicted_score": 84.46,
+        "oof_score": 79.4,
+        "ground_truth": 90.0
+      }
+    },
+    "Shimla": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -2.057,
+        "image_contribution": -2.265,
+        "predicted_score": 64.51,
+        "oof_score": 60.1,
+        "ground_truth": 70.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -0.494,
+        "image_contribution": -4.928,
+        "predicted_score": 32.74,
+        "oof_score": 32.6,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -12.059,
+        "image_contribution": -4.285,
+        "predicted_score": 54.42,
+        "oof_score": 59.1,
+        "ground_truth": 50.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -18.092,
+        "image_contribution": -5.559,
+        "predicted_score": 32.63,
+        "oof_score": 44.0,
+        "ground_truth": 20.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -5.612,
+        "image_contribution": -5.64,
+        "predicted_score": 72.24,
+        "oof_score": 73.8,
+        "ground_truth": 70.0
+      }
+    },
+    "Leh": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 13.53,
+        "image_contribution": 3.515,
+        "predicted_score": 85.88,
+        "oof_score": 70.5,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 17.384,
+        "image_contribution": 6.357,
+        "predicted_score": 61.9,
+        "oof_score": 41.3,
+        "ground_truth": 90.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 7.159,
+        "image_contribution": 0.936,
+        "predicted_score": 78.86,
+        "oof_score": 69.6,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 5.566,
+        "image_contribution": 0.144,
+        "predicted_score": 62.0,
+        "oof_score": 57.2,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 5.382,
+        "image_contribution": 1.529,
+        "predicted_score": 90.4,
+        "oof_score": 81.3,
+        "ground_truth": 100.0
+      }
+    },
+    "Srinagar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -7.95,
+        "image_contribution": -1.085,
+        "predicted_score": 59.8,
+        "oof_score": 47.3,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -6.201,
+        "image_contribution": -4.227,
+        "predicted_score": 27.73,
+        "oof_score": 22.4,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -11.936,
+        "image_contribution": -1.982,
+        "predicted_score": 56.85,
+        "oof_score": 50.1,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -15.776,
+        "image_contribution": -4.406,
+        "predicted_score": 36.1,
+        "oof_score": 34.5,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 0.134,
+        "image_contribution": -1.369,
+        "predicted_score": 82.26,
+        "oof_score": 77.1,
+        "ground_truth": 90.0
+      }
+    },
+    "Darjeeling": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 11.679,
+        "image_contribution": 2.39,
+        "predicted_score": 82.9,
+        "oof_score": 81.1,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 5.051,
+        "image_contribution": -3.094,
+        "predicted_score": 40.11,
+        "oof_score": 40.5,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -3.206,
+        "image_contribution": 0.318,
+        "predicted_score": 67.88,
+        "oof_score": 69.1,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -10.435,
+        "image_contribution": -2.652,
+        "predicted_score": 43.2,
+        "oof_score": 51.0,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 0.061,
+        "image_contribution": -3.44,
+        "predicted_score": 80.11,
+        "oof_score": 79.5,
+        "ground_truth": 80.0
+      }
+    },
+    "Kolkata": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -30.022,
+        "image_contribution": -15.694,
+        "predicted_score": 23.11,
+        "oof_score": 31.0,
+        "ground_truth": 10.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -13.892,
+        "image_contribution": -12.907,
+        "predicted_score": 11.36,
+        "oof_score": 15.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -23.45,
+        "image_contribution": -12.21,
+        "predicted_score": 35.11,
+        "oof_score": 43.8,
+        "ground_truth": 20.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -16.095,
+        "image_contribution": -11.357,
+        "predicted_score": 28.83,
+        "oof_score": 33.4,
+        "ground_truth": 20.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -12.605,
+        "image_contribution": -7.751,
+        "predicted_score": 63.13,
+        "oof_score": 70.8,
+        "ground_truth": 50.0
+      }
+    },
+    "Gangtok": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 5.561,
+        "image_contribution": 6.413,
+        "predicted_score": 80.81,
+        "oof_score": 74.1,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 12.039,
+        "image_contribution": 2.86,
+        "predicted_score": 53.06,
+        "oof_score": 45.1,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -0.729,
+        "image_contribution": 2.293,
+        "predicted_score": 72.33,
+        "oof_score": 71.8,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 3.915,
+        "image_contribution": 2.112,
+        "predicted_score": 62.31,
+        "oof_score": 60.4,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.044,
+        "image_contribution": -1.548,
+        "predicted_score": 81.9,
+        "oof_score": 79.6,
+        "ground_truth": 80.0
+      }
+    },
+    "Shillong": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 11.346,
+        "image_contribution": 9.926,
+        "predicted_score": 90.1,
+        "oof_score": 89.6,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 2.616,
+        "image_contribution": -0.102,
+        "predicted_score": 40.67,
+        "oof_score": 41.8,
+        "ground_truth": 40.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 2.517,
+        "image_contribution": 5.463,
+        "predicted_score": 78.75,
+        "oof_score": 77.6,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 9.07,
+        "image_contribution": 5.521,
+        "predicted_score": 70.88,
+        "oof_score": 57.5,
+        "ground_truth": 90.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.661,
+        "image_contribution": -1.863,
+        "predicted_score": 80.97,
+        "oof_score": 81.8,
+        "ground_truth": 80.0
+      }
+    },
+    "Khajuraho": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -19.439,
+        "image_contribution": -15.741,
+        "predicted_score": 33.65,
+        "oof_score": 30.1,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -9.637,
+        "image_contribution": -13.919,
+        "predicted_score": 14.6,
+        "oof_score": 15.5,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -5.472,
+        "image_contribution": -8.806,
+        "predicted_score": 56.49,
+        "oof_score": 48.6,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 1.794,
+        "image_contribution": -6.704,
+        "predicted_score": 51.38,
+        "oof_score": 39.0,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -2.525,
+        "image_contribution": -5.987,
+        "predicted_score": 74.98,
+        "oof_score": 72.4,
+        "ground_truth": 80.0
+      }
+    },
+    "Mumbai": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -16.917,
+        "image_contribution": -14.207,
+        "predicted_score": 37.71,
+        "oof_score": 49.9,
+        "ground_truth": 20.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -8.543,
+        "image_contribution": -12.444,
+        "predicted_score": 17.17,
+        "oof_score": 23.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -20.813,
+        "image_contribution": -11.88,
+        "predicted_score": 38.07,
+        "oof_score": 51.4,
+        "ground_truth": 20.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -18.527,
+        "image_contribution": -11.649,
+        "predicted_score": 26.11,
+        "oof_score": 39.0,
+        "ground_truth": 10.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -7.371,
+        "image_contribution": -7.264,
+        "predicted_score": 68.85,
+        "oof_score": 75.8,
+        "ground_truth": 60.0
+      }
+    },
+    "Goa": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 4.95,
+        "image_contribution": -1.461,
+        "predicted_score": 72.32,
+        "oof_score": 71.8,
+        "ground_truth": 70.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 7.66,
+        "image_contribution": -6.085,
+        "predicted_score": 39.73,
+        "oof_score": 37.8,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -7.048,
+        "image_contribution": -4.033,
+        "predicted_score": 59.68,
+        "oof_score": 70.6,
+        "ground_truth": 40.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -13.566,
+        "image_contribution": -4.892,
+        "predicted_score": 37.83,
+        "oof_score": 60.4,
+        "ground_truth": 10.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 1.503,
+        "image_contribution": -4.704,
+        "predicted_score": 80.29,
+        "oof_score": 80.3,
+        "ground_truth": 80.0
+      }
+    },
+    "Hampi": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -11.264,
+        "image_contribution": -9.765,
+        "predicted_score": 47.8,
+        "oof_score": 42.7,
+        "ground_truth": 60.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -2.092,
+        "image_contribution": -9.345,
+        "predicted_score": 26.72,
+        "oof_score": 19.3,
+        "ground_truth": 40.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -4.158,
+        "image_contribution": -5.138,
+        "predicted_score": 61.47,
+        "oof_score": 51.7,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -2.55,
+        "image_contribution": -4.031,
+        "predicted_score": 49.7,
+        "oof_score": 44.0,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.208,
+        "image_contribution": -3.742,
+        "predicted_score": 79.54,
+        "oof_score": 73.9,
+        "ground_truth": 90.0
+      }
+    },
+    "Mysore": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -17.284,
+        "image_contribution": -8.391,
+        "predicted_score": 43.16,
+        "oof_score": 50.3,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.461,
+        "image_contribution": -10.286,
+        "predicted_score": 17.41,
+        "oof_score": 23.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -11.605,
+        "image_contribution": -6.135,
+        "predicted_score": 53.03,
+        "oof_score": 53.4,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -11.682,
+        "image_contribution": -6.855,
+        "predicted_score": 37.75,
+        "oof_score": 41.1,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -7.144,
+        "image_contribution": -5.468,
+        "predicted_score": 70.88,
+        "oof_score": 74.0,
+        "ground_truth": 70.0
+      }
+    },
+    "Coorg": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 13.889,
+        "image_contribution": 1.017,
+        "predicted_score": 83.74,
+        "oof_score": 81.0,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 11.635,
+        "image_contribution": -5.472,
+        "predicted_score": 44.32,
+        "oof_score": 47.0,
+        "ground_truth": 40.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 4.192,
+        "image_contribution": 0.547,
+        "predicted_score": 75.51,
+        "oof_score": 74.7,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 3.391,
+        "image_contribution": -0.307,
+        "predicted_score": 59.37,
+        "oof_score": 63.8,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 0.814,
+        "image_contribution": -4.048,
+        "predicted_score": 80.26,
+        "oof_score": 80.3,
+        "ground_truth": 80.0
+      }
+    },
+    "Hyderabad": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -20.465,
+        "image_contribution": -15.292,
+        "predicted_score": 33.07,
+        "oof_score": 43.4,
+        "ground_truth": 20.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -8.856,
+        "image_contribution": -12.87,
+        "predicted_score": 16.43,
+        "oof_score": 21.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -19.254,
+        "image_contribution": -11.153,
+        "predicted_score": 40.36,
+        "oof_score": 47.7,
+        "ground_truth": 30.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -15.886,
+        "image_contribution": -10.661,
+        "predicted_score": 29.74,
+        "oof_score": 37.5,
+        "ground_truth": 20.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -7.628,
+        "image_contribution": -5.85,
+        "predicted_score": 70.01,
+        "oof_score": 76.3,
+        "ground_truth": 60.0
+      }
+    },
+    "Kochi": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -17.21,
+        "image_contribution": -7.433,
+        "predicted_score": 44.19,
+        "oof_score": 48.5,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -11.966,
+        "image_contribution": -10.243,
+        "predicted_score": 15.95,
+        "oof_score": 22.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -9.61,
+        "image_contribution": -5.143,
+        "predicted_score": 56.01,
+        "oof_score": 54.9,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -5.875,
+        "image_contribution": -6.35,
+        "predicted_score": 44.06,
+        "oof_score": 44.9,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -5.296,
+        "image_contribution": -6.209,
+        "predicted_score": 71.99,
+        "oof_score": 73.9,
+        "ground_truth": 70.0
+      }
+    },
+    "Munnar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 12.372,
+        "image_contribution": 10.094,
+        "predicted_score": 91.3,
+        "oof_score": 83.2,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -2.208,
+        "image_contribution": 0.604,
+        "predicted_score": 36.55,
+        "oof_score": 43.9,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 3.022,
+        "image_contribution": 5.458,
+        "predicted_score": 79.25,
+        "oof_score": 71.2,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -7.549,
+        "image_contribution": 2.757,
+        "predicted_score": 51.49,
+        "oof_score": 55.6,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 2.653,
+        "image_contribution": -0.125,
+        "predicted_score": 86.02,
+        "oof_score": 83.7,
+        "ground_truth": 90.0
+      }
+    },
+    "Alleppey": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 8.421,
+        "image_contribution": 3.54,
+        "predicted_score": 80.79,
+        "oof_score": 73.2,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -5.213,
+        "image_contribution": -5.303,
+        "predicted_score": 27.64,
+        "oof_score": 41.9,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 6.533,
+        "image_contribution": 1.063,
+        "predicted_score": 78.36,
+        "oof_score": 72.1,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -5.98,
+        "image_contribution": -2.754,
+        "predicted_score": 47.55,
+        "oof_score": 60.3,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 3.609,
+        "image_contribution": -2.229,
+        "predicted_score": 84.87,
+        "oof_score": 81.0,
+        "ground_truth": 90.0
+      }
+    },
+    "Ooty": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 8.678,
+        "image_contribution": 6.553,
+        "predicted_score": 84.06,
+        "oof_score": 85.4,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 0.593,
+        "image_contribution": -2.291,
+        "predicted_score": 36.46,
+        "oof_score": 44.4,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -3.842,
+        "image_contribution": 2.238,
+        "predicted_score": 69.16,
+        "oof_score": 72.5,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -11.366,
+        "image_contribution": 0.133,
+        "predicted_score": 45.05,
+        "oof_score": 55.9,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -3.555,
+        "image_contribution": -3.491,
+        "predicted_score": 76.44,
+        "oof_score": 80.2,
+        "ground_truth": 70.0
+      }
+    },
+    "Madurai": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -25.306,
+        "image_contribution": -15.758,
+        "predicted_score": 27.77,
+        "oof_score": 39.8,
+        "ground_truth": 10.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -11.378,
+        "image_contribution": -13.241,
+        "predicted_score": 13.54,
+        "oof_score": 16.8,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -14.696,
+        "image_contribution": -10.477,
+        "predicted_score": 45.59,
+        "oof_score": 52.9,
+        "ground_truth": 30.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -8.71,
+        "image_contribution": -9.039,
+        "predicted_score": 38.54,
+        "oof_score": 41.5,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -5.694,
+        "image_contribution": -5.585,
+        "predicted_score": 72.21,
+        "oof_score": 74.4,
+        "ground_truth": 70.0
+      }
+    },
+    "Pondicherry": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -3.297,
+        "image_contribution": -3.724,
+        "predicted_score": 61.81,
+        "oof_score": 67.3,
+        "ground_truth": 50.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -6.342,
+        "image_contribution": -5.98,
+        "predicted_score": 25.84,
+        "oof_score": 24.5,
+        "ground_truth": 20.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -2.084,
+        "image_contribution": -1.985,
+        "predicted_score": 66.7,
+        "oof_score": 59.8,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -7.091,
+        "image_contribution": -3.156,
+        "predicted_score": 46.04,
+        "oof_score": 35.2,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.216,
+        "image_contribution": -3.82,
+        "predicted_score": 79.45,
+        "oof_score": 76.9,
+        "ground_truth": 80.0
+      }
+    },
+    "Havelock Island": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 9.911,
+        "image_contribution": 9.609,
+        "predicted_score": 88.35,
+        "oof_score": 77.2,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 15.589,
+        "image_contribution": 3.927,
+        "predicted_score": 57.67,
+        "oof_score": 31.9,
+        "ground_truth": 90.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 1.721,
+        "image_contribution": 6.173,
+        "predicted_score": 78.66,
+        "oof_score": 65.5,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 3.548,
+        "image_contribution": 6.238,
+        "predicted_score": 66.07,
+        "oof_score": 41.7,
+        "ground_truth": 90.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 2.506,
+        "image_contribution": 0.9,
+        "predicted_score": 86.9,
+        "oof_score": 76.0,
+        "ground_truth": 100.0
+      }
+    },
+    "Port Blair": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 2.938,
+        "image_contribution": 3.443,
+        "predicted_score": 75.21,
+        "oof_score": 68.0,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 3.87,
+        "image_contribution": -2.054,
+        "predicted_score": 39.97,
+        "oof_score": 30.8,
+        "ground_truth": 40.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -2.707,
+        "image_contribution": 0.728,
+        "predicted_score": 68.79,
+        "oof_score": 61.0,
+        "ground_truth": 70.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 4.32,
+        "image_contribution": 0.593,
+        "predicted_score": 61.2,
+        "oof_score": 42.6,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -3.568,
+        "image_contribution": -3.915,
+        "predicted_score": 76.01,
+        "oof_score": 76.6,
+        "ground_truth": 70.0
+      }
+    },
+    "Pune": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -27.594,
+        "image_contribution": -10.536,
+        "predicted_score": 30.7,
+        "oof_score": 37.5,
+        "ground_truth": 20.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -11.308,
+        "image_contribution": -11.356,
+        "predicted_score": 15.49,
+        "oof_score": 21.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -24.692,
+        "image_contribution": -8.835,
+        "predicted_score": 37.24,
+        "oof_score": 41.3,
+        "ground_truth": 30.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -20.133,
+        "image_contribution": -8.541,
+        "predicted_score": 27.61,
+        "oof_score": 27.7,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -11.373,
+        "image_contribution": -7.914,
+        "predicted_score": 64.2,
+        "oof_score": 73.3,
+        "ground_truth": 50.0
+      }
+    },
+    "Ahmedabad": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -27.645,
+        "image_contribution": -14.978,
+        "predicted_score": 26.21,
+        "oof_score": 36.9,
+        "ground_truth": 10.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -10.835,
+        "image_contribution": -13.192,
+        "predicted_score": 14.13,
+        "oof_score": 17.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -19.498,
+        "image_contribution": -9.795,
+        "predicted_score": 41.47,
+        "oof_score": 47.1,
+        "ground_truth": 30.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -11.514,
+        "image_contribution": -8.539,
+        "predicted_score": 36.23,
+        "oof_score": 37.3,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -7.262,
+        "image_contribution": -6.72,
+        "predicted_score": 69.51,
+        "oof_score": 76.5,
+        "ground_truth": 60.0
+      }
+    },
+    "Rann of Kutch": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 6.936,
+        "image_contribution": 8.873,
+        "predicted_score": 84.64,
+        "oof_score": 79.2,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 4.255,
+        "image_contribution": 3.081,
+        "predicted_score": 45.49,
+        "oof_score": 46.0,
+        "ground_truth": 40.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 3.373,
+        "image_contribution": 5.978,
+        "predicted_score": 80.12,
+        "oof_score": 68.2,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -0.378,
+        "image_contribution": 4.246,
+        "predicted_score": 60.15,
+        "oof_score": 52.4,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 1.903,
+        "image_contribution": 0.581,
+        "predicted_score": 85.97,
+        "oof_score": 82.7,
+        "ground_truth": 90.0
+      }
+    },
+    "Mahabaleshwar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 7.998,
+        "image_contribution": 4.184,
+        "predicted_score": 81.01,
+        "oof_score": 81.1,
+        "ground_truth": 80.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -1.18,
+        "image_contribution": -2.199,
+        "predicted_score": 34.78,
+        "oof_score": 36.6,
+        "ground_truth": 30.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -4.567,
+        "image_contribution": 0.251,
+        "predicted_score": 66.45,
+        "oof_score": 67.3,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -12.454,
+        "image_contribution": -0.122,
+        "predicted_score": 43.71,
+        "oof_score": 42.0,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -2.77,
+        "image_contribution": -3.761,
+        "predicted_score": 76.96,
+        "oof_score": 81.0,
+        "ground_truth": 70.0
+      }
+    },
+    "Bhopal": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -6.569,
+        "image_contribution": -8.258,
+        "predicted_score": 54.0,
+        "oof_score": 64.7,
+        "ground_truth": 40.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -8.391,
+        "image_contribution": -8.773,
+        "predicted_score": 20.99,
+        "oof_score": 29.4,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -2.916,
+        "image_contribution": -6.035,
+        "predicted_score": 61.82,
+        "oof_score": 64.6,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 2.548,
+        "image_contribution": -5.366,
+        "predicted_score": 53.47,
+        "oof_score": 51.3,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -4.367,
+        "image_contribution": -5.787,
+        "predicted_score": 73.34,
+        "oof_score": 83.0,
+        "ground_truth": 60.0
+      }
+    },
+    "Ujjain": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -20.156,
+        "image_contribution": -15.675,
+        "predicted_score": 33.0,
+        "oof_score": 42.1,
+        "ground_truth": 20.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -9.358,
+        "image_contribution": -14.839,
+        "predicted_score": 13.96,
+        "oof_score": 18.0,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -11.075,
+        "image_contribution": -11.339,
+        "predicted_score": 48.35,
+        "oof_score": 49.2,
+        "ground_truth": 50.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -8.28,
+        "image_contribution": -11.892,
+        "predicted_score": 36.11,
+        "oof_score": 35.8,
+        "ground_truth": 40.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -6.095,
+        "image_contribution": -7.552,
+        "predicted_score": 69.84,
+        "oof_score": 76.7,
+        "ground_truth": 60.0
+      }
+    },
+    "Pachmarhi": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 8.818,
+        "image_contribution": 6.871,
+        "predicted_score": 84.52,
+        "oof_score": 79.0,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 6.346,
+        "image_contribution": -0.46,
+        "predicted_score": 44.04,
+        "oof_score": 38.6,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -3.316,
+        "image_contribution": 3.716,
+        "predicted_score": 71.17,
+        "oof_score": 64.7,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -3.497,
+        "image_contribution": 4.461,
+        "predicted_score": 57.25,
+        "oof_score": 47.0,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 0.15,
+        "image_contribution": -3.052,
+        "predicted_score": 80.59,
+        "oof_score": 81.1,
+        "ground_truth": 80.0
+      }
+    },
+    "Puri": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -8.682,
+        "image_contribution": -6.812,
+        "predicted_score": 53.34,
+        "oof_score": 50.1,
+        "ground_truth": 60.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -3.682,
+        "image_contribution": -9.175,
+        "predicted_score": 25.3,
+        "oof_score": 30.9,
+        "ground_truth": 20.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -10.308,
+        "image_contribution": -4.075,
+        "predicted_score": 56.38,
+        "oof_score": 56.8,
+        "ground_truth": 50.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -11.127,
+        "image_contribution": -4.651,
+        "predicted_score": 40.51,
+        "oof_score": 43.5,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -4.82,
+        "image_contribution": -4.844,
+        "predicted_score": 73.83,
+        "oof_score": 76.2,
+        "ground_truth": 70.0
+      }
+    },
+    "Bhubaneswar": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -23.239,
+        "image_contribution": -11.794,
+        "predicted_score": 33.8,
+        "oof_score": 34.7,
+        "ground_truth": 30.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -12.893,
+        "image_contribution": -12.188,
+        "predicted_score": 13.08,
+        "oof_score": 16.7,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -13.312,
+        "image_contribution": -7.526,
+        "predicted_score": 49.93,
+        "oof_score": 48.4,
+        "ground_truth": 50.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -5.036,
+        "image_contribution": -6.322,
+        "predicted_score": 44.93,
+        "oof_score": 41.8,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -7.275,
+        "image_contribution": -7.366,
+        "predicted_score": 68.85,
+        "oof_score": 72.6,
+        "ground_truth": 60.0
+      }
+    },
+    "Bodh Gaya": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -16.737,
+        "image_contribution": -10.419,
+        "predicted_score": 41.68,
+        "oof_score": 47.4,
+        "ground_truth": 30.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -6.634,
+        "image_contribution": -11.538,
+        "predicted_score": 19.99,
+        "oof_score": 27.7,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -2.401,
+        "image_contribution": -4.562,
+        "predicted_score": 63.8,
+        "oof_score": 51.1,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -4.515,
+        "image_contribution": -4.669,
+        "predicted_score": 47.1,
+        "oof_score": 36.8,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -2.112,
+        "image_contribution": -7.138,
+        "predicted_score": 74.24,
+        "oof_score": 77.8,
+        "ground_truth": 70.0
+      }
+    },
+    "Tawang": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 9.75,
+        "image_contribution": 10.394,
+        "predicted_score": 88.98,
+        "oof_score": 85.5,
+        "ground_truth": 90.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 14.021,
+        "image_contribution": 6.043,
+        "predicted_score": 58.22,
+        "oof_score": 54.5,
+        "ground_truth": 60.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 5.653,
+        "image_contribution": 4.525,
+        "predicted_score": 80.94,
+        "oof_score": 72.5,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 8.541,
+        "image_contribution": 4.666,
+        "predicted_score": 69.49,
+        "oof_score": 53.1,
+        "ground_truth": 90.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 4.106,
+        "image_contribution": -0.43,
+        "predicted_score": 87.17,
+        "oof_score": 84.4,
+        "ground_truth": 90.0
+      }
+    },
+    "Kaziranga": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 14.291,
+        "image_contribution": 5.775,
+        "predicted_score": 88.9,
+        "oof_score": 72.2,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 9.201,
+        "image_contribution": -0.008,
+        "predicted_score": 47.35,
+        "oof_score": 29.7,
+        "ground_truth": 60.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 3.657,
+        "image_contribution": 3.295,
+        "predicted_score": 77.72,
+        "oof_score": 70.6,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 4.729,
+        "image_contribution": 0.227,
+        "predicted_score": 61.24,
+        "oof_score": 56.2,
+        "ground_truth": 60.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 2.046,
+        "image_contribution": -3.48,
+        "predicted_score": 82.06,
+        "oof_score": 82.2,
+        "ground_truth": 80.0
+      }
+    },
+    "Cherrapunji": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 18.899,
+        "image_contribution": 8.895,
+        "predicted_score": 96.63,
+        "oof_score": 89.0,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 11.82,
+        "image_contribution": 1.213,
+        "predicted_score": 51.19,
+        "oof_score": 46.3,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 4.051,
+        "image_contribution": 5.002,
+        "predicted_score": 79.82,
+        "oof_score": 75.9,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 5.951,
+        "image_contribution": 5.587,
+        "predicted_score": 67.82,
+        "oof_score": 60.7,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 4.294,
+        "image_contribution": -1.648,
+        "predicted_score": 86.14,
+        "oof_score": 82.2,
+        "ground_truth": 90.0
+      }
+    },
+    "Kanyakumari": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -4.356,
+        "image_contribution": -4.276,
+        "predicted_score": 60.2,
+        "oof_score": 52.8,
+        "ground_truth": 70.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -8.335,
+        "image_contribution": -8.192,
+        "predicted_score": 21.63,
+        "oof_score": 28.4,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -5.876,
+        "image_contribution": -4.951,
+        "predicted_score": 59.94,
+        "oof_score": 58.3,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -9.491,
+        "image_contribution": -5.874,
+        "predicted_score": 40.92,
+        "oof_score": 46.2,
+        "ground_truth": 30.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -0.134,
+        "image_contribution": -5.565,
+        "predicted_score": 77.79,
+        "oof_score": 77.0,
+        "ground_truth": 80.0
+      }
+    },
+    "Mahabalipuram": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": -17.225,
+        "image_contribution": -4.98,
+        "predicted_score": 46.63,
+        "oof_score": 44.4,
+        "ground_truth": 50.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": -12.504,
+        "image_contribution": -8.382,
+        "predicted_score": 17.27,
+        "oof_score": 24.6,
+        "ground_truth": 10.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": -13.325,
+        "image_contribution": -1.386,
+        "predicted_score": 56.06,
+        "oof_score": 51.8,
+        "ground_truth": 60.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": -8.12,
+        "image_contribution": -2.294,
+        "predicted_score": 45.87,
+        "oof_score": 41.7,
+        "ground_truth": 50.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": -2.605,
+        "image_contribution": -4.525,
+        "predicted_score": 76.36,
+        "oof_score": 75.5,
+        "ground_truth": 80.0
+      }
+    },
+    "Wayanad": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 14.704,
+        "image_contribution": 10.269,
+        "predicted_score": 93.8,
+        "oof_score": 85.3,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 10.014,
+        "image_contribution": 1.088,
+        "predicted_score": 49.26,
+        "oof_score": 43.9,
+        "ground_truth": 50.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 1.311,
+        "image_contribution": 6.07,
+        "predicted_score": 78.15,
+        "oof_score": 74.0,
+        "ground_truth": 80.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 4.259,
+        "image_contribution": 5.427,
+        "predicted_score": 65.97,
+        "oof_score": 57.7,
+        "ground_truth": 70.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 3.232,
+        "image_contribution": -2.046,
+        "predicted_score": 84.68,
+        "oof_score": 80.3,
+        "ground_truth": 90.0
+      }
+    },
+    "Auli": {
+      "nature": {
+        "dimension": "nature",
+        "intercept": 68.831,
+        "text_contribution": 13.225,
+        "image_contribution": 14.191,
+        "predicted_score": 96.25,
+        "oof_score": 88.8,
+        "ground_truth": 100.0
+      },
+      "adventure": {
+        "dimension": "adventure",
+        "intercept": 38.157,
+        "text_contribution": 23.13,
+        "image_contribution": 11.556,
+        "predicted_score": 72.84,
+        "oof_score": 57.2,
+        "ground_truth": 90.0
+      },
+      "peacefulness": {
+        "dimension": "peacefulness",
+        "intercept": 70.766,
+        "text_contribution": 4.812,
+        "image_contribution": 7.443,
+        "predicted_score": 83.02,
+        "oof_score": 74.2,
+        "ground_truth": 90.0
+      },
+      "crowd_match": {
+        "dimension": "crowd_match",
+        "intercept": 56.285,
+        "text_contribution": 4.026,
+        "image_contribution": 6.731,
+        "predicted_score": 67.04,
+        "oof_score": 52.5,
+        "ground_truth": 80.0
+      },
+      "visual_atmosphere": {
+        "dimension": "visual_atmosphere",
+        "intercept": 83.49,
+        "text_contribution": 4.002,
+        "image_contribution": 1.998,
+        "predicted_score": 89.49,
+        "oof_score": 87.9,
+        "ground_truth": 90.0
+      }
+    }
+  },
+  "full_fit_predictions": {
+    "Agra": {
+      "nature": 24.65,
+      "adventure": 13.14,
+      "peacefulness": 34.59,
+      "crowd_match": 23.74,
+      "visual_atmosphere": 84.02
+    },
+    "Jaipur": {
+      "nature": 31.62,
+      "adventure": 17.54,
+      "peacefulness": 38.46,
+      "crowd_match": 28.89,
+      "visual_atmosphere": 76.92
+    },
+    "Udaipur": {
+      "nature": 42.85,
+      "adventure": 18.57,
+      "peacefulness": 53.66,
+      "crowd_match": 43.39,
+      "visual_atmosphere": 77.17
+    },
+    "Jodhpur": {
+      "nature": 33.13,
+      "adventure": 15.83,
+      "peacefulness": 44.13,
+      "crowd_match": 36.9,
+      "visual_atmosphere": 75.93
+    },
+    "Jaisalmer": {
+      "nature": 67.71,
+      "adventure": 44.15,
+      "peacefulness": 63.22,
+      "crowd_match": 47.42,
+      "visual_atmosphere": 84.27
+    },
+    "Delhi": {
+      "nature": 21.91,
+      "adventure": 12.5,
+      "peacefulness": 28.54,
+      "crowd_match": 20.94,
+      "visual_atmosphere": 74.11
+    },
+    "Varanasi": {
+      "nature": 35.59,
+      "adventure": 15.43,
+      "peacefulness": 37.9,
+      "crowd_match": 25.92,
+      "visual_atmosphere": 77.1
+    },
+    "Amritsar": {
+      "nature": 27.58,
+      "adventure": 13.65,
+      "peacefulness": 44.89,
+      "crowd_match": 27.55,
+      "visual_atmosphere": 73.9
+    },
+    "Rishikesh": {
+      "nature": 66.69,
+      "adventure": 50.23,
+      "peacefulness": 57.84,
+      "crowd_match": 41.86,
+      "visual_atmosphere": 77.05
+    },
+    "Haridwar": {
+      "nature": 50.43,
+      "adventure": 25.87,
+      "peacefulness": 46.27,
+      "crowd_match": 32.73,
+      "visual_atmosphere": 74.37
+    },
+    "Manali": {
+      "nature": 81.53,
+      "adventure": 60.52,
+      "peacefulness": 66.8,
+      "crowd_match": 47.41,
+      "visual_atmosphere": 84.46
+    },
+    "Shimla": {
+      "nature": 64.51,
+      "adventure": 32.74,
+      "peacefulness": 54.42,
+      "crowd_match": 32.63,
+      "visual_atmosphere": 72.24
+    },
+    "Leh": {
+      "nature": 85.88,
+      "adventure": 61.9,
+      "peacefulness": 78.86,
+      "crowd_match": 62.0,
+      "visual_atmosphere": 90.4
+    },
+    "Srinagar": {
+      "nature": 59.8,
+      "adventure": 27.73,
+      "peacefulness": 56.85,
+      "crowd_match": 36.1,
+      "visual_atmosphere": 82.26
+    },
+    "Darjeeling": {
+      "nature": 82.9,
+      "adventure": 40.11,
+      "peacefulness": 67.88,
+      "crowd_match": 43.2,
+      "visual_atmosphere": 80.11
+    },
+    "Kolkata": {
+      "nature": 23.11,
+      "adventure": 11.36,
+      "peacefulness": 35.11,
+      "crowd_match": 28.83,
+      "visual_atmosphere": 63.13
+    },
+    "Gangtok": {
+      "nature": 80.81,
+      "adventure": 53.06,
+      "peacefulness": 72.33,
+      "crowd_match": 62.31,
+      "visual_atmosphere": 81.9
+    },
+    "Shillong": {
+      "nature": 90.1,
+      "adventure": 40.67,
+      "peacefulness": 78.75,
+      "crowd_match": 70.88,
+      "visual_atmosphere": 80.97
+    },
+    "Khajuraho": {
+      "nature": 33.65,
+      "adventure": 14.6,
+      "peacefulness": 56.49,
+      "crowd_match": 51.38,
+      "visual_atmosphere": 74.98
+    },
+    "Mumbai": {
+      "nature": 37.71,
+      "adventure": 17.17,
+      "peacefulness": 38.07,
+      "crowd_match": 26.11,
+      "visual_atmosphere": 68.85
+    },
+    "Goa": {
+      "nature": 72.32,
+      "adventure": 39.73,
+      "peacefulness": 59.68,
+      "crowd_match": 37.83,
+      "visual_atmosphere": 80.29
+    },
+    "Hampi": {
+      "nature": 47.8,
+      "adventure": 26.72,
+      "peacefulness": 61.47,
+      "crowd_match": 49.7,
+      "visual_atmosphere": 79.54
+    },
+    "Mysore": {
+      "nature": 43.16,
+      "adventure": 17.41,
+      "peacefulness": 53.03,
+      "crowd_match": 37.75,
+      "visual_atmosphere": 70.88
+    },
+    "Coorg": {
+      "nature": 83.74,
+      "adventure": 44.32,
+      "peacefulness": 75.51,
+      "crowd_match": 59.37,
+      "visual_atmosphere": 80.26
+    },
+    "Hyderabad": {
+      "nature": 33.07,
+      "adventure": 16.43,
+      "peacefulness": 40.36,
+      "crowd_match": 29.74,
+      "visual_atmosphere": 70.01
+    },
+    "Kochi": {
+      "nature": 44.19,
+      "adventure": 15.95,
+      "peacefulness": 56.01,
+      "crowd_match": 44.06,
+      "visual_atmosphere": 71.99
+    },
+    "Munnar": {
+      "nature": 91.3,
+      "adventure": 36.55,
+      "peacefulness": 79.25,
+      "crowd_match": 51.49,
+      "visual_atmosphere": 86.02
+    },
+    "Alleppey": {
+      "nature": 80.79,
+      "adventure": 27.64,
+      "peacefulness": 78.36,
+      "crowd_match": 47.55,
+      "visual_atmosphere": 84.87
+    },
+    "Ooty": {
+      "nature": 84.06,
+      "adventure": 36.46,
+      "peacefulness": 69.16,
+      "crowd_match": 45.05,
+      "visual_atmosphere": 76.44
+    },
+    "Madurai": {
+      "nature": 27.77,
+      "adventure": 13.54,
+      "peacefulness": 45.59,
+      "crowd_match": 38.54,
+      "visual_atmosphere": 72.21
+    },
+    "Pondicherry": {
+      "nature": 61.81,
+      "adventure": 25.84,
+      "peacefulness": 66.7,
+      "crowd_match": 46.04,
+      "visual_atmosphere": 79.45
+    },
+    "Havelock Island": {
+      "nature": 88.35,
+      "adventure": 57.67,
+      "peacefulness": 78.66,
+      "crowd_match": 66.07,
+      "visual_atmosphere": 86.9
+    },
+    "Port Blair": {
+      "nature": 75.21,
+      "adventure": 39.97,
+      "peacefulness": 68.79,
+      "crowd_match": 61.2,
+      "visual_atmosphere": 76.01
+    },
+    "Pune": {
+      "nature": 30.7,
+      "adventure": 15.49,
+      "peacefulness": 37.24,
+      "crowd_match": 27.61,
+      "visual_atmosphere": 64.2
+    },
+    "Ahmedabad": {
+      "nature": 26.21,
+      "adventure": 14.13,
+      "peacefulness": 41.47,
+      "crowd_match": 36.23,
+      "visual_atmosphere": 69.51
+    },
+    "Rann of Kutch": {
+      "nature": 84.64,
+      "adventure": 45.49,
+      "peacefulness": 80.12,
+      "crowd_match": 60.15,
+      "visual_atmosphere": 85.97
+    },
+    "Mahabaleshwar": {
+      "nature": 81.01,
+      "adventure": 34.78,
+      "peacefulness": 66.45,
+      "crowd_match": 43.71,
+      "visual_atmosphere": 76.96
+    },
+    "Bhopal": {
+      "nature": 54.0,
+      "adventure": 20.99,
+      "peacefulness": 61.82,
+      "crowd_match": 53.47,
+      "visual_atmosphere": 73.34
+    },
+    "Ujjain": {
+      "nature": 33.0,
+      "adventure": 13.96,
+      "peacefulness": 48.35,
+      "crowd_match": 36.11,
+      "visual_atmosphere": 69.84
+    },
+    "Pachmarhi": {
+      "nature": 84.52,
+      "adventure": 44.04,
+      "peacefulness": 71.17,
+      "crowd_match": 57.25,
+      "visual_atmosphere": 80.59
+    },
+    "Puri": {
+      "nature": 53.34,
+      "adventure": 25.3,
+      "peacefulness": 56.38,
+      "crowd_match": 40.51,
+      "visual_atmosphere": 73.83
+    },
+    "Bhubaneswar": {
+      "nature": 33.8,
+      "adventure": 13.08,
+      "peacefulness": 49.93,
+      "crowd_match": 44.93,
+      "visual_atmosphere": 68.85
+    },
+    "Bodh Gaya": {
+      "nature": 41.68,
+      "adventure": 19.99,
+      "peacefulness": 63.8,
+      "crowd_match": 47.1,
+      "visual_atmosphere": 74.24
+    },
+    "Tawang": {
+      "nature": 88.98,
+      "adventure": 58.22,
+      "peacefulness": 80.94,
+      "crowd_match": 69.49,
+      "visual_atmosphere": 87.17
+    },
+    "Kaziranga": {
+      "nature": 88.9,
+      "adventure": 47.35,
+      "peacefulness": 77.72,
+      "crowd_match": 61.24,
+      "visual_atmosphere": 82.06
+    },
+    "Cherrapunji": {
+      "nature": 96.63,
+      "adventure": 51.19,
+      "peacefulness": 79.82,
+      "crowd_match": 67.82,
+      "visual_atmosphere": 86.14
+    },
+    "Kanyakumari": {
+      "nature": 60.2,
+      "adventure": 21.63,
+      "peacefulness": 59.94,
+      "crowd_match": 40.92,
+      "visual_atmosphere": 77.79
+    },
+    "Mahabalipuram": {
+      "nature": 46.63,
+      "adventure": 17.27,
+      "peacefulness": 56.06,
+      "crowd_match": 45.87,
+      "visual_atmosphere": 76.36
+    },
+    "Wayanad": {
+      "nature": 93.8,
+      "adventure": 49.26,
+      "peacefulness": 78.15,
+      "crowd_match": 65.97,
+      "visual_atmosphere": 84.68
+    },
+    "Auli": {
+      "nature": 96.25,
+      "adventure": 72.84,
+      "peacefulness": 83.02,
+      "crowd_match": 67.04,
+      "visual_atmosphere": 89.49
+    }
+  },
+  "self_check_max_error": 7.62939453125e-06
+}

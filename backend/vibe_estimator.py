@@ -97,3 +97,44 @@ def estimate_vibe_scores(text_input: str, image_paths: list) -> dict:
         scores[dim] = round(float(np.clip(pred, 0.0, 100.0)), 2)
 
     return scores
+
+def build_fused_embedding(text_input: str, image_paths: list):
+    """Returns (fused_emb, text_emb, vis_emb) for embedding projection and OOD calculation."""
+    text_model = get_text_model()
+    text_emb = text_model.encode([text_input]) # (1, 384)
+
+    vis_model, processor = get_vision_model()
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    imgs = []
+    for p in image_paths:
+        try:
+            imgs.append(Image.open(p).convert("RGB"))
+        except Exception as e:
+            print(f"Error loading image {p}: {e}")
+
+    if not imgs:
+        vis_emb = np.zeros((1, vis_model.config.projection_dim))
+    else:
+        inputs = processor(images=imgs, return_tensors="pt", padding=True)
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        with torch.no_grad():
+            img_features = vis_model.get_image_features(pixel_values=inputs["pixel_values"])
+            if hasattr(img_features, "image_embeds"):
+                img_features = img_features.image_embeds
+            elif hasattr(img_features, "pooler_output"):
+                img_features = img_features.pooler_output
+            elif isinstance(img_features, tuple) and not isinstance(img_features, torch.Tensor):
+                img_features = img_features[0]
+            if img_features.shape[-1] != vis_model.config.projection_dim:
+                img_features = vis_model.visual_projection(img_features)
+
+        img_features_np = img_features.cpu().numpy()
+        avg_feature = img_features_np.mean(axis=0)
+        norm = np.linalg.norm(avg_feature)
+        if norm > 0:
+            avg_feature = avg_feature / norm
+        vis_emb = avg_feature.reshape(1, -1)
+
+    fused_emb = np.concatenate([text_emb, vis_emb], axis=1)
+    return fused_emb, text_emb, vis_emb

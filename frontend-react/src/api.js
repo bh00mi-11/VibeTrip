@@ -179,6 +179,10 @@ export async function getBuddies(destination) {
   return request(`/api/buddies/${encodeURIComponent(destination)}`);
 }
 
+export async function getLocals(destination) {
+  return request(`/api/locals/${encodeURIComponent(destination)}`);
+}
+
 export async function sendBuddyRequest(toUserId, destination, note = '') {
   return request('/api/connections/send', {
     method: 'POST',
@@ -285,7 +289,11 @@ export async function getAdminUsers() {
 }
 
 export async function toggleAdminUserActive(userId) {
-  return request(`/api/admin/users/${userId}/toggle-active`, { method: 'POST' });
+  return request(`/api/admin/users/${userId}/toggle-active`, { method: 'PATCH' });
+}
+
+export async function toggleAdminUserVerify(userId) {
+  return request(`/api/admin/users/${userId}/toggle-verify`, { method: 'PATCH' });
 }
 
 export async function getAdminReports() {
@@ -309,6 +317,50 @@ export async function createAdminDestination(formData) {
 
 export async function getAdminDlBenchmarks() {
   return request('/api/admin/dl-benchmarks');
+}
+
+// --- ADMIN DEEP LEARNING DASHBOARD (/api/admin/ml/*) ---
+export async function getAdminMlStatus() {
+  return request('/api/admin/ml/status');
+}
+
+export async function getAdminMlEvalComparison() {
+  return request('/api/admin/ml/eval-comparison');
+}
+
+export async function getAdminMlAblationResults() {
+  return request('/api/admin/ml/ablation-results');
+}
+
+export async function getAdminMlMultiseedResults() {
+  return request('/api/admin/ml/multiseed-results');
+}
+
+export async function getAdminMlCvRobustness() {
+  return request('/api/admin/ml/cv-robustness');
+}
+
+export async function getAdminMlResidualAudit() {
+  return request('/api/admin/ml/residual-audit');
+}
+
+export async function getAdminMlPerQueryMetrics() {
+  return request('/api/admin/ml/per-query-metrics');
+}
+
+export async function getAdminMlExplain(destination) {
+  return request(`/api/admin/ml/explain/${encodeURIComponent(destination)}`);
+}
+
+export async function getAdminMlEmbeddingCoordinates() {
+  return request('/api/admin/ml/embedding-coordinates');
+}
+
+export async function runAdminMlLabQuery(payload) {
+  return request('/api/admin/ml/lab/query', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  });
 }
 
 export function getImageUrl(path) {

@@ -53,6 +53,13 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="VibeTrip Multi-User API")
 
+try:
+    from .ml_dashboard.router import router as ml_router
+except (ImportError, ValueError):
+    from backend.ml_dashboard.router import router as ml_router
+
+app.include_router(ml_router)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -662,23 +669,92 @@ def get_local_experiences(
         for g in guides:
             prof = g.profile
             payout_info = prof.contact_info if prof else ""
+            if g.is_demo:
+                guide_label = "Demo Guide"
+            elif g.is_verified:
+                guide_label = "Verified Guide"
+            else:
+                guide_label = "Registered Guide"
+
             results.append({
                 "id": 90000 + g.id,
-                "name": f"{g.name} (Licensed Pro Guide)",
+                "name": f"{g.name} ({guide_label})",
                 "category": "guide",
                 "latitude": None,
                 "longitude": None,
-                "description": prof.bio if prof else "Certified local mountain / heritage guide.",
+                "description": prof.bio if prof else "Local mountain / heritage guide.",
                 "contact_info": payout_info,
-                "source": "admin",
-                "source_label": "Certified Guide",
-                "crowd_hint": "Direct Payout & Verification Active"
+                "source": "admin" if g.is_verified else "local_user",
+                "source_label": guide_label,
+                "is_verified": bool(g.is_verified),
+                "is_demo": bool(g.is_demo),
+                "crowd_hint": "Direct Payout & Verification Active" if g.is_verified else ("Demo Guide Profile" if g.is_demo else "Verification Pending")
             })
 
     return {
         "destination": destination,
         "total": len(results),
         "experiences": results
+    }
+
+@app.get("/api/locals/{destination}")
+def get_locals_for_destination(
+    destination: str,
+    user: Optional[User] = Depends(get_optional_user),
+    db: Session = Depends(get_db)
+):
+    """Retrieve community locals / hosts living in or representing this destination."""
+    locals_query = db.query(User).join(TravelerProfile).filter(
+        User.role == "local",
+        User.is_active == True,
+        TravelerProfile.home_city.ilike(f"%{destination}%")
+    )
+    
+    current_user_id = user.id if user else None
+    if current_user_id:
+        locals_query = locals_query.filter(User.id != current_user_id)
+        blocked_ids = [
+            b.blocked_id for b in db.query(UserBlock).filter(UserBlock.blocker_id == current_user_id).all()
+        ] + [
+            b.blocker_id for b in db.query(UserBlock).filter(UserBlock.blocked_id == current_user_id).all()
+        ]
+        if blocked_ids:
+            locals_query = locals_query.filter(User.id.notin_(blocked_ids))
+
+    local_users = locals_query.all()
+    
+    # Check if there are any submitted local places by these locals to count
+    results = []
+    for u in local_users:
+        prof = u.profile
+        conn_status = None
+        if current_user_id:
+            req = db.query(BuddyRequest).filter(
+                ((BuddyRequest.from_user == current_user_id) & (BuddyRequest.to_user == u.id)) |
+                ((BuddyRequest.from_user == u.id) & (BuddyRequest.to_user == current_user_id))
+            ).first()
+            if req:
+                conn_status = req.status
+
+        # Count spots shared by this local
+        spots_count = db.query(LocalPlace).filter(LocalPlace.submitted_by == u.id).count()
+
+        results.append({
+            "user_id": u.id,
+            "name": u.name,
+            "home_city": prof.home_city if prof else destination,
+            "bio": prof.bio if prof else f"Resident & local insider of {destination}.",
+            "interest_tags": prof.interest_tags if prof else "",
+            "role": "local",
+            "is_demo": u.is_demo,
+            "spots_shared": spots_count,
+            "connection_status": conn_status
+        })
+
+    return {
+        "destination": destination,
+        "count": len(results),
+        "locals": results
     }
 
 
@@ -849,6 +925,7 @@ def get_travelers_for_destination(
         travelers.append({
             "user_id": u.id,
             "name": u.name,
+            "role": u.role,
             "home_city": prof.home_city if prof else "",
             "bio": prof.bio if prof else "",
             "is_demo": u.is_demo,
@@ -858,6 +935,7 @@ def get_travelers_for_destination(
             "interest_tags": bi.interest_tags,
             "note": bi.note,
             "compatibility": compat["compatibility_score"],
+            "compatibility_score": compat["compatibility_score"],
             "breakdown": compat["breakdown"],
             "connection_status": conn_status
         })
@@ -1009,9 +1087,10 @@ class LocalPlaceSubmission(BaseModel):
     contact_info: Optional[str] = ""
 
 @app.post("/api/local/submissions")
+@app.post("/api/contribute/submit")
 def submit_local_place(
     req: LocalPlaceSubmission,
-    user: User = Depends(require_role("tourist", "local", "admin")),
+    user: User = Depends(require_role("tourist", "local", "guide", "admin")),
     db: Session = Depends(get_db)
 ):
     lat = req.latitude
@@ -1042,8 +1121,9 @@ def submit_local_place(
     }
 
 @app.get("/api/local/my-submissions")
+@app.get("/api/contribute/my")
 def get_my_submissions(
-    user: User = Depends(require_role("local", "admin")),
+    user: User = Depends(require_role("tourist", "local", "guide", "admin")),
     db: Session = Depends(get_db)
 ):
     places = db.query(LocalPlace).filter(LocalPlace.submitted_by == user.id).all()
@@ -1120,6 +1200,7 @@ def get_admin_users(role: Optional[str] = None, user: User = Depends(require_rol
             "contact_info": prof.contact_info if prof else "",
             "is_active": u.is_active,
             "is_demo": u.is_demo,
+            "is_verified": bool(u.is_verified),
             "created_at": u.created_at.strftime("%Y-%m-%d")
         })
     return {"users": results}
@@ -1134,6 +1215,15 @@ def toggle_user_active(user_id: int, user: User = Depends(require_role("admin"))
     u.is_active = not u.is_active
     db.commit()
     return {"message": f"User is now {'active' if u.is_active else 'deactivated'}", "is_active": u.is_active}
+
+@app.patch("/api/admin/users/{user_id}/toggle-verify")
+def toggle_user_verify(user_id: int, user: User = Depends(require_role("admin")), db: Session = Depends(get_db)):
+    u = db.query(User).filter(User.id == user_id).first()
+    if not u:
+        raise HTTPException(status_code=404, detail="User not found.")
+    u.is_verified = not bool(u.is_verified)
+    db.commit()
+    return {"message": f"User verification status is now {u.is_verified}", "is_verified": u.is_verified}
 
 @app.get("/api/admin/reports")
 def get_admin_reports(user: User = Depends(require_role("admin")), db: Session = Depends(get_db)):
@@ -1283,8 +1373,11 @@ async def admin_create_destination(
     lat = latitude
     lon = longitude
     if lat is None or lon is None:
-        from .seed_db import geocode_destination
-        lat, lon = geocode_destination(clean_name, state)
+        try:
+            from scripts_db_setup.seed_db import geocode_destination
+            lat, lon = geocode_destination(clean_name, state)
+        except Exception:
+            lat, lon = None, None
         if lat is None or lon is None:
             lat, lon = 20.5937, 78.9629
 
@@ -1468,7 +1561,7 @@ def get_dl_benchmarks(user: User = Depends(require_role("admin"))):
     architecture = {
         "text_encoder": {
             "name": "Sentence-Transformers all-MiniLM-L6-v2",
-            "type": "Transformer (BERT-based)",
+            "type": "Transformer (all-MiniLM-L6-v2)",
             "embedding_dim": 384,
             "pooling": "Mean Pooling"
         },

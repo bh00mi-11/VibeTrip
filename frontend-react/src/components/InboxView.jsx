@@ -5,11 +5,24 @@ import {
   acceptBuddyRequest, declineBuddyRequest, blockUser, submitReport
 } from '../api';
 
-export default function InboxView() {
+export default function InboxView({ user }) {
   const [activeTab, setActiveTab] = useState('received');
   const [received, setReceived] = useState([]);
   const [sent, setSent] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const role = user?.role || 'tourist';
+  const roleTitle = role === 'guide'
+    ? 'Guide Bookings & Traveler Requests'
+    : role === 'local'
+    ? 'Local Community Inquiries & Requests'
+    : 'Traveler Inbox & Connections';
+
+  const roleSubtitle = role === 'guide'
+    ? 'Inquiries and booking connections from travelers requesting guided experiences and trekking tours.'
+    : role === 'local'
+    ? 'Travelers reaching out to discover local secret spots and authentic experiences in your area.'
+    : 'Manage your travel connection requests. Contact information is strictly protected until mutual connection is accepted.';
 
   // Block & Report modal states
   const [actionUser, setActionUser] = useState(null); // { id, name }
@@ -82,9 +95,9 @@ export default function InboxView() {
   return (
     <div>
       <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ fontSize: '1.75rem' }}>Traveler Inbox & Connections</h2>
+        <h2 style={{ fontSize: '1.75rem' }}>{roleTitle}</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-          Manage your travel connection requests. Contact information is strictly protected until mutual connection is accepted.
+          {roleSubtitle}
         </p>
       </div>
 
@@ -93,7 +106,7 @@ export default function InboxView() {
           className={`tab-item ${activeTab === 'received' ? 'active' : ''}`}
           onClick={() => setActiveTab('received')}
         >
-          Received Requests ({received.length})
+          {role === 'guide' ? 'Received Bookings & Inquiries' : 'Received Requests'} ({received.length})
         </button>
         <button
           className={`tab-item ${activeTab === 'sent' ? 'active' : ''}`}

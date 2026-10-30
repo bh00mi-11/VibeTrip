@@ -1,0 +1,8658 @@
+{
+  "queries": [
+    {
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "target_dims_json": "{\"nature\": \"high\", \"peacefulness\": \"high\", \"crowd_match\": \"high\"}"
+    },
+    {
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "target_dims_json": "{\"adventure\": \"high\", \"crowd_match\": \"high\"}"
+    },
+    {
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "target_dims_json": "{\"visual_atmosphere\": \"high\", \"crowd_match\": \"low\"}"
+    },
+    {
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "target_dims_json": "{\"nature\": \"high\", \"peacefulness\": \"high\", \"adventure\": \"low\"}"
+    },
+    {
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "target_dims_json": "{\"peacefulness\": \"high\", \"nature\": \"high\"}"
+    },
+    {
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "target_dims_json": "{\"nature\": \"high\", \"adventure\": \"high\"}"
+    },
+    {
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "target_dims_json": "{\"peacefulness\": \"low\", \"crowd_match\": \"low\", \"visual_atmosphere\": \"high\"}"
+    },
+    {
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "target_dims_json": "{\"nature\": \"high\", \"peacefulness\": \"high\", \"crowd_match\": \"high\"}"
+    },
+    {
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "target_dims_json": "{\"visual_atmosphere\": \"high\", \"crowd_match\": \"low\"}"
+    },
+    {
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "target_dims_json": "{\"nature\": \"high\", \"crowd_match\": \"high\"}"
+    },
+    {
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "target_dims_json": "{\"visual_atmosphere\": \"high\"}"
+    },
+    {
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "target_dims_json": "{\"adventure\": \"high\", \"crowd_match\": \"high\"}"
+    }
+  ],
+  "per_query_metrics": {
+    "Baseline": {
+      "q01": {
+        "query_id": "q01",
+        "query_text": "peaceful nature getaway, avoid crowds",
+        "p_at_5": 0.6,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.684,
+        "ndcg_at_10": 0.444,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Kaziranga",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          }
+        ]
+      },
+      "q02": {
+        "query_id": "q02",
+        "query_text": "adventure-packed offbeat trip",
+        "p_at_5": 0.2,
+        "p_at_10": 0.1,
+        "ndcg_at_5": 0.214,
+        "ndcg_at_10": 0.139,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Rishikesh",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q03": {
+        "query_id": "q03",
+        "query_text": "visually stunning iconic landmarks",
+        "p_at_5": 0.6,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.447,
+        "ndcg_at_10": 0.489,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Cherrapunji",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Varanasi",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": true
+          }
+        ]
+      },
+      "q04": {
+        "query_id": "q04",
+        "query_text": "relaxing coastal vacation with scenic beaches",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Alleppey",
+          "Cherrapunji",
+          "Coorg",
+          "Darjeeling",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Srinagar",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Havelock Island",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Kanyakumari",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Port Blair",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Kochi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Jaipur",
+            "is_hit": false
+          }
+        ]
+      },
+      "q05": {
+        "query_id": "q05",
+        "query_text": "deep spiritual journey to calm the mind",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Alleppey",
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Munnar",
+          "Rann of Kutch",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Amritsar",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Rishikesh",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Madurai",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Haridwar",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Agra",
+            "is_hit": false
+          }
+        ]
+      },
+      "q06": {
+        "query_id": "q06",
+        "query_text": "action-packed mountain climbing and skiing",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Manali",
+          "Pachmarhi",
+          "Rishikesh",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q07": {
+        "query_id": "q07",
+        "query_text": "bustling chaotic city with rich heritage",
+        "p_at_5": 0.4,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.485,
+        "ndcg_at_10": 0.393,
+        "relevant_destinations": [
+          "Agra",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Hyderabad",
+          "Jaipur",
+          "Kolkata",
+          "Madurai",
+          "Mumbai",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Hyderabad",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Mysore",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Jodhpur",
+            "is_hit": false
+          }
+        ]
+      },
+      "q08": {
+        "query_id": "q08",
+        "query_text": "serene backwaters away from everyone",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Delhi",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Amritsar",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Rishikesh",
+            "is_hit": false
+          }
+        ]
+      },
+      "q09": {
+        "query_id": "q09",
+        "query_text": "popular highly-visited heritage forts and palaces",
+        "p_at_5": 0.8,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.869,
+        "ndcg_at_10": 0.633,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Goa",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Kolkata",
+            "is_hit": false
+          }
+        ]
+      },
+      "q10": {
+        "query_id": "q10",
+        "query_text": "offbeat wildlife and nature exploration",
+        "p_at_5": 0.8,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.83,
+        "ndcg_at_10": 0.539,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Kaziranga",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          }
+        ]
+      },
+      "q11": {
+        "query_id": "q11",
+        "query_text": "visually photogenic ancient temples and ruins",
+        "p_at_5": 0.2,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.339,
+        "ndcg_at_10": 0.368,
+        "relevant_destinations": [
+          "Agra",
+          "Alleppey",
+          "Hampi",
+          "Havelock Island",
+          "Leh",
+          "Manali",
+          "Munnar",
+          "Srinagar",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Hampi",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Khajuraho",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Pachmarhi",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          }
+        ]
+      },
+      "q12": {
+        "query_id": "q12",
+        "query_text": "hidden gems for adventure sports and hiking",
+        "p_at_5": 0.2,
+        "p_at_10": 0.1,
+        "ndcg_at_5": 0.214,
+        "ndcg_at_10": 0.139,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Rishikesh",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Agra",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      }
+    },
+    "Text": {
+      "q01": {
+        "query_id": "q01",
+        "query_text": "peaceful nature getaway, avoid crowds",
+        "p_at_5": 0.2,
+        "p_at_10": 0.1,
+        "ndcg_at_5": 0.146,
+        "ndcg_at_10": 0.095,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Haridwar",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Rishikesh",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Darjeeling",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Manali",
+            "is_hit": false
+          }
+        ]
+      },
+      "q02": {
+        "query_id": "q02",
+        "query_text": "adventure-packed offbeat trip",
+        "p_at_5": 0.4,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.509,
+        "ndcg_at_10": 0.529,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Rishikesh",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Darjeeling",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Havelock Island",
+            "is_hit": true
+          }
+        ]
+      },
+      "q03": {
+        "query_id": "q03",
+        "query_text": "visually stunning iconic landmarks",
+        "p_at_5": 0.2,
+        "p_at_10": 0.2,
+        "ndcg_at_5": 0.146,
+        "ndcg_at_10": 0.161,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Khajuraho",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Auli",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Bhopal",
+            "is_hit": false
+          }
+        ]
+      },
+      "q04": {
+        "query_id": "q04",
+        "query_text": "relaxing coastal vacation with scenic beaches",
+        "p_at_5": 0.2,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.146,
+        "ndcg_at_10": 0.228,
+        "relevant_destinations": [
+          "Alleppey",
+          "Cherrapunji",
+          "Coorg",
+          "Darjeeling",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Srinagar",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Havelock Island",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Alleppey",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Kanyakumari",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Coorg",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          }
+        ]
+      },
+      "q05": {
+        "query_id": "q05",
+        "query_text": "deep spiritual journey to calm the mind",
+        "p_at_5": 0.2,
+        "p_at_10": 0.1,
+        "ndcg_at_5": 0.131,
+        "ndcg_at_10": 0.085,
+        "relevant_destinations": [
+          "Alleppey",
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Munnar",
+          "Rann of Kutch",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Rishikesh",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Varanasi",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Haridwar",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Madurai",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q06": {
+        "query_id": "q06",
+        "query_text": "action-packed mountain climbing and skiing",
+        "p_at_5": 0.6,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.723,
+        "ndcg_at_10": 0.605,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Manali",
+          "Pachmarhi",
+          "Rishikesh",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Manali",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Darjeeling",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Ooty",
+            "is_hit": false
+          }
+        ]
+      },
+      "q07": {
+        "query_id": "q07",
+        "query_text": "bustling chaotic city with rich heritage",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.509,
+        "ndcg_at_10": 0.463,
+        "relevant_destinations": [
+          "Agra",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Hyderabad",
+          "Jaipur",
+          "Kolkata",
+          "Madurai",
+          "Mumbai",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Hyderabad",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Kolkata",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Delhi",
+            "is_hit": true
+          }
+        ]
+      },
+      "q08": {
+        "query_id": "q08",
+        "query_text": "serene backwaters away from everyone",
+        "p_at_5": 0.0,
+        "p_at_10": 0.2,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.143,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Rishikesh",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Haridwar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q09": {
+        "query_id": "q09",
+        "query_text": "popular highly-visited heritage forts and palaces",
+        "p_at_5": 0.4,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.509,
+        "ndcg_at_10": 0.548,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Hampi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Goa",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q10": {
+        "query_id": "q10",
+        "query_text": "offbeat wildlife and nature exploration",
+        "p_at_5": 0.8,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.854,
+        "ndcg_at_10": 0.684,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Kaziranga",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Leh",
+            "is_hit": true
+          }
+        ]
+      },
+      "q11": {
+        "query_id": "q11",
+        "query_text": "visually photogenic ancient temples and ruins",
+        "p_at_5": 0.4,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.345,
+        "ndcg_at_10": 0.297,
+        "relevant_destinations": [
+          "Agra",
+          "Alleppey",
+          "Hampi",
+          "Havelock Island",
+          "Leh",
+          "Manali",
+          "Munnar",
+          "Srinagar",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Khajuraho",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Hampi",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Udaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Madurai",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Kolkata",
+            "is_hit": false
+          }
+        ]
+      },
+      "q12": {
+        "query_id": "q12",
+        "query_text": "hidden gems for adventure sports and hiking",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.301,
+        "ndcg_at_10": 0.34,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Rishikesh",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Wayanad",
+            "is_hit": false
+          }
+        ]
+      }
+    },
+    "Visual(Max)": {
+      "q01": {
+        "query_id": "q01",
+        "query_text": "peaceful nature getaway, avoid crowds",
+        "p_at_5": 0.8,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.661,
+        "ndcg_at_10": 0.562,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Havelock Island",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          }
+        ]
+      },
+      "q02": {
+        "query_id": "q02",
+        "query_text": "adventure-packed offbeat trip",
+        "p_at_5": 0.2,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.17,
+        "ndcg_at_10": 0.253,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Hampi",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Darjeeling",
+            "is_hit": false
+          }
+        ]
+      },
+      "q03": {
+        "query_id": "q03",
+        "query_text": "visually stunning iconic landmarks",
+        "p_at_5": 0.6,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.723,
+        "ndcg_at_10": 0.469,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Leh",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Mumbai",
+            "is_hit": false
+          }
+        ]
+      },
+      "q04": {
+        "query_id": "q04",
+        "query_text": "relaxing coastal vacation with scenic beaches",
+        "p_at_5": 0.2,
+        "p_at_10": 0.1,
+        "ndcg_at_5": 0.131,
+        "ndcg_at_10": 0.085,
+        "relevant_destinations": [
+          "Alleppey",
+          "Cherrapunji",
+          "Coorg",
+          "Darjeeling",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Srinagar",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Havelock Island",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Port Blair",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Alleppey",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Kochi",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Goa",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Kanyakumari",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Auli",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Udaipur",
+            "is_hit": false
+          }
+        ]
+      },
+      "q05": {
+        "query_id": "q05",
+        "query_text": "deep spiritual journey to calm the mind",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.277,
+        "ndcg_at_10": 0.323,
+        "relevant_destinations": [
+          "Alleppey",
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Munnar",
+          "Rann of Kutch",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pachmarhi",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Alleppey",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Kochi",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q06": {
+        "query_id": "q06",
+        "query_text": "action-packed mountain climbing and skiing",
+        "p_at_5": 0.6,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.723,
+        "ndcg_at_10": 0.612,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Manali",
+          "Pachmarhi",
+          "Rishikesh",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Manali",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Darjeeling",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Shimla",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Hampi",
+            "is_hit": false
+          }
+        ]
+      },
+      "q07": {
+        "query_id": "q07",
+        "query_text": "bustling chaotic city with rich heritage",
+        "p_at_5": 0.6,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.447,
+        "ndcg_at_10": 0.29,
+        "relevant_destinations": [
+          "Agra",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Hyderabad",
+          "Jaipur",
+          "Kolkata",
+          "Madurai",
+          "Mumbai",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Haridwar",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Mumbai",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Varanasi",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Tawang",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Leh",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Shimla",
+            "is_hit": false
+          }
+        ]
+      },
+      "q08": {
+        "query_id": "q08",
+        "query_text": "serene backwaters away from everyone",
+        "p_at_5": 0.2,
+        "p_at_10": 0.2,
+        "ndcg_at_5": 0.131,
+        "ndcg_at_10": 0.159,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Udaipur",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Kochi",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Havelock Island",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Kanyakumari",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Srinagar",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Goa",
+            "is_hit": false
+          }
+        ]
+      },
+      "q09": {
+        "query_id": "q09",
+        "query_text": "popular highly-visited heritage forts and palaces",
+        "p_at_5": 0.6,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.53,
+        "ndcg_at_10": 0.417,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Amritsar",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Port Blair",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Agra",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Pachmarhi",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Kochi",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Mysore",
+            "is_hit": false
+          }
+        ]
+      },
+      "q10": {
+        "query_id": "q10",
+        "query_text": "offbeat wildlife and nature exploration",
+        "p_at_5": 0.6,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.684,
+        "ndcg_at_10": 0.589,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Kaziranga",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Havelock Island",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Goa",
+            "is_hit": false
+          }
+        ]
+      },
+      "q11": {
+        "query_id": "q11",
+        "query_text": "visually photogenic ancient temples and ruins",
+        "p_at_5": 0.2,
+        "p_at_10": 0.3,
+        "ndcg_at_5": 0.339,
+        "ndcg_at_10": 0.357,
+        "relevant_destinations": [
+          "Agra",
+          "Alleppey",
+          "Hampi",
+          "Havelock Island",
+          "Leh",
+          "Manali",
+          "Munnar",
+          "Srinagar",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Hampi",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Bhubaneswar",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Mahabalipuram",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Khajuraho",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Puri",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Manali",
+            "is_hit": true
+          }
+        ]
+      },
+      "q12": {
+        "query_id": "q12",
+        "query_text": "hidden gems for adventure sports and hiking",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.47,
+        "ndcg_at_10": 0.441,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Hampi",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Goa",
+            "is_hit": false
+          }
+        ]
+      }
+    },
+    "Fusion": {
+      "q01": {
+        "query_id": "q01",
+        "query_text": "peaceful nature getaway, avoid crowds",
+        "p_at_5": 0.8,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.83,
+        "ndcg_at_10": 0.682,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Alleppey",
+            "is_hit": false
+          }
+        ]
+      },
+      "q02": {
+        "query_id": "q02",
+        "query_text": "adventure-packed offbeat trip",
+        "p_at_5": 0.8,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.661,
+        "ndcg_at_10": 0.429,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Munnar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q03": {
+        "query_id": "q03",
+        "query_text": "visually stunning iconic landmarks",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Srinagar",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Mumbai",
+            "is_hit": false
+          }
+        ]
+      },
+      "q04": {
+        "query_id": "q04",
+        "query_text": "relaxing coastal vacation with scenic beaches",
+        "p_at_5": 0.6,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.723,
+        "ndcg_at_10": 0.668,
+        "relevant_destinations": [
+          "Alleppey",
+          "Cherrapunji",
+          "Coorg",
+          "Darjeeling",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Srinagar",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Kaziranga",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Havelock Island",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Darjeeling",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Coorg",
+            "is_hit": true
+          }
+        ]
+      },
+      "q05": {
+        "query_id": "q05",
+        "query_text": "deep spiritual journey to calm the mind",
+        "p_at_5": 0.8,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.661,
+        "ndcg_at_10": 0.498,
+        "relevant_destinations": [
+          "Alleppey",
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Munnar",
+          "Rann of Kutch",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Darjeeling",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q06": {
+        "query_id": "q06",
+        "query_text": "action-packed mountain climbing and skiing",
+        "p_at_5": 0.6,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.723,
+        "ndcg_at_10": 0.547,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Manali",
+          "Pachmarhi",
+          "Rishikesh",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Darjeeling",
+            "is_hit": false
+          }
+        ]
+      },
+      "q07": {
+        "query_id": "q07",
+        "query_text": "bustling chaotic city with rich heritage",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.36,
+        "ndcg_at_10": 0.376,
+        "relevant_destinations": [
+          "Agra",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Hyderabad",
+          "Jaipur",
+          "Kolkata",
+          "Madurai",
+          "Mumbai",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Kolkata",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Srinagar",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Jaipur",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Hyderabad",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Delhi",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q08": {
+        "query_id": "q08",
+        "query_text": "serene backwaters away from everyone",
+        "p_at_5": 0.8,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.83,
+        "ndcg_at_10": 0.682,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Gangtok",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Alleppey",
+            "is_hit": false
+          }
+        ]
+      },
+      "q09": {
+        "query_id": "q09",
+        "query_text": "popular highly-visited heritage forts and palaces",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Srinagar",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Bodh Gaya",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Mumbai",
+            "is_hit": false
+          }
+        ]
+      },
+      "q10": {
+        "query_id": "q10",
+        "query_text": "offbeat wildlife and nature exploration",
+        "p_at_5": 0.8,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.83,
+        "ndcg_at_10": 0.675,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Alleppey",
+            "is_hit": false
+          }
+        ]
+      },
+      "q11": {
+        "query_id": "q11",
+        "query_text": "visually photogenic ancient temples and ruins",
+        "p_at_5": 0.2,
+        "p_at_10": 0.2,
+        "ndcg_at_5": 0.17,
+        "ndcg_at_10": 0.174,
+        "relevant_destinations": [
+          "Agra",
+          "Alleppey",
+          "Hampi",
+          "Havelock Island",
+          "Leh",
+          "Manali",
+          "Munnar",
+          "Srinagar",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Tawang",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Kaziranga",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Cherrapunji",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Jaisalmer",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Leh",
+            "is_hit": true
+          }
+        ]
+      },
+      "q12": {
+        "query_id": "q12",
+        "query_text": "hidden gems for adventure sports and hiking",
+        "p_at_5": 0.8,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.661,
+        "ndcg_at_10": 0.429,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Coorg",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Alleppey",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Munnar",
+            "is_hit": false
+          }
+        ]
+      }
+    },
+    "Image-only": {
+      "q01": {
+        "query_id": "q01",
+        "query_text": "peaceful nature getaway, avoid crowds",
+        "p_at_5": 0.8,
+        "p_at_10": 0.8,
+        "ndcg_at_5": 0.869,
+        "ndcg_at_10": 0.851,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Gangtok",
+            "is_hit": false
+          }
+        ]
+      },
+      "q02": {
+        "query_id": "q02",
+        "query_text": "adventure-packed offbeat trip",
+        "p_at_5": 0.4,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.36,
+        "ndcg_at_10": 0.445,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          }
+        ]
+      },
+      "q03": {
+        "query_id": "q03",
+        "query_text": "visually stunning iconic landmarks",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Madurai",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Khajuraho",
+            "is_hit": false
+          }
+        ]
+      },
+      "q04": {
+        "query_id": "q04",
+        "query_text": "relaxing coastal vacation with scenic beaches",
+        "p_at_5": 0.6,
+        "p_at_10": 0.6,
+        "ndcg_at_5": 0.699,
+        "ndcg_at_10": 0.672,
+        "relevant_destinations": [
+          "Alleppey",
+          "Cherrapunji",
+          "Coorg",
+          "Darjeeling",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Srinagar",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Havelock Island",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Auli",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Tawang",
+            "is_hit": false
+          }
+        ]
+      },
+      "q05": {
+        "query_id": "q05",
+        "query_text": "deep spiritual journey to calm the mind",
+        "p_at_5": 0.8,
+        "p_at_10": 0.7,
+        "ndcg_at_5": 0.786,
+        "ndcg_at_10": 0.722,
+        "relevant_destinations": [
+          "Alleppey",
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Munnar",
+          "Rann of Kutch",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Pachmarhi",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Rann of Kutch",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Havelock Island",
+            "is_hit": true
+          }
+        ]
+      },
+      "q06": {
+        "query_id": "q06",
+        "query_text": "action-packed mountain climbing and skiing",
+        "p_at_5": 0.6,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.684,
+        "ndcg_at_10": 0.589,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Manali",
+          "Pachmarhi",
+          "Rishikesh",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q07": {
+        "query_id": "q07",
+        "query_text": "bustling chaotic city with rich heritage",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.384,
+        "ndcg_at_10": 0.401,
+        "relevant_destinations": [
+          "Agra",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Hyderabad",
+          "Jaipur",
+          "Kolkata",
+          "Madurai",
+          "Mumbai",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Hyderabad",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Kolkata",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Khajuraho",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Madurai",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Mumbai",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Jodhpur",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Amritsar",
+            "is_hit": false
+          }
+        ]
+      },
+      "q08": {
+        "query_id": "q08",
+        "query_text": "serene backwaters away from everyone",
+        "p_at_5": 0.8,
+        "p_at_10": 0.8,
+        "ndcg_at_5": 0.869,
+        "ndcg_at_10": 0.851,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Havelock Island",
+          "Leh",
+          "Munnar",
+          "Pachmarhi",
+          "Rann of Kutch",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 2,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Gangtok",
+            "is_hit": false
+          }
+        ]
+      },
+      "q09": {
+        "query_id": "q09",
+        "query_text": "popular highly-visited heritage forts and palaces",
+        "p_at_5": 0.0,
+        "p_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0,
+        "relevant_destinations": [
+          "Agra",
+          "Amritsar",
+          "Delhi",
+          "Goa",
+          "Haridwar",
+          "Jaipur",
+          "Manali",
+          "Shimla",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Ujjain",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Pune",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Ahmedabad",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Hyderabad",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Mumbai",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Kolkata",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Pondicherry",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Bhopal",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Madurai",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Khajuraho",
+            "is_hit": false
+          }
+        ]
+      },
+      "q10": {
+        "query_id": "q10",
+        "query_text": "offbeat wildlife and nature exploration",
+        "p_at_5": 0.6,
+        "p_at_10": 0.7,
+        "ndcg_at_5": 0.53,
+        "ndcg_at_10": 0.629,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Shillong",
+          "Tawang",
+          "Wayanad"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Wayanad",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Pachmarhi",
+            "is_hit": true
+          },
+          {
+            "rank": 8,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Gangtok",
+            "is_hit": true
+          }
+        ]
+      },
+      "q11": {
+        "query_id": "q11",
+        "query_text": "visually photogenic ancient temples and ruins",
+        "p_at_5": 0.4,
+        "p_at_10": 0.4,
+        "ndcg_at_5": 0.301,
+        "ndcg_at_10": 0.325,
+        "relevant_destinations": [
+          "Agra",
+          "Alleppey",
+          "Hampi",
+          "Havelock Island",
+          "Leh",
+          "Manali",
+          "Munnar",
+          "Srinagar",
+          "Udaipur",
+          "Varanasi"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Auli",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 3,
+            "destination": "Munnar",
+            "is_hit": true
+          },
+          {
+            "rank": 4,
+            "destination": "Mahabaleshwar",
+            "is_hit": false
+          },
+          {
+            "rank": 5,
+            "destination": "Leh",
+            "is_hit": true
+          },
+          {
+            "rank": 6,
+            "destination": "Shillong",
+            "is_hit": false
+          },
+          {
+            "rank": 7,
+            "destination": "Pachmarhi",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Tawang",
+            "is_hit": false
+          },
+          {
+            "rank": 9,
+            "destination": "Havelock Island",
+            "is_hit": true
+          },
+          {
+            "rank": 10,
+            "destination": "Manali",
+            "is_hit": true
+          }
+        ]
+      },
+      "q12": {
+        "query_id": "q12",
+        "query_text": "hidden gems for adventure sports and hiking",
+        "p_at_5": 0.4,
+        "p_at_10": 0.5,
+        "ndcg_at_5": 0.36,
+        "ndcg_at_10": 0.445,
+        "relevant_destinations": [
+          "Auli",
+          "Cherrapunji",
+          "Gangtok",
+          "Havelock Island",
+          "Kaziranga",
+          "Leh",
+          "Pachmarhi",
+          "Rishikesh",
+          "Shillong",
+          "Tawang"
+        ],
+        "top10": [
+          {
+            "rank": 1,
+            "destination": "Munnar",
+            "is_hit": false
+          },
+          {
+            "rank": 2,
+            "destination": "Auli",
+            "is_hit": true
+          },
+          {
+            "rank": 3,
+            "destination": "Ooty",
+            "is_hit": false
+          },
+          {
+            "rank": 4,
+            "destination": "Shillong",
+            "is_hit": true
+          },
+          {
+            "rank": 5,
+            "destination": "Wayanad",
+            "is_hit": false
+          },
+          {
+            "rank": 6,
+            "destination": "Tawang",
+            "is_hit": true
+          },
+          {
+            "rank": 7,
+            "destination": "Manali",
+            "is_hit": false
+          },
+          {
+            "rank": 8,
+            "destination": "Gangtok",
+            "is_hit": true
+          },
+          {
+            "rank": 9,
+            "destination": "Rann of Kutch",
+            "is_hit": false
+          },
+          {
+            "rank": 10,
+            "destination": "Cherrapunji",
+            "is_hit": true
+          }
+        ]
+      }
+    }
+  },
+  "heatmap_grid": [
+    {
+      "model": "Baseline",
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "ndcg_at_5": 0.684,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Kaziranga",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "ndcg_at_5": 0.214,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Rishikesh",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "ndcg_at_5": 0.447,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Cherrapunji",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Varanasi",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Havelock Island",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Kanyakumari",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Port Blair",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Kochi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Jaipur",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Cherrapunji",
+        "Coorg",
+        "Darjeeling",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Srinagar",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Amritsar",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Rishikesh",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Madurai",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Haridwar",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Agra",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Munnar",
+        "Rann of Kutch",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Manali",
+        "Pachmarhi",
+        "Rishikesh",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "ndcg_at_5": 0.485,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Hyderabad",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Mysore",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Jodhpur",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Hyderabad",
+        "Jaipur",
+        "Kolkata",
+        "Madurai",
+        "Mumbai",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Delhi",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Amritsar",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Rishikesh",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "ndcg_at_5": 0.869,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Goa",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Kolkata",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "ndcg_at_5": 0.83,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Kaziranga",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "ndcg_at_5": 0.339,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Hampi",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Khajuraho",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Pachmarhi",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Alleppey",
+        "Hampi",
+        "Havelock Island",
+        "Leh",
+        "Manali",
+        "Munnar",
+        "Srinagar",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Baseline",
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "ndcg_at_5": 0.214,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Rishikesh",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Agra",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "ndcg_at_5": 0.146,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Haridwar",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Rishikesh",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Darjeeling",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Manali",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "ndcg_at_5": 0.509,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Rishikesh",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Darjeeling",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Havelock Island",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "ndcg_at_5": 0.146,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Khajuraho",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Auli",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Bhopal",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "ndcg_at_5": 0.146,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Havelock Island",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Alleppey",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Kanyakumari",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Coorg",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Cherrapunji",
+        "Coorg",
+        "Darjeeling",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Srinagar",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "ndcg_at_5": 0.131,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Rishikesh",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Varanasi",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Haridwar",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Madurai",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Munnar",
+        "Rann of Kutch",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "ndcg_at_5": 0.723,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Manali",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Darjeeling",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Ooty",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Manali",
+        "Pachmarhi",
+        "Rishikesh",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "ndcg_at_5": 0.509,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Hyderabad",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Kolkata",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Delhi",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Hyderabad",
+        "Jaipur",
+        "Kolkata",
+        "Madurai",
+        "Mumbai",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Rishikesh",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Haridwar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "ndcg_at_5": 0.509,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Hampi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Goa",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "ndcg_at_5": 0.854,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Kaziranga",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Leh",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "ndcg_at_5": 0.345,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Khajuraho",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Hampi",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Udaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Madurai",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Kolkata",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Alleppey",
+        "Hampi",
+        "Havelock Island",
+        "Leh",
+        "Manali",
+        "Munnar",
+        "Srinagar",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Text",
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "ndcg_at_5": 0.301,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Rishikesh",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Wayanad",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "ndcg_at_5": 0.661,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Havelock Island",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "ndcg_at_5": 0.17,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Hampi",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Darjeeling",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "ndcg_at_5": 0.723,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Leh",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Mumbai",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "ndcg_at_5": 0.131,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Havelock Island",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Port Blair",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Alleppey",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Kochi",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Goa",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Kanyakumari",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Auli",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Udaipur",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Cherrapunji",
+        "Coorg",
+        "Darjeeling",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Srinagar",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "ndcg_at_5": 0.277,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pachmarhi",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Alleppey",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Kochi",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Munnar",
+        "Rann of Kutch",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "ndcg_at_5": 0.723,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Manali",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Darjeeling",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Shimla",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Hampi",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Manali",
+        "Pachmarhi",
+        "Rishikesh",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "ndcg_at_5": 0.447,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Haridwar",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Mumbai",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Varanasi",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Tawang",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Leh",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Shimla",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Hyderabad",
+        "Jaipur",
+        "Kolkata",
+        "Madurai",
+        "Mumbai",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "ndcg_at_5": 0.131,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Udaipur",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Kochi",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Havelock Island",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Kanyakumari",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Srinagar",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Goa",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "ndcg_at_5": 0.53,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Amritsar",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Port Blair",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Agra",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Pachmarhi",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Kochi",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Mysore",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "ndcg_at_5": 0.684,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Kaziranga",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Havelock Island",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Goa",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "ndcg_at_5": 0.339,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Hampi",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Bhubaneswar",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Mahabalipuram",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Khajuraho",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Puri",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Manali",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Alleppey",
+        "Hampi",
+        "Havelock Island",
+        "Leh",
+        "Manali",
+        "Munnar",
+        "Srinagar",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Visual(Max)",
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "ndcg_at_5": 0.47,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Hampi",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Goa",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "ndcg_at_5": 0.83,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Alleppey",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "ndcg_at_5": 0.661,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Munnar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Srinagar",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Mumbai",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "ndcg_at_5": 0.723,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Kaziranga",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Havelock Island",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Darjeeling",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Coorg",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Cherrapunji",
+        "Coorg",
+        "Darjeeling",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Srinagar",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "ndcg_at_5": 0.661,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Darjeeling",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Munnar",
+        "Rann of Kutch",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "ndcg_at_5": 0.723,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Darjeeling",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Manali",
+        "Pachmarhi",
+        "Rishikesh",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "ndcg_at_5": 0.36,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Kolkata",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Srinagar",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Jaipur",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Hyderabad",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Delhi",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Hyderabad",
+        "Jaipur",
+        "Kolkata",
+        "Madurai",
+        "Mumbai",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "ndcg_at_5": 0.83,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Gangtok",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Alleppey",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Srinagar",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Bodh Gaya",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Mumbai",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "ndcg_at_5": 0.83,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Alleppey",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "ndcg_at_5": 0.17,
+      "p_at_5": 0.2,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Tawang",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Kaziranga",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Cherrapunji",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Jaisalmer",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Leh",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Alleppey",
+        "Hampi",
+        "Havelock Island",
+        "Leh",
+        "Manali",
+        "Munnar",
+        "Srinagar",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Fusion",
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "ndcg_at_5": 0.661,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Coorg",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Alleppey",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Munnar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q01",
+      "query_text": "peaceful nature getaway, avoid crowds",
+      "ndcg_at_5": 0.869,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Gangtok",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q02",
+      "query_text": "adventure-packed offbeat trip",
+      "ndcg_at_5": 0.36,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q03",
+      "query_text": "visually stunning iconic landmarks",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Madurai",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Khajuraho",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q04",
+      "query_text": "relaxing coastal vacation with scenic beaches",
+      "ndcg_at_5": 0.699,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Havelock Island",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Auli",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Tawang",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Cherrapunji",
+        "Coorg",
+        "Darjeeling",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Srinagar",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q05",
+      "query_text": "deep spiritual journey to calm the mind",
+      "ndcg_at_5": 0.786,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Pachmarhi",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Rann of Kutch",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Havelock Island",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Alleppey",
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Munnar",
+        "Rann of Kutch",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q06",
+      "query_text": "action-packed mountain climbing and skiing",
+      "ndcg_at_5": 0.684,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Manali",
+        "Pachmarhi",
+        "Rishikesh",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q07",
+      "query_text": "bustling chaotic city with rich heritage",
+      "ndcg_at_5": 0.384,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Hyderabad",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Kolkata",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Khajuraho",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Madurai",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Mumbai",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Jodhpur",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Amritsar",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Hyderabad",
+        "Jaipur",
+        "Kolkata",
+        "Madurai",
+        "Mumbai",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q08",
+      "query_text": "serene backwaters away from everyone",
+      "ndcg_at_5": 0.869,
+      "p_at_5": 0.8,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 2,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Gangtok",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Havelock Island",
+        "Leh",
+        "Munnar",
+        "Pachmarhi",
+        "Rann of Kutch",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q09",
+      "query_text": "popular highly-visited heritage forts and palaces",
+      "ndcg_at_5": 0.0,
+      "p_at_5": 0.0,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Ujjain",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Pune",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Ahmedabad",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Hyderabad",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Mumbai",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Kolkata",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Pondicherry",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Bhopal",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Madurai",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Khajuraho",
+          "is_hit": false
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Amritsar",
+        "Delhi",
+        "Goa",
+        "Haridwar",
+        "Jaipur",
+        "Manali",
+        "Shimla",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q10",
+      "query_text": "offbeat wildlife and nature exploration",
+      "ndcg_at_5": 0.53,
+      "p_at_5": 0.6,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Wayanad",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Pachmarhi",
+          "is_hit": true
+        },
+        {
+          "rank": 8,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Gangtok",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Shillong",
+        "Tawang",
+        "Wayanad"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q11",
+      "query_text": "visually photogenic ancient temples and ruins",
+      "ndcg_at_5": 0.301,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Auli",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 3,
+          "destination": "Munnar",
+          "is_hit": true
+        },
+        {
+          "rank": 4,
+          "destination": "Mahabaleshwar",
+          "is_hit": false
+        },
+        {
+          "rank": 5,
+          "destination": "Leh",
+          "is_hit": true
+        },
+        {
+          "rank": 6,
+          "destination": "Shillong",
+          "is_hit": false
+        },
+        {
+          "rank": 7,
+          "destination": "Pachmarhi",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Tawang",
+          "is_hit": false
+        },
+        {
+          "rank": 9,
+          "destination": "Havelock Island",
+          "is_hit": true
+        },
+        {
+          "rank": 10,
+          "destination": "Manali",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Agra",
+        "Alleppey",
+        "Hampi",
+        "Havelock Island",
+        "Leh",
+        "Manali",
+        "Munnar",
+        "Srinagar",
+        "Udaipur",
+        "Varanasi"
+      ]
+    },
+    {
+      "model": "Image-only",
+      "query_id": "q12",
+      "query_text": "hidden gems for adventure sports and hiking",
+      "ndcg_at_5": 0.36,
+      "p_at_5": 0.4,
+      "top10": [
+        {
+          "rank": 1,
+          "destination": "Munnar",
+          "is_hit": false
+        },
+        {
+          "rank": 2,
+          "destination": "Auli",
+          "is_hit": true
+        },
+        {
+          "rank": 3,
+          "destination": "Ooty",
+          "is_hit": false
+        },
+        {
+          "rank": 4,
+          "destination": "Shillong",
+          "is_hit": true
+        },
+        {
+          "rank": 5,
+          "destination": "Wayanad",
+          "is_hit": false
+        },
+        {
+          "rank": 6,
+          "destination": "Tawang",
+          "is_hit": true
+        },
+        {
+          "rank": 7,
+          "destination": "Manali",
+          "is_hit": false
+        },
+        {
+          "rank": 8,
+          "destination": "Gangtok",
+          "is_hit": true
+        },
+        {
+          "rank": 9,
+          "destination": "Rann of Kutch",
+          "is_hit": false
+        },
+        {
+          "rank": 10,
+          "destination": "Cherrapunji",
+          "is_hit": true
+        }
+      ],
+      "relevant_destinations": [
+        "Auli",
+        "Cherrapunji",
+        "Gangtok",
+        "Havelock Island",
+        "Kaziranga",
+        "Leh",
+        "Pachmarhi",
+        "Rishikesh",
+        "Shillong",
+        "Tawang"
+      ]
+    }
+  ]
+}

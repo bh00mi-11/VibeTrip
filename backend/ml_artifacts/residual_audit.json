@@ -1,0 +1,3129 @@
+{
+  "dimensions": {
+    "nature": {
+      "dimension_display": "Nature",
+      "count": 50,
+      "pearson_r": 0.874,
+      "mae": 14.16,
+      "blocked_cv_mae": 14.155709686279296,
+      "scatter_data": [
+        {
+          "destination": "Agra",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 34.86,
+          "residual": -24.86,
+          "abs_residual": 24.86,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Jaipur",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 31.34,
+          "residual": 8.66,
+          "abs_residual": 8.66,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "nature",
+          "ground_truth": 50.0,
+          "predicted": 39.51,
+          "residual": 10.49,
+          "abs_residual": 10.49,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jodhpur",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 33.28,
+          "residual": 6.72,
+          "abs_residual": 6.72,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaisalmer",
+          "dimension": "nature",
+          "ground_truth": 70.0,
+          "predicted": 67.58,
+          "residual": 2.42,
+          "abs_residual": 2.42,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Delhi",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 31.56,
+          "residual": -21.56,
+          "abs_residual": 21.56,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "nature",
+          "ground_truth": 30.0,
+          "predicted": 40.3,
+          "residual": -10.3,
+          "abs_residual": 10.3,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Amritsar",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 33.57,
+          "residual": -13.57,
+          "abs_residual": 13.57,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rishikesh",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 60.03,
+          "residual": 19.97,
+          "abs_residual": 19.97,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "nature",
+          "ground_truth": 50.0,
+          "predicted": 51.76,
+          "residual": -1.76,
+          "abs_residual": 1.76,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 72.27,
+          "residual": 17.73,
+          "abs_residual": 17.73,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shimla",
+          "dimension": "nature",
+          "ground_truth": 70.0,
+          "predicted": 60.15,
+          "residual": 9.85,
+          "abs_residual": 9.85,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 70.46,
+          "residual": 29.54,
+          "abs_residual": 29.54,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Srinagar",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 47.26,
+          "residual": 32.74,
+          "abs_residual": 32.74,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Darjeeling",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 81.09,
+          "residual": -1.09,
+          "abs_residual": 1.09,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 30.99,
+          "residual": -20.99,
+          "abs_residual": 20.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Gangtok",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 74.06,
+          "residual": 5.94,
+          "abs_residual": 5.94,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 89.59,
+          "residual": 0.41,
+          "abs_residual": 0.41,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 30.06,
+          "residual": 9.94,
+          "abs_residual": 9.94,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 49.93,
+          "residual": -29.93,
+          "abs_residual": 29.93,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "nature",
+          "ground_truth": 70.0,
+          "predicted": 71.82,
+          "residual": -1.82,
+          "abs_residual": 1.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "nature",
+          "ground_truth": 60.0,
+          "predicted": 42.7,
+          "residual": 17.3,
+          "abs_residual": 17.3,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mysore",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 50.27,
+          "residual": -10.27,
+          "abs_residual": 10.27,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Coorg",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 81.04,
+          "residual": 8.96,
+          "abs_residual": 8.96,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 43.45,
+          "residual": -23.45,
+          "abs_residual": 23.45,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kochi",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 48.52,
+          "residual": -8.52,
+          "abs_residual": 8.52,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Munnar",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 83.23,
+          "residual": 16.77,
+          "abs_residual": 16.77,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 73.18,
+          "residual": 16.82,
+          "abs_residual": 16.82,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ooty",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 85.43,
+          "residual": -5.43,
+          "abs_residual": 5.43,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 39.82,
+          "residual": -29.82,
+          "abs_residual": 29.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pondicherry",
+          "dimension": "nature",
+          "ground_truth": 50.0,
+          "predicted": 67.34,
+          "residual": -17.34,
+          "abs_residual": 17.34,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 77.21,
+          "residual": 22.79,
+          "abs_residual": 22.79,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 68.05,
+          "residual": 11.95,
+          "abs_residual": 11.95,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 37.47,
+          "residual": -17.47,
+          "abs_residual": 17.47,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 36.9,
+          "residual": -26.9,
+          "abs_residual": 26.9,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rann of Kutch",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 79.23,
+          "residual": 10.77,
+          "abs_residual": 10.77,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 81.11,
+          "residual": -1.11,
+          "abs_residual": 1.11,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 64.7,
+          "residual": -24.7,
+          "abs_residual": 24.7,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 42.06,
+          "residual": -22.06,
+          "abs_residual": 22.06,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pachmarhi",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 79.02,
+          "residual": 10.98,
+          "abs_residual": 10.98,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Puri",
+          "dimension": "nature",
+          "ground_truth": 60.0,
+          "predicted": 50.1,
+          "residual": 9.9,
+          "abs_residual": 9.9,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Bhubaneswar",
+          "dimension": "nature",
+          "ground_truth": 30.0,
+          "predicted": 34.73,
+          "residual": -4.73,
+          "abs_residual": 4.73,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "nature",
+          "ground_truth": 30.0,
+          "predicted": 47.44,
+          "residual": -17.44,
+          "abs_residual": 17.44,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "nature",
+          "ground_truth": 90.0,
+          "predicted": 85.55,
+          "residual": 4.45,
+          "abs_residual": 4.45,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 72.16,
+          "residual": 27.84,
+          "abs_residual": 27.84,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Cherrapunji",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 89.0,
+          "residual": 11.0,
+          "abs_residual": 11.0,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kanyakumari",
+          "dimension": "nature",
+          "ground_truth": 70.0,
+          "predicted": 52.77,
+          "residual": 17.23,
+          "abs_residual": 17.23,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabalipuram",
+          "dimension": "nature",
+          "ground_truth": 50.0,
+          "predicted": 44.36,
+          "residual": 5.64,
+          "abs_residual": 5.64,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Wayanad",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 85.31,
+          "residual": 14.69,
+          "abs_residual": 14.69,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 88.81,
+          "residual": 11.19,
+          "abs_residual": 11.19,
+          "type": "Under-predicted"
+        }
+      ],
+      "top10_residuals": [
+        {
+          "destination": "Srinagar",
+          "dimension": "nature",
+          "ground_truth": 80.0,
+          "predicted": 47.26,
+          "residual": 32.74,
+          "abs_residual": 32.74,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 49.93,
+          "residual": -29.93,
+          "abs_residual": 29.93,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 39.82,
+          "residual": -29.82,
+          "abs_residual": 29.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 70.46,
+          "residual": 29.54,
+          "abs_residual": 29.54,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 72.16,
+          "residual": 27.84,
+          "abs_residual": 27.84,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 36.9,
+          "residual": -26.9,
+          "abs_residual": 26.9,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Agra",
+          "dimension": "nature",
+          "ground_truth": 10.0,
+          "predicted": 34.86,
+          "residual": -24.86,
+          "abs_residual": 24.86,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "nature",
+          "ground_truth": 40.0,
+          "predicted": 64.7,
+          "residual": -24.7,
+          "abs_residual": 24.7,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "nature",
+          "ground_truth": 20.0,
+          "predicted": 43.45,
+          "residual": -23.45,
+          "abs_residual": 23.45,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "nature",
+          "ground_truth": 100.0,
+          "predicted": 77.21,
+          "residual": 22.79,
+          "abs_residual": 22.79,
+          "type": "Under-predicted"
+        }
+      ]
+    },
+    "adventure": {
+      "dimension_display": "Adventure",
+      "count": 50,
+      "pearson_r": 0.65,
+      "mae": 13.8,
+      "blocked_cv_mae": 13.799388809204101,
+      "scatter_data": [
+        {
+          "destination": "Agra",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 14.58,
+          "residual": -4.58,
+          "abs_residual": 4.58,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Jaipur",
+          "dimension": "adventure",
+          "ground_truth": 20.0,
+          "predicted": 15.21,
+          "residual": 4.79,
+          "abs_residual": 4.79,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "adventure",
+          "ground_truth": 20.0,
+          "predicted": 17.35,
+          "residual": 2.65,
+          "abs_residual": 2.65,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jodhpur",
+          "dimension": "adventure",
+          "ground_truth": 20.0,
+          "predicted": 15.42,
+          "residual": 4.58,
+          "abs_residual": 4.58,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaisalmer",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 40.93,
+          "residual": 9.07,
+          "abs_residual": 9.07,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Delhi",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 13.18,
+          "residual": -3.18,
+          "abs_residual": 3.18,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.59,
+          "residual": -6.59,
+          "abs_residual": 6.59,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Amritsar",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.23,
+          "residual": -6.23,
+          "abs_residual": 6.23,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rishikesh",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 27.68,
+          "residual": 62.32,
+          "abs_residual": 62.32,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 30.02,
+          "residual": -20.02,
+          "abs_residual": 20.02,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "adventure",
+          "ground_truth": 80.0,
+          "predicted": 46.19,
+          "residual": 33.81,
+          "abs_residual": 33.81,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shimla",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 32.63,
+          "residual": -2.63,
+          "abs_residual": 2.63,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 41.28,
+          "residual": 48.72,
+          "abs_residual": 48.72,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Srinagar",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 22.41,
+          "residual": 7.59,
+          "abs_residual": 7.59,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Darjeeling",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 40.5,
+          "residual": -10.5,
+          "abs_residual": 10.5,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 15.05,
+          "residual": -5.05,
+          "abs_residual": 5.05,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Gangtok",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 45.05,
+          "residual": 4.95,
+          "abs_residual": 4.95,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 41.81,
+          "residual": -1.81,
+          "abs_residual": 1.81,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 15.54,
+          "residual": -5.54,
+          "abs_residual": 5.54,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 23.64,
+          "residual": -13.64,
+          "abs_residual": 13.64,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 37.75,
+          "residual": 12.25,
+          "abs_residual": 12.25,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 19.33,
+          "residual": 20.67,
+          "abs_residual": 20.67,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mysore",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 23.58,
+          "residual": -13.58,
+          "abs_residual": 13.58,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Coorg",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 46.99,
+          "residual": -6.99,
+          "abs_residual": 6.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 20.99,
+          "residual": -10.99,
+          "abs_residual": 10.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kochi",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 22.62,
+          "residual": -12.62,
+          "abs_residual": 12.62,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Munnar",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 43.9,
+          "residual": -13.9,
+          "abs_residual": 13.9,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 41.89,
+          "residual": -31.89,
+          "abs_residual": 31.89,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ooty",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 44.4,
+          "residual": -14.4,
+          "abs_residual": 14.4,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.79,
+          "residual": -6.79,
+          "abs_residual": 6.79,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pondicherry",
+          "dimension": "adventure",
+          "ground_truth": 20.0,
+          "predicted": 24.45,
+          "residual": -4.45,
+          "abs_residual": 4.45,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 31.93,
+          "residual": 58.07,
+          "abs_residual": 58.07,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 30.82,
+          "residual": 9.18,
+          "abs_residual": 9.18,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 20.95,
+          "residual": -10.95,
+          "abs_residual": 10.95,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.97,
+          "residual": -6.97,
+          "abs_residual": 6.97,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rann of Kutch",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 46.0,
+          "residual": -6.0,
+          "abs_residual": 6.0,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "dimension": "adventure",
+          "ground_truth": 30.0,
+          "predicted": 36.62,
+          "residual": -6.62,
+          "abs_residual": 6.62,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 29.38,
+          "residual": -19.38,
+          "abs_residual": 19.38,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 17.99,
+          "residual": -7.99,
+          "abs_residual": 7.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pachmarhi",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 38.59,
+          "residual": 11.41,
+          "abs_residual": 11.41,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Puri",
+          "dimension": "adventure",
+          "ground_truth": 20.0,
+          "predicted": 30.92,
+          "residual": -10.92,
+          "abs_residual": 10.92,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhubaneswar",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.69,
+          "residual": -6.69,
+          "abs_residual": 6.69,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 27.65,
+          "residual": -17.65,
+          "abs_residual": 17.65,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "adventure",
+          "ground_truth": 60.0,
+          "predicted": 54.48,
+          "residual": 5.52,
+          "abs_residual": 5.52,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "adventure",
+          "ground_truth": 60.0,
+          "predicted": 29.66,
+          "residual": 30.34,
+          "abs_residual": 30.34,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Cherrapunji",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 46.35,
+          "residual": 3.65,
+          "abs_residual": 3.65,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kanyakumari",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 28.38,
+          "residual": -18.38,
+          "abs_residual": 18.38,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mahabalipuram",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 24.65,
+          "residual": -14.65,
+          "abs_residual": 14.65,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Wayanad",
+          "dimension": "adventure",
+          "ground_truth": 50.0,
+          "predicted": 43.93,
+          "residual": 6.07,
+          "abs_residual": 6.07,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 57.23,
+          "residual": 32.77,
+          "abs_residual": 32.77,
+          "type": "Under-predicted"
+        }
+      ],
+      "top10_residuals": [
+        {
+          "destination": "Rishikesh",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 27.68,
+          "residual": 62.32,
+          "abs_residual": 62.32,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 31.93,
+          "residual": 58.07,
+          "abs_residual": 58.07,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 41.28,
+          "residual": 48.72,
+          "abs_residual": 48.72,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "adventure",
+          "ground_truth": 80.0,
+          "predicted": 46.19,
+          "residual": 33.81,
+          "abs_residual": 33.81,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "adventure",
+          "ground_truth": 90.0,
+          "predicted": 57.23,
+          "residual": 32.77,
+          "abs_residual": 32.77,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 41.89,
+          "residual": -31.89,
+          "abs_residual": 31.89,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "adventure",
+          "ground_truth": 60.0,
+          "predicted": 29.66,
+          "residual": 30.34,
+          "abs_residual": 30.34,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "adventure",
+          "ground_truth": 40.0,
+          "predicted": 19.33,
+          "residual": 20.67,
+          "abs_residual": 20.67,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 30.02,
+          "residual": -20.02,
+          "abs_residual": 20.02,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "adventure",
+          "ground_truth": 10.0,
+          "predicted": 29.38,
+          "residual": -19.38,
+          "abs_residual": 19.38,
+          "type": "Over-predicted"
+        }
+      ]
+    },
+    "peacefulness": {
+      "dimension_display": "Peacefulness",
+      "count": 50,
+      "pearson_r": 0.681,
+      "mae": 13.78,
+      "blocked_cv_mae": 13.779175338745118,
+      "scatter_data": [
+        {
+          "destination": "Agra",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 48.91,
+          "residual": -28.91,
+          "abs_residual": 28.91,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Jaipur",
+          "dimension": "peacefulness",
+          "ground_truth": 40.0,
+          "predicted": 42.89,
+          "residual": -2.89,
+          "abs_residual": 2.89,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 52.3,
+          "residual": 7.7,
+          "abs_residual": 7.7,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jodhpur",
+          "dimension": "peacefulness",
+          "ground_truth": 50.0,
+          "predicted": 45.58,
+          "residual": 4.42,
+          "abs_residual": 4.42,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaisalmer",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 65.9,
+          "residual": -5.9,
+          "abs_residual": 5.9,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Delhi",
+          "dimension": "peacefulness",
+          "ground_truth": 10.0,
+          "predicted": 44.22,
+          "residual": -34.22,
+          "abs_residual": 34.22,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 52.32,
+          "residual": -32.32,
+          "abs_residual": 32.32,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Amritsar",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 45.12,
+          "residual": 14.88,
+          "abs_residual": 14.88,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Rishikesh",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 62.54,
+          "residual": -2.54,
+          "abs_residual": 2.54,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 58.22,
+          "residual": -28.22,
+          "abs_residual": 28.22,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 68.24,
+          "residual": -8.24,
+          "abs_residual": 8.24,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Shimla",
+          "dimension": "peacefulness",
+          "ground_truth": 50.0,
+          "predicted": 59.07,
+          "residual": -9.07,
+          "abs_residual": 9.07,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 69.6,
+          "residual": 20.4,
+          "abs_residual": 20.4,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Srinagar",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 50.14,
+          "residual": 19.86,
+          "abs_residual": 19.86,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Darjeeling",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 69.06,
+          "residual": 0.94,
+          "abs_residual": 0.94,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 43.82,
+          "residual": -23.82,
+          "abs_residual": 23.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Gangtok",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 71.85,
+          "residual": -1.85,
+          "abs_residual": 1.85,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 77.64,
+          "residual": 2.36,
+          "abs_residual": 2.36,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 48.62,
+          "residual": 21.38,
+          "abs_residual": 21.38,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 51.39,
+          "residual": -31.39,
+          "abs_residual": 31.39,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "peacefulness",
+          "ground_truth": 40.0,
+          "predicted": 70.61,
+          "residual": -30.61,
+          "abs_residual": 30.61,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 51.69,
+          "residual": 28.31,
+          "abs_residual": 28.31,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mysore",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 53.41,
+          "residual": 6.59,
+          "abs_residual": 6.59,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Coorg",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 74.67,
+          "residual": 5.33,
+          "abs_residual": 5.33,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 47.69,
+          "residual": -17.69,
+          "abs_residual": 17.69,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kochi",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 54.91,
+          "residual": 5.09,
+          "abs_residual": 5.09,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Munnar",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 71.15,
+          "residual": 18.85,
+          "abs_residual": 18.85,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 72.14,
+          "residual": 17.86,
+          "abs_residual": 17.86,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ooty",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 72.51,
+          "residual": -12.51,
+          "abs_residual": 12.51,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 52.87,
+          "residual": -22.87,
+          "abs_residual": 22.87,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pondicherry",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 59.79,
+          "residual": 10.21,
+          "abs_residual": 10.21,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 65.48,
+          "residual": 24.52,
+          "abs_residual": 24.52,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "peacefulness",
+          "ground_truth": 70.0,
+          "predicted": 61.0,
+          "residual": 9.0,
+          "abs_residual": 9.0,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 41.32,
+          "residual": -11.32,
+          "abs_residual": 11.32,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 47.08,
+          "residual": -17.08,
+          "abs_residual": 17.08,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rann of Kutch",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 68.18,
+          "residual": 21.82,
+          "abs_residual": 21.82,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 67.26,
+          "residual": -7.26,
+          "abs_residual": 7.26,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 64.65,
+          "residual": -4.65,
+          "abs_residual": 4.65,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "peacefulness",
+          "ground_truth": 50.0,
+          "predicted": 49.25,
+          "residual": 0.75,
+          "abs_residual": 0.75,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pachmarhi",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 64.65,
+          "residual": 15.35,
+          "abs_residual": 15.35,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Puri",
+          "dimension": "peacefulness",
+          "ground_truth": 50.0,
+          "predicted": 56.8,
+          "residual": -6.8,
+          "abs_residual": 6.8,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhubaneswar",
+          "dimension": "peacefulness",
+          "ground_truth": 50.0,
+          "predicted": 48.39,
+          "residual": 1.61,
+          "abs_residual": 1.61,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 51.15,
+          "residual": 28.85,
+          "abs_residual": 28.85,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 72.49,
+          "residual": 17.51,
+          "abs_residual": 17.51,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 70.63,
+          "residual": 9.37,
+          "abs_residual": 9.37,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Cherrapunji",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 75.85,
+          "residual": 4.15,
+          "abs_residual": 4.15,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kanyakumari",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 58.31,
+          "residual": 1.69,
+          "abs_residual": 1.69,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabalipuram",
+          "dimension": "peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 51.83,
+          "residual": 8.17,
+          "abs_residual": 8.17,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Wayanad",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 73.97,
+          "residual": 6.03,
+          "abs_residual": 6.03,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 74.19,
+          "residual": 15.81,
+          "abs_residual": 15.81,
+          "type": "Under-predicted"
+        }
+      ],
+      "top10_residuals": [
+        {
+          "destination": "Delhi",
+          "dimension": "peacefulness",
+          "ground_truth": 10.0,
+          "predicted": 44.22,
+          "residual": -34.22,
+          "abs_residual": 34.22,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 52.32,
+          "residual": -32.32,
+          "abs_residual": 32.32,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 51.39,
+          "residual": -31.39,
+          "abs_residual": 31.39,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "peacefulness",
+          "ground_truth": 40.0,
+          "predicted": 70.61,
+          "residual": -30.61,
+          "abs_residual": 30.61,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Agra",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 48.91,
+          "residual": -28.91,
+          "abs_residual": 28.91,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 51.15,
+          "residual": 28.85,
+          "abs_residual": 28.85,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 51.69,
+          "residual": 28.31,
+          "abs_residual": 28.31,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "peacefulness",
+          "ground_truth": 30.0,
+          "predicted": 58.22,
+          "residual": -28.22,
+          "abs_residual": 28.22,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 65.48,
+          "residual": 24.52,
+          "abs_residual": 24.52,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 43.82,
+          "residual": -23.82,
+          "abs_residual": 23.82,
+          "type": "Over-predicted"
+        }
+      ]
+    },
+    "crowd_match": {
+      "dimension_display": "Crowd Match",
+      "count": 50,
+      "pearson_r": 0.429,
+      "mae": 15.9,
+      "blocked_cv_mae": 15.897336273193359,
+      "scatter_data": [
+        {
+          "destination": "Agra",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 34.34,
+          "residual": -24.34,
+          "abs_residual": 24.34,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Jaipur",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 31.76,
+          "residual": -1.76,
+          "abs_residual": 1.76,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 44.82,
+          "residual": -4.82,
+          "abs_residual": 4.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Jodhpur",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 33.2,
+          "residual": 16.8,
+          "abs_residual": 16.8,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaisalmer",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 47.22,
+          "residual": 2.78,
+          "abs_residual": 2.78,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Delhi",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 31.52,
+          "residual": -21.52,
+          "abs_residual": 21.52,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 40.37,
+          "residual": -30.37,
+          "abs_residual": 30.37,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Amritsar",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 32.01,
+          "residual": -2.01,
+          "abs_residual": 2.01,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rishikesh",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 48.98,
+          "residual": -8.98,
+          "abs_residual": 8.98,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "crowd_match",
+          "ground_truth": 20.0,
+          "predicted": 44.29,
+          "residual": -24.29,
+          "abs_residual": 24.29,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 56.57,
+          "residual": -26.57,
+          "abs_residual": 26.57,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Shimla",
+          "dimension": "crowd_match",
+          "ground_truth": 20.0,
+          "predicted": 44.03,
+          "residual": -24.03,
+          "abs_residual": 24.03,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 57.25,
+          "residual": 12.75,
+          "abs_residual": 12.75,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Srinagar",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 34.48,
+          "residual": 5.52,
+          "abs_residual": 5.52,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Darjeeling",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 50.99,
+          "residual": -10.99,
+          "abs_residual": 10.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "crowd_match",
+          "ground_truth": 20.0,
+          "predicted": 33.39,
+          "residual": -13.39,
+          "abs_residual": 13.39,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Gangtok",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 60.37,
+          "residual": 9.63,
+          "abs_residual": 9.63,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 57.47,
+          "residual": 32.53,
+          "abs_residual": 32.53,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 39.03,
+          "residual": 30.97,
+          "abs_residual": 30.97,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 38.97,
+          "residual": -28.97,
+          "abs_residual": 28.97,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 60.36,
+          "residual": -50.36,
+          "abs_residual": 50.36,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 44.02,
+          "residual": 15.98,
+          "abs_residual": 15.98,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mysore",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 41.09,
+          "residual": -1.09,
+          "abs_residual": 1.09,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Coorg",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 63.8,
+          "residual": -3.8,
+          "abs_residual": 3.8,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "crowd_match",
+          "ground_truth": 20.0,
+          "predicted": 37.53,
+          "residual": -17.53,
+          "abs_residual": 17.53,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kochi",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 44.86,
+          "residual": 5.14,
+          "abs_residual": 5.14,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Munnar",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 55.6,
+          "residual": -5.6,
+          "abs_residual": 5.6,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 60.35,
+          "residual": -20.35,
+          "abs_residual": 20.35,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ooty",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 55.86,
+          "residual": -25.86,
+          "abs_residual": 25.86,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 41.53,
+          "residual": -11.53,
+          "abs_residual": 11.53,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pondicherry",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 35.22,
+          "residual": 14.78,
+          "abs_residual": 14.78,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 41.73,
+          "residual": 48.27,
+          "abs_residual": 48.27,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 42.58,
+          "residual": 27.42,
+          "abs_residual": 27.42,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 27.66,
+          "residual": 2.34,
+          "abs_residual": 2.34,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 37.26,
+          "residual": -7.26,
+          "abs_residual": 7.26,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rann of Kutch",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 52.36,
+          "residual": 7.64,
+          "abs_residual": 7.64,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 41.95,
+          "residual": -1.95,
+          "abs_residual": 1.95,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 51.28,
+          "residual": 8.72,
+          "abs_residual": 8.72,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "crowd_match",
+          "ground_truth": 40.0,
+          "predicted": 35.75,
+          "residual": 4.25,
+          "abs_residual": 4.25,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pachmarhi",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 47.04,
+          "residual": 22.96,
+          "abs_residual": 22.96,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Puri",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 43.48,
+          "residual": -13.48,
+          "abs_residual": 13.48,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhubaneswar",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 41.8,
+          "residual": 8.2,
+          "abs_residual": 8.2,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 36.81,
+          "residual": 23.19,
+          "abs_residual": 23.19,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 53.1,
+          "residual": 36.9,
+          "abs_residual": 36.9,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "crowd_match",
+          "ground_truth": 60.0,
+          "predicted": 56.23,
+          "residual": 3.77,
+          "abs_residual": 3.77,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Cherrapunji",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 60.73,
+          "residual": 9.27,
+          "abs_residual": 9.27,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kanyakumari",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 46.24,
+          "residual": -16.24,
+          "abs_residual": 16.24,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mahabalipuram",
+          "dimension": "crowd_match",
+          "ground_truth": 50.0,
+          "predicted": 41.75,
+          "residual": 8.25,
+          "abs_residual": 8.25,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Wayanad",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 57.72,
+          "residual": 12.28,
+          "abs_residual": 12.28,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "crowd_match",
+          "ground_truth": 80.0,
+          "predicted": 52.55,
+          "residual": 27.45,
+          "abs_residual": 27.45,
+          "type": "Under-predicted"
+        }
+      ],
+      "top10_residuals": [
+        {
+          "destination": "Goa",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 60.36,
+          "residual": -50.36,
+          "abs_residual": 50.36,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 41.73,
+          "residual": 48.27,
+          "abs_residual": 48.27,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 53.1,
+          "residual": 36.9,
+          "abs_residual": 36.9,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "crowd_match",
+          "ground_truth": 90.0,
+          "predicted": 57.47,
+          "residual": 32.53,
+          "abs_residual": 32.53,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 39.03,
+          "residual": 30.97,
+          "abs_residual": 30.97,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 40.37,
+          "residual": -30.37,
+          "abs_residual": 30.37,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "crowd_match",
+          "ground_truth": 10.0,
+          "predicted": 38.97,
+          "residual": -28.97,
+          "abs_residual": 28.97,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "crowd_match",
+          "ground_truth": 80.0,
+          "predicted": 52.55,
+          "residual": 27.45,
+          "abs_residual": 27.45,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "crowd_match",
+          "ground_truth": 70.0,
+          "predicted": 42.58,
+          "residual": 27.42,
+          "abs_residual": 27.42,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "crowd_match",
+          "ground_truth": 30.0,
+          "predicted": 56.57,
+          "residual": -26.57,
+          "abs_residual": 26.57,
+          "type": "Over-predicted"
+        }
+      ]
+    },
+    "visual_atmosphere": {
+      "dimension_display": "Visual Atmosphere",
+      "count": 50,
+      "pearson_r": 0.201,
+      "mae": 9.72,
+      "blocked_cv_mae": 9.725088653564454,
+      "scatter_data": [
+        {
+          "destination": "Agra",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 69.88,
+          "residual": 30.12,
+          "abs_residual": 30.12,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaipur",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 66.97,
+          "residual": 13.03,
+          "abs_residual": 13.03,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 68.49,
+          "residual": 21.51,
+          "abs_residual": 21.51,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jodhpur",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 66.51,
+          "residual": 13.49,
+          "abs_residual": 13.49,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Jaisalmer",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 81.54,
+          "residual": -1.54,
+          "abs_residual": 1.54,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Delhi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 66.73,
+          "residual": 3.27,
+          "abs_residual": 3.27,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 67.21,
+          "residual": 22.79,
+          "abs_residual": 22.79,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Amritsar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 66.41,
+          "residual": 13.59,
+          "abs_residual": 13.59,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Rishikesh",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 74.14,
+          "residual": 5.86,
+          "abs_residual": 5.86,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Haridwar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 73.15,
+          "residual": -3.15,
+          "abs_residual": 3.15,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Manali",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 79.44,
+          "residual": 10.56,
+          "abs_residual": 10.56,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shimla",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 73.83,
+          "residual": -3.83,
+          "abs_residual": 3.83,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 81.31,
+          "residual": 18.69,
+          "abs_residual": 18.69,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Srinagar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 77.13,
+          "residual": 12.87,
+          "abs_residual": 12.87,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Darjeeling",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 79.51,
+          "residual": 0.49,
+          "abs_residual": 0.49,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 50.0,
+          "predicted": 70.82,
+          "residual": -20.82,
+          "abs_residual": 20.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Gangtok",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 79.63,
+          "residual": 0.37,
+          "abs_residual": 0.37,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Shillong",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 81.81,
+          "residual": -1.81,
+          "abs_residual": 1.81,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Khajuraho",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 72.4,
+          "residual": 7.6,
+          "abs_residual": 7.6,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mumbai",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 75.82,
+          "residual": -15.82,
+          "abs_residual": 15.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Goa",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 80.31,
+          "residual": -0.31,
+          "abs_residual": 0.31,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hampi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 73.91,
+          "residual": 16.09,
+          "abs_residual": 16.09,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mysore",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 74.0,
+          "residual": -4.0,
+          "abs_residual": 4.0,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Coorg",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 80.31,
+          "residual": -0.31,
+          "abs_residual": 0.31,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Hyderabad",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 76.31,
+          "residual": -16.31,
+          "abs_residual": 16.31,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Kochi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 73.86,
+          "residual": -3.86,
+          "abs_residual": 3.86,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Munnar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 83.75,
+          "residual": 6.25,
+          "abs_residual": 6.25,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Alleppey",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 80.96,
+          "residual": 9.04,
+          "abs_residual": 9.04,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ooty",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 80.21,
+          "residual": -10.21,
+          "abs_residual": 10.21,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Madurai",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 74.37,
+          "residual": -4.37,
+          "abs_residual": 4.37,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pondicherry",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 76.89,
+          "residual": 3.11,
+          "abs_residual": 3.11,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 76.05,
+          "residual": 23.95,
+          "abs_residual": 23.95,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Port Blair",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 76.64,
+          "residual": -6.64,
+          "abs_residual": 6.64,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 50.0,
+          "predicted": 73.33,
+          "residual": -23.33,
+          "abs_residual": 23.33,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 76.53,
+          "residual": -16.53,
+          "abs_residual": 16.53,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Rann of Kutch",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 82.69,
+          "residual": 7.31,
+          "abs_residual": 7.31,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 80.99,
+          "residual": -10.99,
+          "abs_residual": 10.99,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 83.02,
+          "residual": -23.02,
+          "abs_residual": 23.02,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 76.75,
+          "residual": -16.75,
+          "abs_residual": 16.75,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Pachmarhi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 81.11,
+          "residual": -1.11,
+          "abs_residual": 1.11,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Puri",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 76.18,
+          "residual": -6.18,
+          "abs_residual": 6.18,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhubaneswar",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 72.64,
+          "residual": -12.64,
+          "abs_residual": 12.64,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bodh Gaya",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 70.0,
+          "predicted": 77.82,
+          "residual": -7.82,
+          "abs_residual": 7.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Tawang",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 84.39,
+          "residual": 5.61,
+          "abs_residual": 5.61,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kaziranga",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 82.19,
+          "residual": -2.19,
+          "abs_residual": 2.19,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Cherrapunji",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 82.15,
+          "residual": 7.85,
+          "abs_residual": 7.85,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kanyakumari",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 77.02,
+          "residual": 2.98,
+          "abs_residual": 2.98,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Mahabalipuram",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 75.51,
+          "residual": 4.49,
+          "abs_residual": 4.49,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Wayanad",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 80.3,
+          "residual": 9.7,
+          "abs_residual": 9.7,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Auli",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 87.92,
+          "residual": 2.08,
+          "abs_residual": 2.08,
+          "type": "Under-predicted"
+        }
+      ],
+      "top10_residuals": [
+        {
+          "destination": "Agra",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 69.88,
+          "residual": 30.12,
+          "abs_residual": 30.12,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Havelock Island",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 76.05,
+          "residual": 23.95,
+          "abs_residual": 23.95,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Pune",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 50.0,
+          "predicted": 73.33,
+          "residual": -23.33,
+          "abs_residual": 23.33,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Bhopal",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 83.02,
+          "residual": -23.02,
+          "abs_residual": 23.02,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Varanasi",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 67.21,
+          "residual": 22.79,
+          "abs_residual": 22.79,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Udaipur",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 68.49,
+          "residual": 21.51,
+          "abs_residual": 21.51,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Kolkata",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 50.0,
+          "predicted": 70.82,
+          "residual": -20.82,
+          "abs_residual": 20.82,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Leh",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 81.31,
+          "residual": 18.69,
+          "abs_residual": 18.69,
+          "type": "Under-predicted"
+        },
+        {
+          "destination": "Ujjain",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 76.75,
+          "residual": -16.75,
+          "abs_residual": 16.75,
+          "type": "Over-predicted"
+        },
+        {
+          "destination": "Ahmedabad",
+          "dimension": "visual_atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 76.53,
+          "residual": -16.53,
+          "abs_residual": 16.53,
+          "type": "Over-predicted"
+        }
+      ]
+    }
+  },
+  "problematic_destinations": [
+    {
+      "destination": "Mumbai",
+      "bad_dimension_count": 3,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 20.0,
+          "predicted": 49.9,
+          "residual": -29.9
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 10.0,
+          "predicted": 23.6,
+          "residual": -13.6
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 51.4,
+          "residual": -31.4
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 10.0,
+          "predicted": 39.0,
+          "residual": -29.0
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 75.8,
+          "residual": -15.8
+        }
+      ]
+    },
+    {
+      "destination": "Leh",
+      "bad_dimension_count": 3,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 100.0,
+          "predicted": 70.5,
+          "residual": 29.5
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 90.0,
+          "predicted": 41.3,
+          "residual": 48.7
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 69.6,
+          "residual": 20.4
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 70.0,
+          "predicted": 57.2,
+          "residual": 12.8
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 81.3,
+          "residual": 18.7
+        }
+      ]
+    },
+    {
+      "destination": "Agra",
+      "bad_dimension_count": 3,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 10.0,
+          "predicted": 34.9,
+          "residual": -24.9
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 10.0,
+          "predicted": 14.6,
+          "residual": -4.6
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 48.9,
+          "residual": -28.9
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 10.0,
+          "predicted": 34.3,
+          "residual": -24.3
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 69.9,
+          "residual": 30.1
+        }
+      ]
+    },
+    {
+      "destination": "Havelock Island",
+      "bad_dimension_count": 3,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 100.0,
+          "predicted": 77.2,
+          "residual": 22.8
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 90.0,
+          "predicted": 31.9,
+          "residual": 58.1
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 65.5,
+          "residual": 24.5
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 90.0,
+          "predicted": 41.7,
+          "residual": 48.3
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 100.0,
+          "predicted": 76.0,
+          "residual": 24.0
+        }
+      ]
+    },
+    {
+      "destination": "Varanasi",
+      "bad_dimension_count": 3,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 30.0,
+          "predicted": 40.3,
+          "residual": -10.3
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 10.0,
+          "predicted": 16.6,
+          "residual": -6.6
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 20.0,
+          "predicted": 52.3,
+          "residual": -32.3
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 10.0,
+          "predicted": 40.4,
+          "residual": -30.4
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 67.2,
+          "residual": 22.8
+        }
+      ]
+    },
+    {
+      "destination": "Kaziranga",
+      "bad_dimension_count": 2,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 100.0,
+          "predicted": 72.2,
+          "residual": 27.8
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 60.0,
+          "predicted": 29.7,
+          "residual": 30.3
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 70.6,
+          "residual": 9.4
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 60.0,
+          "predicted": 56.2,
+          "residual": 3.8
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 82.2,
+          "residual": -2.2
+        }
+      ]
+    },
+    {
+      "destination": "Bhopal",
+      "bad_dimension_count": 2,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 40.0,
+          "predicted": 64.7,
+          "residual": -24.7
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 10.0,
+          "predicted": 29.4,
+          "residual": -19.4
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 60.0,
+          "predicted": 64.6,
+          "residual": -4.6
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 60.0,
+          "predicted": 51.3,
+          "residual": 8.7
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 60.0,
+          "predicted": 83.0,
+          "residual": -23.0
+        }
+      ]
+    },
+    {
+      "destination": "Auli",
+      "bad_dimension_count": 2,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 100.0,
+          "predicted": 88.8,
+          "residual": 11.2
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 90.0,
+          "predicted": 57.2,
+          "residual": 32.8
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 90.0,
+          "predicted": 74.2,
+          "residual": 15.8
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 80.0,
+          "predicted": 52.5,
+          "residual": 27.5
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 87.9,
+          "residual": 2.1
+        }
+      ]
+    },
+    {
+      "destination": "Hampi",
+      "bad_dimension_count": 2,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 60.0,
+          "predicted": 42.7,
+          "residual": 17.3
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 40.0,
+          "predicted": 19.3,
+          "residual": 20.7
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 80.0,
+          "predicted": 51.7,
+          "residual": 28.3
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 60.0,
+          "predicted": 44.0,
+          "residual": 16.0
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 90.0,
+          "predicted": 73.9,
+          "residual": 16.1
+        }
+      ]
+    },
+    {
+      "destination": "Goa",
+      "bad_dimension_count": 2,
+      "details": [
+        {
+          "dimension": "Nature",
+          "ground_truth": 70.0,
+          "predicted": 71.8,
+          "residual": -1.8
+        },
+        {
+          "dimension": "Adventure",
+          "ground_truth": 50.0,
+          "predicted": 37.8,
+          "residual": 12.2
+        },
+        {
+          "dimension": "Peacefulness",
+          "ground_truth": 40.0,
+          "predicted": 70.6,
+          "residual": -30.6
+        },
+        {
+          "dimension": "Crowd Match",
+          "ground_truth": 10.0,
+          "predicted": 60.4,
+          "residual": -50.4
+        },
+        {
+          "dimension": "Visual Atmosphere",
+          "ground_truth": 80.0,
+          "predicted": 80.3,
+          "residual": -0.3
+        }
+      ]
+    }
+  ],
+  "case_study_rishikesh": {
+    "destination": "Rishikesh",
+    "dimension": "adventure",
+    "ground_truth": 90.0,
+    "predicted": 27.68,
+    "residual": 62.32,
+    "finding": "Ground truth is 90 (world-famous river rafting & bungee capital), but the model predicted 27.7. The Wikimedia photo manifest shows Laxman Jhula bridge, Triveni Ghat prayer ceremonies, and riverside yoga ashrams rather than active white-water rafting, causing CLIP vision embeddings to encode serene architectural/cultural aesthetics rather than extreme sports."
+  }
+}

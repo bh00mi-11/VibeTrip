@@ -1,0 +1,18 @@
+{
+  "status": "SUCCESS",
+  "artifacts": {
+    "eval_comparison": "4 models",
+    "ablation_results": "6 conditions",
+    "multiseed_results": "2 conditions (10 seeds each, dynamic win counts computed)",
+    "cv_robustness": "5 dimensions",
+    "residual_audit": "250 total pairs, 10 problematic destinations",
+    "per_query_metrics": "5 models x 12 queries"
+  },
+  "provenance": {
+    "dataset_destinations": 50,
+    "queries_evaluated": 12,
+    "cv_seeds": 10,
+    "encoders": "all-MiniLM-L6-v2 (384D) + CLIP ViT-B/32 (512D)",
+    "fusion_space": "896D Concatenated Early Fusion"
+  }
+}

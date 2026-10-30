@@ -25,15 +25,15 @@ def create_admin():
         admin_name = args.name
 
     if not admin_password:
-        # Prompt securely or default if non-interactive
+        # Prompt securely or error if non-interactive
         import getpass
         try:
             admin_password = getpass.getpass("Enter Admin Password (min 8 characters): ")
         except Exception:
-            admin_password = "AdminSuperSecret2026!"
+            pass
 
-    if len(admin_password) < 8:
-        print("Error: Password must be at least 8 characters long.")
+    if not admin_password or len(admin_password) < 8:
+        print("Error: Admin password must be provided via ADMIN_PASSWORD env var, --password flag, or interactive prompt (min 8 chars).")
         sys.exit(1)
 
     existing = db.query(User).filter(User.email == admin_email).first()

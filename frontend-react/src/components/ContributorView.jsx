@@ -2,9 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { PlusCircle, Clock, CheckCircle, XCircle, MapPin, Tag } from 'lucide-react';
 import { getMySubmissions } from '../api';
 
-export default function ContributorView({ onOpenSubmitModal }) {
+export default function ContributorView({ user, onOpenSubmitModal }) {
   const [submissions, setSubmissions] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const role = user?.role || 'tourist';
+  const roleTitle = role === 'guide' ? 'My Guide Places & Activities' : role === 'local' ? 'My Local Spots & Community Gems' : 'My Submissions';
+  const roleSubtitle = role === 'guide'
+    ? 'Manage your professional tour spots, trek routes, and guided experience listings'
+    : role === 'local'
+    ? 'Track your submitted local gems, secret viewpoints, and neighborhood spots'
+    : 'Track the status of your submitted places and recommendations';
+  const submitButtonText = role === 'guide' ? 'Add Guided Place' : 'Submit New Spot';
 
   useEffect(() => {
     loadSubmissions();
@@ -26,13 +35,13 @@ export default function ContributorView({ onOpenSubmitModal }) {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
-          <h2 style={{ fontSize: '1.75rem' }}>Contributor Submissions</h2>
+          <h2 style={{ fontSize: '1.75rem' }}>{roleTitle}</h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-            Track the status of your submitted local places, viewpoints, and recommendations
+            {roleSubtitle}
           </p>
         </div>
         <button className="btn btn-primary" onClick={onOpenSubmitModal}>
-          <PlusCircle size={16} /> Submit New Spot
+          <PlusCircle size={16} /> {submitButtonText}
         </button>
       </div>
 

@@ -1,0 +1,52 @@
+[
+  {
+    "dimension": "nature",
+    "dimension_display": "Nature",
+    "unshuffled_r2": 0.7050742225852065,
+    "shuffled_r2_mean": 0.7267843706080623,
+    "shuffled_r2_std": 0.013601229986691749,
+    "unshuffled_mae": 14.155709686279296,
+    "shuffled_mae_mean": 13.668791793823242,
+    "shuffled_mae_std": 0.31418400318396517
+  },
+  {
+    "dimension": "adventure",
+    "dimension_display": "Adventure",
+    "unshuffled_r2": 0.39429187804955845,
+    "shuffled_r2_mean": 0.4033291650435273,
+    "shuffled_r2_std": 0.030378178137673,
+    "unshuffled_mae": 13.799388809204101,
+    "shuffled_mae_mean": 13.462120571136476,
+    "shuffled_mae_std": 0.3960036463071128
+  },
+  {
+    "dimension": "peacefulness",
+    "dimension_display": "Peacefulness",
+    "unshuffled_r2": 0.4222919358515035,
+    "shuffled_r2_mean": 0.4531563100132529,
+    "shuffled_r2_std": 0.03447012279833998,
+    "unshuffled_mae": 13.779175338745118,
+    "shuffled_mae_mean": 13.40678116607666,
+    "shuffled_mae_std": 0.4030680414080411
+  },
+  {
+    "dimension": "crowd_match",
+    "dimension_display": "Crowd Match",
+    "unshuffled_r2": 0.18440530523459853,
+    "shuffled_r2_mean": 0.30413938342631874,
+    "shuffled_r2_std": 0.04838700199846469,
+    "unshuffled_mae": 15.897336273193359,
+    "shuffled_mae_mean": 14.532835754394531,
+    "shuffled_mae_std": 0.6708666251389566
+  },
+  {
+    "dimension": "visual_atmosphere",
+    "dimension_display": "Visual Atmosphere",
+    "unshuffled_r2": -0.017062372260790548,
+    "shuffled_r2_mean": 0.15864199381722988,
+    "shuffled_r2_std": 0.03811620947449417,
+    "unshuffled_mae": 9.725088653564454,
+    "shuffled_mae_mean": 9.07931463623047,
+    "shuffled_mae_std": 0.23097666021817723
+  }
+]

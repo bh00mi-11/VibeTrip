@@ -1,0 +1,3406 @@
+{
+  "destinations": [
+    {
+      "destination": "Agra",
+      "state": "Uttar Pradesh",
+      "region": "North",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 10.0,
+        "adventure": 10.0,
+        "peacefulness": 20.0,
+        "crowd_match": 10.0,
+        "visual_atmosphere": 100.0
+      },
+      "oof_scores": {
+        "nature": 34.9,
+        "adventure": 14.6,
+        "peacefulness": 48.9,
+        "crowd_match": 34.3,
+        "visual_atmosphere": 69.9
+      },
+      "pca_fused": [
+        -0.487,
+        -0.075
+      ],
+      "pca_text": [
+        0.348,
+        -0.06
+      ],
+      "pca_img": [
+        -0.341,
+        -0.122
+      ],
+      "tsne_fused": [
+        55.295,
+        34.657
+      ],
+      "tsne_text": [
+        24.016,
+        19.377
+      ],
+      "tsne_img": [
+        -19.401,
+        9.763
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Delhi",
+          "similarity": 0.828
+        },
+        {
+          "destination": "Jaipur",
+          "similarity": 0.8
+        },
+        {
+          "destination": "Jodhpur",
+          "similarity": 0.75
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.734
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.732
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Jaipur",
+      "state": "Rajasthan",
+      "region": "North",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 20.0,
+        "peacefulness": 40.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 31.3,
+        "adventure": 15.2,
+        "peacefulness": 42.9,
+        "crowd_match": 31.8,
+        "visual_atmosphere": 67.0
+      },
+      "pca_fused": [
+        -0.486,
+        0.015
+      ],
+      "pca_text": [
+        0.395,
+        0.016
+      ],
+      "pca_img": [
+        -0.286,
+        -0.096
+      ],
+      "tsne_fused": [
+        50.368,
+        39.126
+      ],
+      "tsne_text": [
+        23.572,
+        23.431
+      ],
+      "tsne_img": [
+        -19.402,
+        5.052
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Agra",
+          "similarity": 0.8
+        },
+        {
+          "destination": "Delhi",
+          "similarity": 0.749
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.749
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.745
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.739
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Udaipur",
+      "state": "Rajasthan",
+      "region": "North",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 50.0,
+        "adventure": 20.0,
+        "peacefulness": 60.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 39.5,
+        "adventure": 17.4,
+        "peacefulness": 52.3,
+        "crowd_match": 44.8,
+        "visual_atmosphere": 68.5
+      },
+      "pca_fused": [
+        -0.32,
+        0.081
+      ],
+      "pca_text": [
+        0.296,
+        0.071
+      ],
+      "pca_img": [
+        -0.151,
+        0.0
+      ],
+      "tsne_fused": [
+        19.362,
+        32.978
+      ],
+      "tsne_text": [
+        7.933,
+        19.042
+      ],
+      "tsne_img": [
+        -13.944,
+        1.407
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Bhopal",
+          "similarity": 0.811
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.791
+        },
+        {
+          "destination": "Srinagar",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.753
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.748
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Jodhpur",
+      "state": "Rajasthan",
+      "region": "North",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 20.0,
+        "peacefulness": 50.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 33.3,
+        "adventure": 15.4,
+        "peacefulness": 45.6,
+        "crowd_match": 33.2,
+        "visual_atmosphere": 66.5
+      },
+      "pca_fused": [
+        -0.407,
+        -0.025
+      ],
+      "pca_text": [
+        0.232,
+        -0.002
+      ],
+      "pca_img": [
+        -0.346,
+        -0.084
+      ],
+      "tsne_fused": [
+        62.933,
+        38.718
+      ],
+      "tsne_text": [
+        28.54,
+        14.802
+      ],
+      "tsne_img": [
+        -17.492,
+        6.671
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Agra",
+          "similarity": 0.75
+        },
+        {
+          "destination": "Delhi",
+          "similarity": 0.745
+        },
+        {
+          "destination": "Jaipur",
+          "similarity": 0.733
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.731
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.726
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Jaisalmer",
+      "state": "Rajasthan",
+      "region": "North",
+      "category": "Desert",
+      "vibe_scores": {
+        "nature": 70.0,
+        "adventure": 50.0,
+        "peacefulness": 60.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 67.6,
+        "adventure": 40.9,
+        "peacefulness": 65.9,
+        "crowd_match": 47.2,
+        "visual_atmosphere": 81.5
+      },
+      "pca_fused": [
+        0.001,
+        0.103
+      ],
+      "pca_text": [
+        -0.074,
+        0.145
+      ],
+      "pca_img": [
+        -0.102,
+        -0.077
+      ],
+      "tsne_fused": [
+        -6.787,
+        -17.876
+      ],
+      "tsne_text": [
+        0.315,
+        -22.614
+      ],
+      "tsne_img": [
+        -21.499,
+        1.901
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Leh",
+          "similarity": 0.681
+        },
+        {
+          "destination": "Rann of Kutch",
+          "similarity": 0.681
+        },
+        {
+          "destination": "Jaipur",
+          "similarity": 0.679
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.675
+        },
+        {
+          "destination": "Srinagar",
+          "similarity": 0.667
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Delhi",
+      "state": "Delhi",
+      "region": "North",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 10.0,
+        "adventure": 10.0,
+        "peacefulness": 10.0,
+        "crowd_match": 10.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 31.6,
+        "adventure": 13.2,
+        "peacefulness": 44.2,
+        "crowd_match": 31.5,
+        "visual_atmosphere": 66.7
+      },
+      "pca_fused": [
+        -0.495,
+        -0.081
+      ],
+      "pca_text": [
+        0.358,
+        -0.075
+      ],
+      "pca_img": [
+        -0.334,
+        -0.092
+      ],
+      "tsne_fused": [
+        57.591,
+        29.654
+      ],
+      "tsne_text": [
+        22.14,
+        16.733
+      ],
+      "tsne_img": [
+        -21.768,
+        9.358
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Agra",
+          "similarity": 0.828
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Jaipur",
+          "similarity": 0.749
+        },
+        {
+          "destination": "Jodhpur",
+          "similarity": 0.745
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.74
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Varanasi",
+      "state": "Uttar Pradesh",
+      "region": "North",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 30.0,
+        "adventure": 10.0,
+        "peacefulness": 20.0,
+        "crowd_match": 10.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 40.3,
+        "adventure": 16.6,
+        "peacefulness": 52.3,
+        "crowd_match": 40.4,
+        "visual_atmosphere": 67.2
+      },
+      "pca_fused": [
+        -0.285,
+        -0.241
+      ],
+      "pca_text": [
+        0.168,
+        -0.245
+      ],
+      "pca_img": [
+        -0.231,
+        -0.023
+      ],
+      "tsne_fused": [
+        27.682,
+        -12.008
+      ],
+      "tsne_text": [
+        8.555,
+        -7.433
+      ],
+      "tsne_img": [
+        -7.869,
+        -13.609
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Ujjain",
+          "similarity": 0.78
+        },
+        {
+          "destination": "Amritsar",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Haridwar",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.725
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.722
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Amritsar",
+      "state": "Punjab",
+      "region": "North",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 20.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 33.6,
+        "adventure": 16.2,
+        "peacefulness": 45.1,
+        "crowd_match": 32.0,
+        "visual_atmosphere": 66.4
+      },
+      "pca_fused": [
+        -0.423,
+        -0.221
+      ],
+      "pca_text": [
+        0.297,
+        -0.22
+      ],
+      "pca_img": [
+        -0.284,
+        -0.031
+      ],
+      "tsne_fused": [
+        19.001,
+        -7.085
+      ],
+      "tsne_text": [
+        3.766,
+        -1.969
+      ],
+      "tsne_img": [
+        -10.606,
+        -14.891
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Ujjain",
+          "similarity": 0.776
+        },
+        {
+          "destination": "Varanasi",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.743
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.742
+        },
+        {
+          "destination": "Haridwar",
+          "similarity": 0.74
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Rishikesh",
+      "state": "Uttarakhand",
+      "region": "North",
+      "category": "Adventure/Spiritual",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 90.0,
+        "peacefulness": 60.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 60.0,
+        "adventure": 27.7,
+        "peacefulness": 62.5,
+        "crowd_match": 49.0,
+        "visual_atmosphere": 74.1
+      },
+      "pca_fused": [
+        0.059,
+        -0.116
+      ],
+      "pca_text": [
+        -0.034,
+        -0.086
+      ],
+      "pca_img": [
+        0.05,
+        -0.039
+      ],
+      "tsne_fused": [
+        18.95,
+        -26.328
+      ],
+      "tsne_text": [
+        -0.664,
+        -9.863
+      ],
+      "tsne_img": [
+        -1.421,
+        -16.442
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Haridwar",
+          "similarity": 0.749
+        },
+        {
+          "destination": "Ujjain",
+          "similarity": 0.714
+        },
+        {
+          "destination": "Varanasi",
+          "similarity": 0.703
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.696
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.686
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Haridwar",
+      "state": "Uttarakhand",
+      "region": "North",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 50.0,
+        "adventure": 10.0,
+        "peacefulness": 30.0,
+        "crowd_match": 20.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 51.8,
+        "adventure": 30.0,
+        "peacefulness": 58.2,
+        "crowd_match": 44.3,
+        "visual_atmosphere": 73.1
+      },
+      "pca_fused": [
+        -0.062,
+        -0.331
+      ],
+      "pca_text": [
+        -0.029,
+        -0.307
+      ],
+      "pca_img": [
+        -0.127,
+        -0.019
+      ],
+      "tsne_fused": [
+        22.949,
+        -20.275
+      ],
+      "tsne_text": [
+        3.338,
+        -10.931
+      ],
+      "tsne_img": [
+        -5.734,
+        -19.604
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Ujjain",
+          "similarity": 0.783
+        },
+        {
+          "destination": "Varanasi",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Rishikesh",
+          "similarity": 0.749
+        },
+        {
+          "destination": "Amritsar",
+          "similarity": 0.74
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.714
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Manali",
+      "state": "Himachal Pradesh",
+      "region": "North",
+      "category": "Mountains",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 80.0,
+        "peacefulness": 60.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 72.3,
+        "adventure": 46.2,
+        "peacefulness": 68.2,
+        "crowd_match": 56.6,
+        "visual_atmosphere": 79.4
+      },
+      "pca_fused": [
+        0.255,
+        -0.402
+      ],
+      "pca_text": [
+        -0.189,
+        -0.321
+      ],
+      "pca_img": [
+        0.17,
+        -0.241
+      ],
+      "tsne_fused": [
+        -32.929,
+        -31.008
+      ],
+      "tsne_text": [
+        -12.619,
+        -21.064
+      ],
+      "tsne_img": [
+        6.362,
+        16.195
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Auli",
+          "similarity": 0.767
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Gangtok",
+          "similarity": 0.741
+        },
+        {
+          "destination": "Leh",
+          "similarity": 0.737
+        },
+        {
+          "destination": "Tawang",
+          "similarity": 0.718
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Shimla",
+      "state": "Himachal Pradesh",
+      "region": "North",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 70.0,
+        "adventure": 30.0,
+        "peacefulness": 50.0,
+        "crowd_match": 20.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 60.1,
+        "adventure": 32.6,
+        "peacefulness": 59.1,
+        "crowd_match": 44.0,
+        "visual_atmosphere": 73.8
+      },
+      "pca_fused": [
+        0.162,
+        -0.224
+      ],
+      "pca_text": [
+        -0.171,
+        -0.142
+      ],
+      "pca_img": [
+        0.071,
+        -0.112
+      ],
+      "tsne_fused": [
+        -44.687,
+        -38.57
+      ],
+      "tsne_text": [
+        -24.703,
+        -19.82
+      ],
+      "tsne_img": [
+        4.053,
+        -13.883
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.736
+        },
+        {
+          "destination": "Ooty",
+          "similarity": 0.71
+        },
+        {
+          "destination": "Gangtok",
+          "similarity": 0.7
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.683
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.67
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Leh",
+      "state": "Ladakh",
+      "region": "North",
+      "category": "Mountains",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 90.0,
+        "peacefulness": 90.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 100.0
+      },
+      "oof_scores": {
+        "nature": 70.5,
+        "adventure": 41.3,
+        "peacefulness": 69.6,
+        "crowd_match": 57.2,
+        "visual_atmosphere": 81.3
+      },
+      "pca_fused": [
+        0.241,
+        -0.304
+      ],
+      "pca_text": [
+        -0.275,
+        -0.174
+      ],
+      "pca_img": [
+        0.037,
+        -0.307
+      ],
+      "tsne_fused": [
+        -20.639,
+        -38.079
+      ],
+      "tsne_text": [
+        -16.144,
+        -13.686
+      ],
+      "tsne_img": [
+        2.901,
+        14.996
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Gangtok",
+          "similarity": 0.797
+        },
+        {
+          "destination": "Tawang",
+          "similarity": 0.789
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.737
+        },
+        {
+          "destination": "Srinagar",
+          "similarity": 0.703
+        },
+        {
+          "destination": "Bhopal",
+          "similarity": 0.683
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Srinagar",
+      "state": "Jammu and Kashmir",
+      "region": "North",
+      "category": "Lakes/Gardens",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 30.0,
+        "peacefulness": 70.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 47.3,
+        "adventure": 22.4,
+        "peacefulness": 50.1,
+        "crowd_match": 34.5,
+        "visual_atmosphere": 77.1
+      },
+      "pca_fused": [
+        -0.108,
+        -0.053
+      ],
+      "pca_text": [
+        0.151,
+        -0.043
+      ],
+      "pca_img": [
+        0.031,
+        -0.047
+      ],
+      "tsne_fused": [
+        20.492,
+        39.601
+      ],
+      "tsne_text": [
+        11.422,
+        20.81
+      ],
+      "tsne_img": [
+        -5.287,
+        1.057
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Udaipur",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.742
+        },
+        {
+          "destination": "Delhi",
+          "similarity": 0.726
+        },
+        {
+          "destination": "Bhopal",
+          "similarity": 0.725
+        },
+        {
+          "destination": "Hyderabad",
+          "similarity": 0.724
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Darjeeling",
+      "state": "West Bengal",
+      "region": "East",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 30.0,
+        "peacefulness": 70.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 81.1,
+        "adventure": 40.5,
+        "peacefulness": 69.1,
+        "crowd_match": 51.0,
+        "visual_atmosphere": 79.5
+      },
+      "pca_fused": [
+        0.4,
+        -0.359
+      ],
+      "pca_text": [
+        -0.391,
+        -0.289
+      ],
+      "pca_img": [
+        0.159,
+        -0.141
+      ],
+      "tsne_fused": [
+        -46.004,
+        -31.044
+      ],
+      "tsne_text": [
+        -25.358,
+        -24.213
+      ],
+      "tsne_img": [
+        9.788,
+        9.91
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Ooty",
+          "similarity": 0.771
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "similarity": 0.746
+        },
+        {
+          "destination": "Shimla",
+          "similarity": 0.736
+        },
+        {
+          "destination": "Munnar",
+          "similarity": 0.735
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Kolkata",
+      "state": "West Bengal",
+      "region": "East",
+      "category": "Heritage/Culture",
+      "vibe_scores": {
+        "nature": 10.0,
+        "adventure": 10.0,
+        "peacefulness": 20.0,
+        "crowd_match": 20.0,
+        "visual_atmosphere": 50.0
+      },
+      "oof_scores": {
+        "nature": 31.0,
+        "adventure": 15.0,
+        "peacefulness": 43.8,
+        "crowd_match": 33.4,
+        "visual_atmosphere": 70.8
+      },
+      "pca_fused": [
+        -0.428,
+        0.024
+      ],
+      "pca_text": [
+        0.372,
+        -0.006
+      ],
+      "pca_img": [
+        -0.222,
+        0.04
+      ],
+      "tsne_fused": [
+        35.219,
+        27.664
+      ],
+      "tsne_text": [
+        17.971,
+        11.349
+      ],
+      "tsne_img": [
+        -14.91,
+        -4.549
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Pune",
+          "similarity": 0.804
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.78
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.753
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.748
+        },
+        {
+          "destination": "Hyderabad",
+          "similarity": 0.742
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Gangtok",
+      "state": "Sikkim",
+      "region": "East",
+      "category": "Mountains",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 50.0,
+        "peacefulness": 70.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 74.1,
+        "adventure": 45.1,
+        "peacefulness": 71.8,
+        "crowd_match": 60.4,
+        "visual_atmosphere": 79.6
+      },
+      "pca_fused": [
+        0.286,
+        -0.246
+      ],
+      "pca_text": [
+        -0.184,
+        -0.165
+      ],
+      "pca_img": [
+        0.231,
+        -0.176
+      ],
+      "tsne_fused": [
+        -26.827,
+        -40.677
+      ],
+      "tsne_text": [
+        -18.031,
+        -10.718
+      ],
+      "tsne_img": [
+        8.668,
+        13.658
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Tawang",
+          "similarity": 0.8
+        },
+        {
+          "destination": "Leh",
+          "similarity": 0.797
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.741
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.701
+        },
+        {
+          "destination": "Shimla",
+          "similarity": 0.7
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Shillong",
+      "state": "Meghalaya",
+      "region": "Northeast",
+      "category": "Nature",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 40.0,
+        "peacefulness": 80.0,
+        "crowd_match": 90.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 89.6,
+        "adventure": 41.8,
+        "peacefulness": 77.6,
+        "crowd_match": 57.5,
+        "visual_atmosphere": 81.8
+      },
+      "pca_fused": [
+        0.468,
+        0.141
+      ],
+      "pca_text": [
+        -0.336,
+        0.101
+      ],
+      "pca_img": [
+        0.331,
+        0.093
+      ],
+      "tsne_fused": [
+        -59.725,
+        0.29
+      ],
+      "tsne_text": [
+        -21.507,
+        -41.687
+      ],
+      "tsne_img": [
+        17.939,
+        5.41
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Cherrapunji",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Wayanad",
+          "similarity": 0.724
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.708
+        },
+        {
+          "destination": "Ooty",
+          "similarity": 0.663
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.66
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "region": "Central",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 10.0,
+        "peacefulness": 70.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 30.1,
+        "adventure": 15.5,
+        "peacefulness": 48.6,
+        "crowd_match": 39.0,
+        "visual_atmosphere": 72.4
+      },
+      "pca_fused": [
+        -0.481,
+        -0.063
+      ],
+      "pca_text": [
+        0.376,
+        -0.071
+      ],
+      "pca_img": [
+        -0.302,
+        -0.019
+      ],
+      "tsne_fused": [
+        47.474,
+        12.846
+      ],
+      "tsne_text": [
+        18.783,
+        -5.599
+      ],
+      "tsne_img": [
+        -24.775,
+        -14.575
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.775
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.769
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.724
+        },
+        {
+          "destination": "Hampi",
+          "similarity": 0.723
+        },
+        {
+          "destination": "Ujjain",
+          "similarity": 0.717
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Mumbai",
+      "state": "Maharashtra",
+      "region": "West",
+      "category": "City",
+      "vibe_scores": {
+        "nature": 20.0,
+        "adventure": 10.0,
+        "peacefulness": 20.0,
+        "crowd_match": 10.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 49.9,
+        "adventure": 23.6,
+        "peacefulness": 51.4,
+        "crowd_match": 39.0,
+        "visual_atmosphere": 75.8
+      },
+      "pca_fused": [
+        -0.189,
+        0.177
+      ],
+      "pca_text": [
+        0.124,
+        0.168
+      ],
+      "pca_img": [
+        -0.165,
+        0.033
+      ],
+      "tsne_fused": [
+        23.587,
+        17.95
+      ],
+      "tsne_text": [
+        6.467,
+        8.894
+      ],
+      "tsne_img": [
+        -11.745,
+        -4.48
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Pune",
+          "similarity": 0.734
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.724
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.716
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.713
+        },
+        {
+          "destination": "Kanyakumari",
+          "similarity": 0.709
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Goa",
+      "state": "Goa",
+      "region": "West",
+      "category": "Beach",
+      "vibe_scores": {
+        "nature": 70.0,
+        "adventure": 50.0,
+        "peacefulness": 40.0,
+        "crowd_match": 10.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 71.8,
+        "adventure": 37.8,
+        "peacefulness": 70.6,
+        "crowd_match": 60.4,
+        "visual_atmosphere": 80.3
+      },
+      "pca_fused": [
+        0.207,
+        0.406
+      ],
+      "pca_text": [
+        -0.169,
+        0.39
+      ],
+      "pca_img": [
+        0.116,
+        0.168
+      ],
+      "tsne_fused": [
+        -24.866,
+        8.842
+      ],
+      "tsne_text": [
+        -15.511,
+        4.086
+      ],
+      "tsne_img": [
+        8.576,
+        -2.264
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Coorg",
+          "similarity": 0.685
+        },
+        {
+          "destination": "Alleppey",
+          "similarity": 0.667
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.659
+        },
+        {
+          "destination": "Pondicherry",
+          "similarity": 0.656
+        },
+        {
+          "destination": "Havelock Island",
+          "similarity": 0.644
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Hampi",
+      "state": "Karnataka",
+      "region": "South",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 60.0,
+        "adventure": 40.0,
+        "peacefulness": 80.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 42.7,
+        "adventure": 19.3,
+        "peacefulness": 51.7,
+        "crowd_match": 44.0,
+        "visual_atmosphere": 73.9
+      },
+      "pca_fused": [
+        -0.268,
+        -0.06
+      ],
+      "pca_text": [
+        0.194,
+        -0.066
+      ],
+      "pca_img": [
+        -0.197,
+        -0.028
+      ],
+      "tsne_fused": [
+        41.701,
+        3.126
+      ],
+      "tsne_text": [
+        21.678,
+        4.505
+      ],
+      "tsne_img": [
+        -22.155,
+        -13.38
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.786
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.734
+        },
+        {
+          "destination": "Mahabalipuram",
+          "similarity": 0.726
+        },
+        {
+          "destination": "Khajuraho",
+          "similarity": 0.723
+        },
+        {
+          "destination": "Agra",
+          "similarity": 0.708
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Mysore",
+      "state": "Karnataka",
+      "region": "South",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 50.3,
+        "adventure": 23.6,
+        "peacefulness": 53.4,
+        "crowd_match": 41.1,
+        "visual_atmosphere": 74.0
+      },
+      "pca_fused": [
+        -0.226,
+        -0.096
+      ],
+      "pca_text": [
+        0.242,
+        -0.158
+      ],
+      "pca_img": [
+        -0.053,
+        0.04
+      ],
+      "tsne_fused": [
+        33.488,
+        38.808
+      ],
+      "tsne_text": [
+        20.962,
+        28.832
+      ],
+      "tsne_img": [
+        -7.026,
+        -1.966
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Kolkata",
+          "similarity": 0.732
+        },
+        {
+          "destination": "Hyderabad",
+          "similarity": 0.721
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.718
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.715
+        },
+        {
+          "destination": "Madurai",
+          "similarity": 0.71
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Coorg",
+      "state": "Karnataka",
+      "region": "South",
+      "category": "Nature",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 40.0,
+        "peacefulness": 80.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 81.0,
+        "adventure": 47.0,
+        "peacefulness": 74.7,
+        "crowd_match": 63.8,
+        "visual_atmosphere": 80.3
+      },
+      "pca_fused": [
+        0.409,
+        -0.037
+      ],
+      "pca_text": [
+        -0.428,
+        -0.027
+      ],
+      "pca_img": [
+        0.126,
+        0.068
+      ],
+      "tsne_fused": [
+        -41.439,
+        -3.435
+      ],
+      "tsne_text": [
+        -19.266,
+        -30.555
+      ],
+      "tsne_img": [
+        23.539,
+        12.098
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Wayanad",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.722
+        },
+        {
+          "destination": "Cherrapunji",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Shillong",
+          "similarity": 0.708
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.702
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Hyderabad",
+      "state": "Telangana",
+      "region": "South",
+      "category": "Heritage/City",
+      "vibe_scores": {
+        "nature": 20.0,
+        "adventure": 10.0,
+        "peacefulness": 30.0,
+        "crowd_match": 20.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 43.4,
+        "adventure": 21.0,
+        "peacefulness": 47.7,
+        "crowd_match": 37.5,
+        "visual_atmosphere": 76.3
+      },
+      "pca_fused": [
+        -0.351,
+        0.051
+      ],
+      "pca_text": [
+        0.263,
+        0.005
+      ],
+      "pca_img": [
+        -0.223,
+        0.055
+      ],
+      "tsne_fused": [
+        41.978,
+        34.087
+      ],
+      "tsne_text": [
+        16.404,
+        22.722
+      ],
+      "tsne_img": [
+        -12.624,
+        -1.235
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Kolkata",
+          "similarity": 0.742
+        },
+        {
+          "destination": "Jaipur",
+          "similarity": 0.737
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.732
+        },
+        {
+          "destination": "Agra",
+          "similarity": 0.728
+        },
+        {
+          "destination": "Delhi",
+          "similarity": 0.726
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Kochi",
+      "state": "Kerala",
+      "region": "South",
+      "category": "Heritage/Coastal",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 48.5,
+        "adventure": 22.6,
+        "peacefulness": 54.9,
+        "crowd_match": 44.9,
+        "visual_atmosphere": 73.9
+      },
+      "pca_fused": [
+        -0.177,
+        0.432
+      ],
+      "pca_text": [
+        0.204,
+        0.429
+      ],
+      "pca_img": [
+        -0.035,
+        0.164
+      ],
+      "tsne_fused": [
+        0.5,
+        17.429
+      ],
+      "tsne_text": [
+        -0.991,
+        16.433
+      ],
+      "tsne_img": [
+        -0.2,
+        -6.242
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Pondicherry",
+          "similarity": 0.673
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.671
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.67
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.667
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.655
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Munnar",
+      "state": "Kerala",
+      "region": "South",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 30.0,
+        "peacefulness": 90.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 83.2,
+        "adventure": 43.9,
+        "peacefulness": 71.2,
+        "crowd_match": 55.6,
+        "visual_atmosphere": 83.7
+      },
+      "pca_fused": [
+        0.5,
+        -0.154
+      ],
+      "pca_text": [
+        -0.417,
+        -0.114
+      ],
+      "pca_img": [
+        0.295,
+        -0.096
+      ],
+      "tsne_fused": [
+        -57.525,
+        -31.743
+      ],
+      "tsne_text": [
+        -34.035,
+        -26.441
+      ],
+      "tsne_img": [
+        17.592,
+        11.923
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Mahabaleshwar",
+          "similarity": 0.737
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.735
+        },
+        {
+          "destination": "Ooty",
+          "similarity": 0.713
+        },
+        {
+          "destination": "Wayanad",
+          "similarity": 0.681
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.672
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Alleppey",
+      "state": "Kerala",
+      "region": "South",
+      "category": "Backwaters",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 10.0,
+        "peacefulness": 90.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 73.2,
+        "adventure": 41.9,
+        "peacefulness": 72.1,
+        "crowd_match": 60.3,
+        "visual_atmosphere": 81.0
+      },
+      "pca_fused": [
+        0.242,
+        0.602
+      ],
+      "pca_text": [
+        -0.181,
+        0.537
+      ],
+      "pca_img": [
+        0.15,
+        0.28
+      ],
+      "tsne_fused": [
+        -17.648,
+        14.263
+      ],
+      "tsne_text": [
+        -13.672,
+        10.629
+      ],
+      "tsne_img": [
+        11.546,
+        -8.308
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Havelock Island",
+          "similarity": 0.671
+        },
+        {
+          "destination": "Goa",
+          "similarity": 0.667
+        },
+        {
+          "destination": "Pondicherry",
+          "similarity": 0.661
+        },
+        {
+          "destination": "Bhopal",
+          "similarity": 0.653
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.629
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Ooty",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 30.0,
+        "peacefulness": 60.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 85.4,
+        "adventure": 44.4,
+        "peacefulness": 72.5,
+        "crowd_match": 55.9,
+        "visual_atmosphere": 80.2
+      },
+      "pca_fused": [
+        0.481,
+        -0.133
+      ],
+      "pca_text": [
+        -0.404,
+        -0.149
+      ],
+      "pca_img": [
+        0.283,
+        0.04
+      ],
+      "tsne_fused": [
+        -49.302,
+        -25.413
+      ],
+      "tsne_text": [
+        -29.257,
+        -22.554
+      ],
+      "tsne_img": [
+        17.304,
+        8.266
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.771
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "similarity": 0.77
+        },
+        {
+          "destination": "Munnar",
+          "similarity": 0.713
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Shimla",
+          "similarity": 0.71
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Madurai",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 10.0,
+        "adventure": 10.0,
+        "peacefulness": 30.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 39.8,
+        "adventure": 16.8,
+        "peacefulness": 52.9,
+        "crowd_match": 41.5,
+        "visual_atmosphere": 74.4
+      },
+      "pca_fused": [
+        -0.425,
+        -0.05
+      ],
+      "pca_text": [
+        0.346,
+        -0.113
+      ],
+      "pca_img": [
+        -0.236,
+        0.074
+      ],
+      "tsne_fused": [
+        31.019,
+        6.353
+      ],
+      "tsne_text": [
+        17.14,
+        0.099
+      ],
+      "tsne_img": [
+        -15.136,
+        -9.193
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.752
+        },
+        {
+          "destination": "Ujjain",
+          "similarity": 0.728
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.727
+        },
+        {
+          "destination": "Amritsar",
+          "similarity": 0.721
+        },
+        {
+          "destination": "Kanyakumari",
+          "similarity": 0.719
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Pondicherry",
+      "state": "Puducherry",
+      "region": "South",
+      "category": "Coastal",
+      "vibe_scores": {
+        "nature": 50.0,
+        "adventure": 20.0,
+        "peacefulness": 70.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 67.3,
+        "adventure": 24.5,
+        "peacefulness": 59.8,
+        "crowd_match": 35.2,
+        "visual_atmosphere": 76.9
+      },
+      "pca_fused": [
+        0.134,
+        0.672
+      ],
+      "pca_text": [
+        -0.137,
+        0.66
+      ],
+      "pca_img": [
+        0.041,
+        0.207
+      ],
+      "tsne_fused": [
+        -8.201,
+        16.174
+      ],
+      "tsne_text": [
+        -9.933,
+        8.245
+      ],
+      "tsne_img": [
+        3.298,
+        -5.199
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Kochi",
+          "similarity": 0.673
+        },
+        {
+          "destination": "Havelock Island",
+          "similarity": 0.663
+        },
+        {
+          "destination": "Alleppey",
+          "similarity": 0.661
+        },
+        {
+          "destination": "Goa",
+          "similarity": 0.656
+        },
+        {
+          "destination": "Port Blair",
+          "similarity": 0.627
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Havelock Island",
+      "state": "Andaman and Nicobar Islands",
+      "region": "Islands",
+      "category": "Beach",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 90.0,
+        "peacefulness": 90.0,
+        "crowd_match": 90.0,
+        "visual_atmosphere": 100.0
+      },
+      "oof_scores": {
+        "nature": 77.2,
+        "adventure": 31.9,
+        "peacefulness": 65.5,
+        "crowd_match": 41.7,
+        "visual_atmosphere": 76.0
+      },
+      "pca_fused": [
+        0.302,
+        0.619
+      ],
+      "pca_text": [
+        -0.16,
+        0.498
+      ],
+      "pca_img": [
+        0.266,
+        0.299
+      ],
+      "tsne_fused": [
+        -15.245,
+        22.453
+      ],
+      "tsne_text": [
+        -5.122,
+        5.148
+      ],
+      "tsne_img": [
+        13.113,
+        -5.415
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Puri",
+          "similarity": 0.7
+        },
+        {
+          "destination": "Alleppey",
+          "similarity": 0.671
+        },
+        {
+          "destination": "Port Blair",
+          "similarity": 0.669
+        },
+        {
+          "destination": "Pondicherry",
+          "similarity": 0.663
+        },
+        {
+          "destination": "Kanyakumari",
+          "similarity": 0.652
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Port Blair",
+      "state": "Andaman and Nicobar Islands",
+      "region": "Islands",
+      "category": "Coastal",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 40.0,
+        "peacefulness": 70.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 68.0,
+        "adventure": 30.8,
+        "peacefulness": 61.0,
+        "crowd_match": 42.6,
+        "visual_atmosphere": 76.6
+      },
+      "pca_fused": [
+        0.205,
+        0.509
+      ],
+      "pca_text": [
+        -0.085,
+        0.432
+      ],
+      "pca_img": [
+        0.194,
+        0.241
+      ],
+      "tsne_fused": [
+        -13.789,
+        29.358
+      ],
+      "tsne_text": [
+        -3.584,
+        9.207
+      ],
+      "tsne_img": [
+        10.005,
+        -4.41
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Havelock Island",
+          "similarity": 0.669
+        },
+        {
+          "destination": "Pondicherry",
+          "similarity": 0.627
+        },
+        {
+          "destination": "Kanyakumari",
+          "similarity": 0.625
+        },
+        {
+          "destination": "Kochi",
+          "similarity": 0.616
+        },
+        {
+          "destination": "Gangtok",
+          "similarity": 0.608
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Pune",
+      "state": "Maharashtra",
+      "region": "West",
+      "category": "City",
+      "vibe_scores": {
+        "nature": 20.0,
+        "adventure": 10.0,
+        "peacefulness": 30.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 50.0
+      },
+      "oof_scores": {
+        "nature": 37.5,
+        "adventure": 21.0,
+        "peacefulness": 41.3,
+        "crowd_match": 27.7,
+        "visual_atmosphere": 73.3
+      },
+      "pca_fused": [
+        -0.335,
+        -0.078
+      ],
+      "pca_text": [
+        0.364,
+        -0.075
+      ],
+      "pca_img": [
+        -0.076,
+        0.006
+      ],
+      "tsne_fused": [
+        30.217,
+        25.1
+      ],
+      "tsne_text": [
+        16.341,
+        13.992
+      ],
+      "tsne_img": [
+        -4.809,
+        -9.154
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Kolkata",
+          "similarity": 0.804
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Udaipur",
+          "similarity": 0.753
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.745
+        },
+        {
+          "destination": "Amritsar",
+          "similarity": 0.743
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Ahmedabad",
+      "state": "Gujarat",
+      "region": "West",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 10.0,
+        "adventure": 10.0,
+        "peacefulness": 30.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 36.9,
+        "adventure": 17.0,
+        "peacefulness": 47.1,
+        "crowd_match": 37.3,
+        "visual_atmosphere": 76.5
+      },
+      "pca_fused": [
+        -0.431,
+        -0.042
+      ],
+      "pca_text": [
+        0.363,
+        -0.093
+      ],
+      "pca_img": [
+        -0.234,
+        0.059
+      ],
+      "tsne_fused": [
+        40.44,
+        17.39
+      ],
+      "tsne_text": [
+        10.022,
+        14.843
+      ],
+      "tsne_img": [
+        -19.389,
+        -11.037
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Udaipur",
+          "similarity": 0.791
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.785
+        },
+        {
+          "destination": "Khajuraho",
+          "similarity": 0.769
+        },
+        {
+          "destination": "Delhi",
+          "similarity": 0.754
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.753
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Rann of Kutch",
+      "state": "Gujarat",
+      "region": "West",
+      "category": "Desert",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 40.0,
+        "peacefulness": 90.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 79.2,
+        "adventure": 46.0,
+        "peacefulness": 68.2,
+        "crowd_match": 52.4,
+        "visual_atmosphere": 82.7
+      },
+      "pca_fused": [
+        0.282,
+        0.147
+      ],
+      "pca_text": [
+        -0.166,
+        0.113
+      ],
+      "pca_img": [
+        0.222,
+        0.031
+      ],
+      "tsne_fused": [
+        -12.863,
+        -16.767
+      ],
+      "tsne_text": [
+        -1.972,
+        -25.594
+      ],
+      "tsne_img": [
+        30.148,
+        5.437
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Jaisalmer",
+          "similarity": 0.681
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.617
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.604
+        },
+        {
+          "destination": "Auli",
+          "similarity": 0.604
+        },
+        {
+          "destination": "Mahabalipuram",
+          "similarity": 0.59
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Mahabaleshwar",
+      "state": "Maharashtra",
+      "region": "West",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 80.0,
+        "adventure": 30.0,
+        "peacefulness": 60.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 81.1,
+        "adventure": 36.6,
+        "peacefulness": 67.3,
+        "crowd_match": 42.0,
+        "visual_atmosphere": 81.0
+      },
+      "pca_fused": [
+        0.419,
+        -0.128
+      ],
+      "pca_text": [
+        -0.399,
+        -0.077
+      ],
+      "pca_img": [
+        0.181,
+        -0.101
+      ],
+      "tsne_fused": [
+        -55.563,
+        -24.377
+      ],
+      "tsne_text": [
+        -29.814,
+        -26.202
+      ],
+      "tsne_img": [
+        24.844,
+        3.174
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Ooty",
+          "similarity": 0.77
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.746
+        },
+        {
+          "destination": "Munnar",
+          "similarity": 0.737
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.69
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Bhopal",
+      "state": "Madhya Pradesh",
+      "region": "Central",
+      "category": "Lakes/Heritage",
+      "vibe_scores": {
+        "nature": 40.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 64.7,
+        "adventure": 29.4,
+        "peacefulness": 64.6,
+        "crowd_match": 51.3,
+        "visual_atmosphere": 83.0
+      },
+      "pca_fused": [
+        -0.074,
+        0.11
+      ],
+      "pca_text": [
+        0.027,
+        0.122
+      ],
+      "pca_img": [
+        -0.091,
+        0.041
+      ],
+      "tsne_fused": [
+        13.616,
+        31.366
+      ],
+      "tsne_text": [
+        4.962,
+        21.184
+      ],
+      "tsne_img": [
+        -20.816,
+        -6.767
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Udaipur",
+          "similarity": 0.811
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.73
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.729
+        },
+        {
+          "destination": "Srinagar",
+          "similarity": 0.725
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.708
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Ujjain",
+      "state": "Madhya Pradesh",
+      "region": "Central",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 20.0,
+        "adventure": 10.0,
+        "peacefulness": 50.0,
+        "crowd_match": 40.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 42.1,
+        "adventure": 18.0,
+        "peacefulness": 49.2,
+        "crowd_match": 35.8,
+        "visual_atmosphere": 76.7
+      },
+      "pca_fused": [
+        -0.339,
+        -0.173
+      ],
+      "pca_text": [
+        0.235,
+        -0.152
+      ],
+      "pca_img": [
+        -0.241,
+        -0.018
+      ],
+      "tsne_fused": [
+        21.427,
+        -13.596
+      ],
+      "tsne_text": [
+        6.418,
+        -4.448
+      ],
+      "tsne_img": [
+        -7.852,
+        -18.811
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Haridwar",
+          "similarity": 0.783
+        },
+        {
+          "destination": "Varanasi",
+          "similarity": 0.78
+        },
+        {
+          "destination": "Amritsar",
+          "similarity": 0.776
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.733
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Pachmarhi",
+      "state": "Madhya Pradesh",
+      "region": "Central",
+      "category": "Hill Station",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 50.0,
+        "peacefulness": 80.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 79.0,
+        "adventure": 38.6,
+        "peacefulness": 64.7,
+        "crowd_match": 47.0,
+        "visual_atmosphere": 81.1
+      },
+      "pca_fused": [
+        0.405,
+        -0.14
+      ],
+      "pca_text": [
+        -0.305,
+        -0.172
+      ],
+      "pca_img": [
+        0.268,
+        0.013
+      ],
+      "tsne_fused": [
+        -50.047,
+        -12.725
+      ],
+      "tsne_text": [
+        -25.888,
+        -31.259
+      ],
+      "tsne_img": [
+        21.254,
+        5.759
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Wayanad",
+          "similarity": 0.741
+        },
+        {
+          "destination": "Cherrapunji",
+          "similarity": 0.715
+        },
+        {
+          "destination": "Mahabaleshwar",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Ooty",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.706
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Puri",
+      "state": "Odisha",
+      "region": "East",
+      "category": "Spiritual/Beach",
+      "vibe_scores": {
+        "nature": 60.0,
+        "adventure": 20.0,
+        "peacefulness": 50.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 50.1,
+        "adventure": 30.9,
+        "peacefulness": 56.8,
+        "crowd_match": 43.5,
+        "visual_atmosphere": 76.2
+      },
+      "pca_fused": [
+        -0.136,
+        0.153
+      ],
+      "pca_text": [
+        0.105,
+        0.115
+      ],
+      "pca_img": [
+        -0.091,
+        0.119
+      ],
+      "tsne_fused": [
+        14.778,
+        1.204
+      ],
+      "tsne_text": [
+        0.907,
+        1.71
+      ],
+      "tsne_img": [
+        -23.948,
+        -6.511
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Amritsar",
+          "similarity": 0.742
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.738
+        },
+        {
+          "destination": "Ujjain",
+          "similarity": 0.733
+        },
+        {
+          "destination": "Mumbai",
+          "similarity": 0.724
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.721
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Bhubaneswar",
+      "state": "Odisha",
+      "region": "East",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 30.0,
+        "adventure": 10.0,
+        "peacefulness": 50.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 60.0
+      },
+      "oof_scores": {
+        "nature": 34.7,
+        "adventure": 16.7,
+        "peacefulness": 48.4,
+        "crowd_match": 41.8,
+        "visual_atmosphere": 72.6
+      },
+      "pca_fused": [
+        -0.333,
+        -0.07
+      ],
+      "pca_text": [
+        0.302,
+        -0.088
+      ],
+      "pca_img": [
+        -0.159,
+        0.025
+      ],
+      "tsne_fused": [
+        39.795,
+        9.017
+      ],
+      "tsne_text": [
+        17.447,
+        5.483
+      ],
+      "tsne_img": [
+        -22.222,
+        -10.148
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Hampi",
+          "similarity": 0.786
+        },
+        {
+          "destination": "Ahmedabad",
+          "similarity": 0.785
+        },
+        {
+          "destination": "Kolkata",
+          "similarity": 0.78
+        },
+        {
+          "destination": "Khajuraho",
+          "similarity": 0.775
+        },
+        {
+          "destination": "Mahabalipuram",
+          "similarity": 0.759
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Bodh Gaya",
+      "state": "Bihar",
+      "region": "East",
+      "category": "Spiritual",
+      "vibe_scores": {
+        "nature": 30.0,
+        "adventure": 10.0,
+        "peacefulness": 80.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 70.0
+      },
+      "oof_scores": {
+        "nature": 47.4,
+        "adventure": 27.7,
+        "peacefulness": 51.1,
+        "crowd_match": 36.8,
+        "visual_atmosphere": 77.8
+      },
+      "pca_fused": [
+        -0.166,
+        -0.142
+      ],
+      "pca_text": [
+        0.099,
+        -0.148
+      ],
+      "pca_img": [
+        -0.125,
+        0.037
+      ],
+      "tsne_fused": [
+        35.987,
+        -20.763
+      ],
+      "tsne_text": [
+        8.171,
+        -14.11
+      ],
+      "tsne_img": [
+        -27.462,
+        -5.169
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Haridwar",
+          "similarity": 0.713
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.71
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.701
+        },
+        {
+          "destination": "Khajuraho",
+          "similarity": 0.696
+        },
+        {
+          "destination": "Madurai",
+          "similarity": 0.693
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Tawang",
+      "state": "Arunachal Pradesh",
+      "region": "Northeast",
+      "category": "Mountains",
+      "vibe_scores": {
+        "nature": 90.0,
+        "adventure": 60.0,
+        "peacefulness": 90.0,
+        "crowd_match": 90.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 85.5,
+        "adventure": 54.5,
+        "peacefulness": 72.5,
+        "crowd_match": 53.1,
+        "visual_atmosphere": 84.4
+      },
+      "pca_fused": [
+        0.416,
+        -0.377
+      ],
+      "pca_text": [
+        -0.289,
+        -0.308
+      ],
+      "pca_img": [
+        0.307,
+        -0.21
+      ],
+      "tsne_fused": [
+        -22.238,
+        -44.834
+      ],
+      "tsne_text": [
+        -13.497,
+        -11.638
+      ],
+      "tsne_img": [
+        10.577,
+        14.857
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Gangtok",
+          "similarity": 0.8
+        },
+        {
+          "destination": "Leh",
+          "similarity": 0.789
+        },
+        {
+          "destination": "Manali",
+          "similarity": 0.718
+        },
+        {
+          "destination": "Wayanad",
+          "similarity": 0.695
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.688
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Kaziranga",
+      "state": "Assam",
+      "region": "Northeast",
+      "category": "Nature",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 60.0,
+        "peacefulness": 80.0,
+        "crowd_match": 60.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 72.2,
+        "adventure": 29.7,
+        "peacefulness": 70.6,
+        "crowd_match": 56.2,
+        "visual_atmosphere": 82.2
+      },
+      "pca_fused": [
+        0.345,
+        0.065
+      ],
+      "pca_text": [
+        -0.297,
+        -0.013
+      ],
+      "pca_img": [
+        0.176,
+        0.134
+      ],
+      "tsne_fused": [
+        -50.073,
+        7.189
+      ],
+      "tsne_text": [
+        -15.155,
+        -39.505
+      ],
+      "tsne_img": [
+        25.624,
+        15.161
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Wayanad",
+          "similarity": 0.616
+        },
+        {
+          "destination": "Cherrapunji",
+          "similarity": 0.59
+        },
+        {
+          "destination": "Shillong",
+          "similarity": 0.577
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.556
+        },
+        {
+          "destination": "Mysore",
+          "similarity": 0.506
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Cherrapunji",
+      "state": "Meghalaya",
+      "region": "Northeast",
+      "category": "Nature",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 50.0,
+        "peacefulness": 80.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 89.0,
+        "adventure": 46.3,
+        "peacefulness": 75.9,
+        "crowd_match": 60.7,
+        "visual_atmosphere": 82.2
+      },
+      "pca_fused": [
+        0.581,
+        0.038
+      ],
+      "pca_text": [
+        -0.494,
+        0.092
+      ],
+      "pca_img": [
+        0.299,
+        -0.081
+      ],
+      "tsne_fused": [
+        -54.498,
+        -2.456
+      ],
+      "tsne_text": [
+        -20.74,
+        -38.555
+      ],
+      "tsne_img": [
+        23.846,
+        7.438
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Wayanad",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Shillong",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.715
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.712
+        },
+        {
+          "destination": "Goa",
+          "similarity": 0.637
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Kanyakumari",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "category": "Coastal",
+      "vibe_scores": {
+        "nature": 70.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 30.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 52.8,
+        "adventure": 28.4,
+        "peacefulness": 58.3,
+        "crowd_match": 46.2,
+        "visual_atmosphere": 77.0
+      },
+      "pca_fused": [
+        -0.078,
+        0.304
+      ],
+      "pca_text": [
+        0.139,
+        0.265
+      ],
+      "pca_img": [
+        0.026,
+        0.089
+      ],
+      "tsne_fused": [
+        20.572,
+        8.572
+      ],
+      "tsne_text": [
+        24.382,
+        0.261
+      ],
+      "tsne_img": [
+        -2.916,
+        -6.615
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Madurai",
+          "similarity": 0.719
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.719
+        },
+        {
+          "destination": "Mumbai",
+          "similarity": 0.709
+        },
+        {
+          "destination": "Hampi",
+          "similarity": 0.703
+        },
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.674
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Mahabalipuram",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "category": "Heritage",
+      "vibe_scores": {
+        "nature": 50.0,
+        "adventure": 10.0,
+        "peacefulness": 60.0,
+        "crowd_match": 50.0,
+        "visual_atmosphere": 80.0
+      },
+      "oof_scores": {
+        "nature": 44.4,
+        "adventure": 24.6,
+        "peacefulness": 51.8,
+        "crowd_match": 41.7,
+        "visual_atmosphere": 75.5
+      },
+      "pca_fused": [
+        -0.244,
+        0.131
+      ],
+      "pca_text": [
+        0.279,
+        0.1
+      ],
+      "pca_img": [
+        -0.054,
+        0.084
+      ],
+      "tsne_fused": [
+        49.861,
+        -0.232
+      ],
+      "tsne_text": [
+        12.845,
+        5.407
+      ],
+      "tsne_img": [
+        -26.9,
+        -9.72
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Bhubaneswar",
+          "similarity": 0.759
+        },
+        {
+          "destination": "Hampi",
+          "similarity": 0.726
+        },
+        {
+          "destination": "Puri",
+          "similarity": 0.706
+        },
+        {
+          "destination": "Pune",
+          "similarity": 0.698
+        },
+        {
+          "destination": "Mumbai",
+          "similarity": 0.692
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Wayanad",
+      "state": "Kerala",
+      "region": "South",
+      "category": "Nature",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 50.0,
+        "peacefulness": 80.0,
+        "crowd_match": 70.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 85.3,
+        "adventure": 43.9,
+        "peacefulness": 74.0,
+        "crowd_match": 57.7,
+        "visual_atmosphere": 80.3
+      },
+      "pca_fused": [
+        0.508,
+        -0.102
+      ],
+      "pca_text": [
+        -0.391,
+        -0.127
+      ],
+      "pca_img": [
+        0.33,
+        0.017
+      ],
+      "tsne_fused": [
+        -48.357,
+        -3.872
+      ],
+      "tsne_text": [
+        -19.843,
+        -34.725
+      ],
+      "tsne_img": [
+        21.332,
+        8.749
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Cherrapunji",
+          "similarity": 0.787
+        },
+        {
+          "destination": "Coorg",
+          "similarity": 0.757
+        },
+        {
+          "destination": "Pachmarhi",
+          "similarity": 0.741
+        },
+        {
+          "destination": "Shillong",
+          "similarity": 0.724
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.695
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    },
+    {
+      "destination": "Auli",
+      "state": "Uttarakhand",
+      "region": "North",
+      "category": "Mountains",
+      "vibe_scores": {
+        "nature": 100.0,
+        "adventure": 90.0,
+        "peacefulness": 90.0,
+        "crowd_match": 80.0,
+        "visual_atmosphere": 90.0
+      },
+      "oof_scores": {
+        "nature": 88.8,
+        "adventure": 57.2,
+        "peacefulness": 74.2,
+        "crowd_match": 52.5,
+        "visual_atmosphere": 87.9
+      },
+      "pca_fused": [
+        0.444,
+        -0.257
+      ],
+      "pca_text": [
+        -0.273,
+        -0.173
+      ],
+      "pca_img": [
+        0.344,
+        -0.296
+      ],
+      "tsne_fused": [
+        -29.506,
+        -26.23
+      ],
+      "tsne_text": [
+        -9.866,
+        -22.889
+      ],
+      "tsne_img": [
+        9.961,
+        18.642
+      ],
+      "nearest_neighbors": [
+        {
+          "destination": "Manali",
+          "similarity": 0.767
+        },
+        {
+          "destination": "Tawang",
+          "similarity": 0.657
+        },
+        {
+          "destination": "Darjeeling",
+          "similarity": 0.656
+        },
+        {
+          "destination": "Gangtok",
+          "similarity": 0.642
+        },
+        {
+          "destination": "Leh",
+          "similarity": 0.634
+        }
+      ],
+      "is_admin_added": false,
+      "is_ood": false
+    }
+  ],
+  "ood_cosine_threshold": 0.6717,
+  "num_destinations": 50
+}

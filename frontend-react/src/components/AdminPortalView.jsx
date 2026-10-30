@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import {
   Shield, Check, X, Users, AlertTriangle, PlusCircle, Sparkles,
   MapPin, CheckCircle, RefreshCw, EyeOff, Eye, Compass, CreditCard,
-  BarChart2, TrendingUp, Layers, Cpu, Award
+  BarChart2, TrendingUp, Layers, Cpu, Award, UserCheck, CheckCircle2
 } from 'lucide-react';
 import {
   getAdminSubmissions, approveAdminSubmission, rejectAdminSubmission,
-  getAdminUsers, toggleAdminUserActive, getAdminReports, resolveAdminReport,
+  getAdminUsers, toggleAdminUserActive, toggleAdminUserVerify, getAdminReports, resolveAdminReport,
   createAdminDestination, getAdminDlBenchmarks
 } from '../api';
+import DeepLearningDashboardView from './DeepLearningDashboardView';
 
 export default function AdminPortalView() {
   const [activeTab, setActiveTab] = useState('submissions');
@@ -116,6 +117,16 @@ export default function AdminPortalView() {
       loadUsers();
     } catch (err) {
       alert(err.message || 'Failed to update user status');
+    }
+  };
+
+  const handleToggleVerify = async (userId) => {
+    try {
+      const res = await toggleAdminUserVerify(userId);
+      alert(res.message);
+      loadUsers();
+    } catch (err) {
+      alert(err.message || 'Failed to update verification status');
     }
   };
 
@@ -328,9 +339,9 @@ export default function AdminPortalView() {
             <div style={{ display: 'flex', gap: '0.4rem', background: 'rgba(0,0,0,0.25)', padding: '0.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-glass)' }}>
               {[
                 { id: 'all', label: 'All Users', count: users.length },
-                { id: 'tourist', label: 'Tourists (20+)', count: users.filter(u => u.role === 'tourist').length },
-                { id: 'local', label: 'Locals (20+)', count: users.filter(u => u.role === 'local').length },
-                { id: 'guide', label: 'Pro Guides (20)', count: users.filter(u => u.role === 'guide').length }
+                { id: 'tourist', label: 'Tourists', count: users.filter(u => u.role === 'tourist').length },
+                { id: 'local', label: 'Locals', count: users.filter(u => u.role === 'local').length },
+                { id: 'guide', label: 'Pro Guides', count: users.filter(u => u.role === 'guide').length }
               ].map(f => (
                 <button
                   key={f.id}
@@ -466,16 +477,39 @@ export default function AdminPortalView() {
                           </span>
                         </td>
                         <td style={{ padding: '0.75rem', textAlign: 'right' }}>
-                          {u.role !== 'admin' && (
-                            <button
-                              className={`btn btn-sm ${u.is_active ? 'btn-danger' : 'btn-primary'}`}
-                              onClick={() => handleToggleUser(u.id)}
-                              style={{ padding: '0.3rem 0.6rem', fontSize: '0.75rem' }}
-                            >
-                              {u.is_active ? <EyeOff size={12} /> : <Eye size={12} />}
-                              {u.is_active ? 'Deactivate' : 'Reactivate'}
-                            </button>
-                          )}
+                          <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end', alignItems: 'center' }}>
+                            {u.role === 'guide' && (
+                              <button
+                                className={`btn btn-sm ${u.is_verified ? 'btn-secondary' : 'btn-primary'}`}
+                                onClick={() => handleToggleVerify(u.id)}
+                                style={{
+                                  padding: '0.3rem 0.6rem',
+                                  fontSize: '0.75rem',
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '4px',
+                                  background: u.is_verified ? 'rgba(16,185,129,0.15)' : undefined,
+                                  borderColor: u.is_verified ? '#10b981' : undefined,
+                                  color: u.is_verified ? '#059669' : undefined
+                                }}
+                                title={u.is_verified ? "Click to Revoke Verification" : "Click to Approve & Verify Guide"}
+                              >
+                                <UserCheck size={12} />
+                                {u.is_verified ? 'Verified ✓' : 'Verify'}
+                              </button>
+                            )}
+
+                            {u.role !== 'admin' && (
+                              <button
+                                className={`btn btn-sm ${u.is_active ? 'btn-danger' : 'btn-primary'}`}
+                                onClick={() => handleToggleUser(u.id)}
+                                style={{ padding: '0.3rem 0.6rem', fontSize: '0.75rem' }}
+                              >
+                                {u.is_active ? <EyeOff size={12} /> : <Eye size={12} />}
+                                {u.is_active ? 'Deactivate' : 'Reactivate'}
+                              </button>
+                            )}
+                          </div>
                         </td>
                       </tr>
                     ))}
@@ -718,228 +752,9 @@ export default function AdminPortalView() {
         </div>
       )}
 
-      {/* 5. DL MODEL INTELLIGENCE & BENCHMARK CENTER */}
+      {/* 5. DL MODEL INTELLIGENCE & BENCHMARK CENTER (/admin/ml) */}
       {activeTab === 'dl-benchmarks' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          {/* Header Banner */}
-          <div className="glass-panel" style={{ padding: '2rem', background: 'linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(248, 250, 252, 0.95) 100%)', border: '1.5px solid rgba(79, 70, 229, 0.25)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
-                  <span className="badge" style={{ background: '#4f46e5', color: '#fff', fontSize: '0.75rem', fontWeight: 600 }}>
-                    <Cpu size={12} style={{ marginRight: '3px' }} /> Academic Evaluation Center
-                  </span>
-                  <span className="badge" style={{ background: '#ecfdf5', color: '#059669', fontSize: '0.75rem' }}>
-                    Multi-Modal Fusion Verified
-                  </span>
-                </div>
-                <h2 style={{ fontSize: '1.8rem', color: 'var(--text-main)', margin: '0.3rem 0' }}>
-                  Deep Learning Model Intelligence & Benchmarking
-                </h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', maxWidth: '820px', lineHeight: 1.6 }}>
-                  Empirical ablation benchmarks, ranking quality metrics (NDCG@K, Precision@K), 5-fold cross-validation performance, and multi-modal latent representation topology for university evaluation.
-                </p>
-              </div>
-
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={loadBenchmarks}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
-              >
-                <RefreshCw size={14} className={benchmarksLoading ? 'spin' : ''} /> Refresh Empirical Metrics
-              </button>
-            </div>
-
-            {/* Architecture Cards Grid */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-              gap: '1rem',
-              marginTop: '1.75rem'
-            }}>
-              <div style={{ background: '#ffffff', padding: '1rem 1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-glass)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Text Modality Encoder</div>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--primary)', display: 'block', margin: '2px 0' }}>
-                  MiniLM-L6-v2 (384D)
-                </strong>
-                <span style={{ fontSize: '0.73rem', color: 'var(--text-secondary)' }}>Sentence-Transformers Semantic Vector</span>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '1rem 1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-glass)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Vision Modality Encoder</div>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--accent-purple)', display: 'block', margin: '2px 0' }}>
-                  CLIP ViT-B/32 (512D)
-                </strong>
-                <span style={{ fontSize: '0.73rem', color: 'var(--text-secondary)' }}>Averaged Visual Latent Projection</span>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '1rem 1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-glass)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Joint Early Fusion Space</div>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--vibe-nature)', display: 'block', margin: '2px 0' }}>
-                  896D Concatenated Vector
-                </strong>
-                <span style={{ fontSize: '0.73rem', color: 'var(--text-secondary)' }}>Direct Multi-Modal Feature Alignment</span>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '1rem 1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-glass)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Transit Choice Architecture</div>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--accent-coral)', display: 'block', margin: '2px 0' }}>
-                  PyTorch Deep Choice MLP
-                </strong>
-                <span style={{ fontSize: '0.73rem', color: 'var(--text-secondary)' }}>11 Inputs &bull; 64-32-5 &bull; Softmax</span>
-              </div>
-            </div>
-          </div>
-
-          {/* SECTION 1: ABLATION STUDY COMPARISON GRAPH */}
-          <div className="glass-panel" style={{ padding: '2rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div>
-                <h3 style={{ fontSize: '1.3rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <TrendingUp size={20} style={{ color: '#4f46e5' }} /> Comparative Ablation Study Benchmarks
-                </h3>
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
-                  Demonstrating that the Multi-Modal Full Fusion model outperforms individual single-modality and non-DL baselines:
-                </p>
-              </div>
-              <span className="badge" style={{ background: '#e0f2fe', color: 'var(--primary)', fontWeight: 600 }}>
-                Primary Metric: NDCG@5 & P@5
-              </span>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {(benchmarkData?.ablation_benchmarks || [
-                { model_name: 'Full Model (Fusion)', ndcg_at_5: 0.537, p_at_5: 0.550, is_full_fusion: true },
-                { model_name: 'Remove Text (Visual Only)', ndcg_at_5: 0.440, p_at_5: 0.450, is_full_fusion: false },
-                { model_name: 'Remove Metadata', ndcg_at_5: 0.487, p_at_5: 0.483, is_full_fusion: false },
-                { model_name: 'Remove Image (Text Only)', ndcg_at_5: 0.360, p_at_5: 0.350, is_full_fusion: false },
-                { model_name: 'Remove Vibe Layer', ndcg_at_5: 0.343, p_at_5: 0.317, is_full_fusion: false },
-                { model_name: 'Baseline (no DL)', ndcg_at_5: 0.340, p_at_5: 0.317, is_full_fusion: false }
-              ]).map((ab, idx) => {
-                const ndcgPct = Math.round(ab.ndcg_at_5 * 100);
-                const pPct = Math.round(ab.p_at_5 * 100);
-                return (
-                  <div key={idx} style={{
-                    padding: '1rem 1.25rem',
-                    borderRadius: 'var(--radius-md)',
-                    background: ab.is_full_fusion ? 'rgba(79, 70, 229, 0.06)' : '#ffffff',
-                    border: ab.is_full_fusion ? '1.8px solid #4f46e5' : '1px solid var(--border-glass)',
-                    boxShadow: ab.is_full_fusion ? 'var(--shadow-md)' : 'var(--shadow-sm)'
-                  }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.45rem' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        {ab.is_full_fusion && <Award size={16} style={{ color: '#4f46e5' }} />}
-                        <strong style={{ fontSize: '0.95rem', color: ab.is_full_fusion ? '#4f46e5' : 'var(--text-main)' }}>
-                          {ab.model_name}
-                        </strong>
-                        {ab.is_full_fusion && (
-                          <span className="badge" style={{ background: '#4f46e5', color: '#fff', fontSize: '0.68rem', padding: '1px 6px' }}>
-                            Best Architecture
-                          </span>
-                        )}
-                      </div>
-                      <div style={{ display: 'flex', gap: '1.25rem', fontSize: '0.85rem' }}>
-                        <span>NDCG@5: <strong>{ab.ndcg_at_5}</strong></span>
-                        <span>Precision@5: <strong>{ab.p_at_5}</strong></span>
-                      </div>
-                    </div>
-
-                    {/* Dual Progress Bars: NDCG (Top) and Precision (Bottom) */}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', width: '60px' }}>NDCG@5:</span>
-                        <div style={{ flex: 1, height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
-                          <div style={{
-                            width: `${ndcgPct}%`,
-                            height: '100%',
-                            background: ab.is_full_fusion ? 'linear-gradient(90deg, #4f46e5, #818cf8)' : '#94a3b8',
-                            borderRadius: '4px',
-                            transition: 'width 0.6s ease'
-                          }} />
-                        </div>
-                        <span style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', width: '38px', textAlign: 'right', fontWeight: 600 }}>{ndcgPct}%</span>
-                      </div>
-
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', width: '60px' }}>P@5:</span>
-                        <div style={{ flex: 1, height: '6px', background: '#f1f5f9', borderRadius: '3px', overflow: 'hidden' }}>
-                          <div style={{
-                            width: `${pPct}%`,
-                            height: '100%',
-                            background: ab.is_full_fusion ? '#0284c7' : '#cbd5e1',
-                            borderRadius: '3px'
-                          }} />
-                        </div>
-                        <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', width: '38px', textAlign: 'right' }}>{pPct}%</span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* SECTION 2: 5-FOLD CROSS-VALIDATION REGRESSOR ACCURACY */}
-          <div className="glass-panel" style={{ padding: '2rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div>
-                <h3 style={{ fontSize: '1.3rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Layers size={20} style={{ color: 'var(--primary)' }} /> 5-Fold Cross-Validation Regressor Metrics
-                </h3>
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
-                  Empirical R² determination and Mean Absolute Error (MAE) across all 5 vibe dimensions:
-                </p>
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
-              {(benchmarkData?.cross_validation_metrics || [
-                { dimension: 'Nature', r2_score: 0.705, mae_score: 14.16 },
-                { dimension: 'Adventure', r2_score: 0.394, mae_score: 13.80 },
-                { dimension: 'Peacefulness', r2_score: 0.422, mae_score: 13.78 },
-                { dimension: 'Crowd Match', r2_score: 0.184, mae_score: 15.90 },
-                { dimension: 'Visual Atmosphere', r2_score: 0.159, mae_score: 9.73 }
-              ]).map((cv, cIdx) => (
-                <div key={cIdx} style={{
-                  background: '#ffffff',
-                  border: '1px solid var(--border-glass)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.25rem',
-                  boxShadow: 'var(--shadow-sm)'
-                }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-                    <strong style={{ fontSize: '1.05rem', color: 'var(--text-main)' }}>{cv.dimension}</strong>
-                    <span className="badge" style={{ background: '#ecfdf5', color: '#059669', fontWeight: 600, fontSize: '0.75rem' }}>
-                      R² = {cv.r2_score}
-                    </span>
-                  </div>
-
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.76rem', color: 'var(--text-muted)', marginBottom: '2px' }}>
-                        <span>Variance Explained</span>
-                        <strong style={{ color: 'var(--text-main)' }}>{Math.max(5, Math.round(cv.r2_score * 100))}%</strong>
-                      </div>
-                      <div style={{ height: '6px', background: '#e2e8f0', borderRadius: '3px', overflow: 'hidden' }}>
-                        <div style={{
-                          width: `${Math.max(5, Math.min(100, cv.r2_score * 100))}%`,
-                          height: '100%',
-                          background: 'var(--primary)',
-                          borderRadius: '3px'
-                        }} />
-                      </div>
-                    </div>
-
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', paddingTop: '0.4rem', borderTop: '1px solid var(--border-subtle)' }}>
-                      <span style={{ color: 'var(--text-secondary)' }}>Cross-Val MAE:</span>
-                      <strong style={{ color: 'var(--text-main)' }}>&plusmn;{cv.mae_score} / 100</strong>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <DeepLearningDashboardView />
       )}
     </div>
   );

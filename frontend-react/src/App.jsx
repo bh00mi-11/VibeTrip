@@ -43,10 +43,12 @@ export default function App() {
     fetchRecommendations(vibes, queryText);
   }, []);
 
-  // If admin logs in, go to admin console automatically
+  // If admin logs in, go to admin console; if guide or local logs in, go to their requests & submissions
   useEffect(() => {
     if (user?.role === 'admin' && currentView !== 'destination') {
       setCurrentView('admin');
+    } else if ((user?.role === 'guide' || user?.role === 'local') && currentView === 'explore') {
+      setCurrentView('inbox');
     }
   }, [user]);
 
@@ -343,12 +345,12 @@ export default function App() {
 
         {/* VIEW 4: INBOX */}
         {currentView === 'inbox' && (
-          <InboxView />
+          <InboxView user={user} />
         )}
 
         {/* VIEW 5: CONTRIBUTOR SUBMISSIONS */}
         {currentView === 'contribute' && (
-          <ContributorView onOpenSubmitModal={() => setSubmitPlaceOpen(true)} />
+          <ContributorView user={user} onOpenSubmitModal={() => setSubmitPlaceOpen(true)} />
         )}
 
         {/* VIEW 6: ADMIN PORTAL */}

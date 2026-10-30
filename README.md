@@ -27,9 +27,9 @@ python seed_db.py
 ```
 
 ### Step 4: Create Administrator Account
-Create the primary administrator user:
+Create the primary administrator user (reads from `.env` or prompts securely):
 ```bash
-python create_admin.py --email admin@vibetrip.internal --password AdminSuperPass2026! --name "System Administrator"
+python scripts_db_setup/create_admin.py --email admin@vibetrip.internal
 ```
 
 ### Step 5: Start the Backend Server
@@ -76,10 +76,12 @@ npx expo start  # Launch Expo Dev Server with interactive QR code
 - **Administrator**: Dedicated login at `/admin/login`. Access to submission queues, user deactivation/reactivation, report reviews, and end-to-end destination creation with real-time AI vibe estimation.
 
 ### Security & Privacy Rules
-1. **Strict 403 Backend Guard**: Tourists or locals attempting to call `/api/admin/*` receive HTTP `403 Forbidden`.
-2. **Local Place Privacy**: Unapproved local contributor submissions are filtered out from all public searches and destination pages.
-3. **Contact Details Protection**: User email and phone/handle are never exposed in public profiles or traveler cards. Contact info is strictly revealed only after a mutual connection request is accepted.
-4. **Safety & Blocking**: Blocked users are immediately filtered out from traveler compatibility cards and search results.
+1. **Strict 403 Backend Guard**: Tourists or locals attempting to call `/api/admin/*` or `/api/admin/ml/*` receive HTTP `403 Forbidden`.
+2. **Deep Learning Dashboard (`/admin/ml`)**: Admin-only empirical analytics suite powered by Recharts with grouped model comparisons, 10-seed multiseed stability bars, ablation rankings, blocked vs shuffled cross-validation R² metrics, interactive model × query heatmap, 5-dimension predicted vs actual scatter with ±MAE confidence bands, diverging residual audit charts, and documented case studies (e.g. Rishikesh).
+3. **Local Place Privacy**: Unapproved local contributor submissions are filtered out from all public searches and destination pages.
+4. **Verified Guide Badging**: Certified guides must be explicitly verified by an administrator via `/api/admin/users/{id}/toggle-verify` before displaying the verified badge. Seeded demo guides are explicitly tagged with `Demo Guide Profile`.
+5. **Contact Details Protection**: User email and phone/handle are never exposed in public profiles or traveler cards. Contact info is strictly revealed only after a mutual connection request is accepted.
+6. **Safety & Blocking**: Blocked users are immediately filtered out from traveler compatibility cards and search results.
 
 ---
 

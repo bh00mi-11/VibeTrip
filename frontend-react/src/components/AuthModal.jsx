@@ -51,7 +51,7 @@ export default function AuthModal({ initialTab = 'login', onClose, onSuccess }) 
 
   const quickDemoAccounts = [
     { label: 'Demo Tourist', role: 'tourist', email: 'tourist.demo@vibetrip.com', pass: 'DemoTourist2026!', badge: 'Tourist (Mumbai)', color: '#38bdf8' },
-    { label: "Captain Rajesh", role: 'guide', email: 'rajesh.guide@vibetrip.pro', pass: 'DemoPass123!', badge: 'Certified Guide (Goa)', color: '#059669' },
+    { label: "Captain Rajesh", role: 'guide', email: 'rajesh.guide@vibetrip.pro', pass: 'DemoPass2026!', badge: 'Certified Guide (Goa)', color: '#059669' },
     { label: "Rohan (Goa)", role: 'local', email: 'rohan.goa@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Goa Host', color: '#10b981' },
     { label: 'Sunita (Manali)', role: 'local', email: 'sunita.manali@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Manali Guide', color: '#8b5cf6' },
     { label: 'Vikram (Rishikesh)', role: 'local', email: 'vikram.rishikesh@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Rishikesh Host', color: '#f59e0b' },

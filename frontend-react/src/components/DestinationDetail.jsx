@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   ArrowLeft, MapPin, Calendar, Compass, Share2, Bookmark, Check,
   Sparkles, Coffee, Utensils, Mountain, Eye, Users, AlertCircle, HeartHandshake, Shield, Camera, X, ExternalLink, Activity,
-  Car, Navigation, Bike, Clock, DollarSign, Fuel, ShieldCheck, Bus, Gauge, Award, Layers, Zap, Info, UserCheck
+  Car, Navigation, Bike, Clock, DollarSign, Fuel, ShieldCheck, Bus, Gauge, Award, Layers, Zap, Info, UserCheck, Home, UserPlus, Send
 } from 'lucide-react';
 import {
   getDestination, generateTripPlan, saveTrip, getLocalExperiences,
-  getBuddies, postBuddyInterest, sendBuddyRequest, getImageUrl
+  getBuddies, getLocals, postBuddyInterest, sendBuddyRequest, getImageUrl
 } from '../api';
 
 export default function DestinationDetail({ destinationName, user, onBack, onOpenAuth }) {
@@ -38,6 +38,19 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
   const [connectNote, setConnectNote] = useState('');
   const [connectStatus, setConnectStatus] = useState('');
 
+  // Locals state
+  const [locals, setLocals] = useState([]);
+  const [localsLoading, setLocalsLoading] = useState(false);
+
+  // Post travel interest state (for tourists signing up for compatible buddies)
+  const [showPostInterestModal, setShowPostInterestModal] = useState(false);
+  const [postTravelStart, setPostTravelStart] = useState('');
+  const [postTravelEnd, setPostTravelEnd] = useState('');
+  const [postTags, setPostTags] = useState('');
+  const [postNote, setPostNote] = useState('');
+  const [postingInterest, setPostingInterest] = useState(false);
+  const [postInterestSuccess, setPostInterestSuccess] = useState('');
+
   // Transit & DL details modal states
   const [showAiArchitecture, setShowAiArchitecture] = useState(false);
   const [selectedInquiryHub, setSelectedInquiryHub] = useState(null);
@@ -68,6 +81,9 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
     }
     if (activeTab === 'travelers' && dest) {
       loadTravelers();
+    }
+    if (activeTab === 'locals' && dest) {
+      loadLocals();
     }
   }, [activeTab, dest]);
 
@@ -210,6 +226,55 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
     }
   };
 
+  const loadLocals = async () => {
+    try {
+      setLocalsLoading(true);
+      const res = await getLocals(destinationName);
+      setLocals(res.locals || []);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLocalsLoading(false);
+    }
+  };
+
+  const handlePostTravelInterest = async (e) => {
+    e.preventDefault();
+    if (!user) {
+      onOpenAuth('login');
+      return;
+    }
+    try {
+      setPostingInterest(true);
+      await postBuddyInterest({
+        destination: destinationName,
+        travel_start: postTravelStart,
+        travel_end: postTravelEnd,
+        interest_tags: postTags,
+        note: postNote,
+        pref_nature: dest?.scores?.nature || 60,
+        pref_adventure: dest?.scores?.adventure || 60,
+        pref_peacefulness: dest?.scores?.peacefulness || 60,
+        pref_crowd_match: dest?.scores?.crowd_match || 50,
+        pref_visual_atmosphere: dest?.scores?.visual_atmosphere || 70,
+      });
+      setPostInterestSuccess('Your trip interest has been posted! Compatible travelers can now see and connect with you.');
+      setTimeout(() => {
+        setShowPostInterestModal(false);
+        setPostInterestSuccess('');
+        setPostTravelStart('');
+        setPostTravelEnd('');
+        setPostTags('');
+        setPostNote('');
+        loadTravelers();
+      }, 1500);
+    } catch (err) {
+      alert(err.message || 'Failed to post travel interest');
+    } finally {
+      setPostingInterest(false);
+    }
+  };
+
   const handleSendRequest = async () => {
     if (!connectModalUser) return;
     try {
@@ -220,6 +285,7 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
         setConnectStatus('');
         setConnectNote('');
         loadTravelers();
+        loadLocals();
       }, 1500);
     } catch (err) {
       alert(err.message || 'Failed to send request');
@@ -361,6 +427,13 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
           onClick={() => setActiveTab('travelers')}
         >
           Compatible Travelers
+        </button>
+        <button
+          className={`tab-item ${activeTab === 'locals' ? 'active' : ''}`}
+          onClick={() => setActiveTab('locals')}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}
+        >
+          <Home size={15} style={{ color: '#10b981' }} /> Locals & Community Hosts
         </button>
       </div>
 
@@ -1180,8 +1253,14 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
                       {p.category === 'viewpoint' && <Mountain size={13} />}
                       {p.category === 'attraction' && <Sparkles size={13} />}
                       {p.category === 'activity' && <Activity size={13} />}
-                      {p.category === 'guide' && <UserCheck size={13} style={{ color: '#059669' }} />}
-                      <span>Category: {p.category === 'guide' ? 'Certified Local Guide' : p.category}</span>
+                      {p.category === 'guide' && p.is_verified && <UserCheck size={13} style={{ color: '#059669' }} />}
+                      {p.category === 'guide' ? (
+                        <span>
+                          Category: {p.is_verified ? 'Verified Guide' : (p.is_demo ? 'Demo Guide Profile' : 'Registered Guide')}
+                        </span>
+                      ) : (
+                        <span>Category: {p.category}</span>
+                      )}
                     </div>
 
                     {p.description && (
@@ -1219,6 +1298,19 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
                 Sorted by multi-modal vibe similarity & travel date compatibility
               </p>
             </div>
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={() => {
+                if (!user) {
+                  onOpenAuth('login');
+                } else {
+                  setShowPostInterestModal(true);
+                }
+              }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+            >
+              <UserPlus size={15} /> Post My Travel Dates & Find Buddies
+            </button>
           </div>
 
           {travelersLoading ? (
@@ -1229,9 +1321,21 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
             <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center' }}>
               <Users size={32} style={{ color: 'var(--text-muted)', margin: '0 auto 0.75rem' }} />
               <h4>No other travelers listed for {dest.name} yet</h4>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.3rem' }}>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.3rem', marginBottom: '1.25rem' }}>
                 Be the first to post your dates and find travel companions!
               </p>
+              <button
+                className="btn btn-primary btn-sm"
+                onClick={() => {
+                  if (!user) {
+                    onOpenAuth('login');
+                  } else {
+                    setShowPostInterestModal(true);
+                  }
+                }}
+              >
+                <UserPlus size={14} style={{ marginRight: '5px' }} /> Post My Dates
+              </button>
             </div>
           ) : (
             <div className="grid-cards">
@@ -1245,9 +1349,15 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
                       </div>
                     </div>
                     <span className="badge badge-match">
-                      {Math.round(t.compatibility_score || 0)}% Compatible
+                      {Math.round(t.compatibility_score || t.compatibility || 0)}% Compatible
                     </span>
                   </div>
+
+                  {t.travel_start && (
+                    <div style={{ fontSize: '0.78rem', color: 'var(--primary)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <Calendar size={13} /> Dates: {t.travel_start} {t.travel_end ? `to ${t.travel_end}` : ''}
+                    </div>
+                  )}
 
                   {t.bio && (
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
@@ -1284,6 +1394,179 @@ export default function DestinationDetail({ destinationName, user, onBack, onOpe
               ))}
             </div>
           )}
+        </div>
+      )}
+
+      {/* TAB 5: LOCALS & COMMUNITY HOSTS */}
+      {activeTab === 'locals' && (
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1.35rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Home size={22} style={{ color: '#10b981' }} /> Local Insiders & Community Hosts in {dest.name}
+              </h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                Residents, authentic storytellers, and neighborhood hosts living in {dest.name}
+              </p>
+            </div>
+          </div>
+
+          {localsLoading ? (
+            <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center' }}>
+              <p style={{ color: 'var(--text-secondary)' }}>Loading verified locals & hosts for {dest.name}...</p>
+            </div>
+          ) : locals.length === 0 ? (
+            <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center' }}>
+              <Home size={34} style={{ color: 'var(--text-muted)', margin: '0 auto 0.75rem' }} />
+              <h4>No registered local hosts for {dest.name} yet</h4>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.3rem' }}>
+                Are you a resident of {dest.name}? Sign up as a Local Contributor to welcome travelers and share authentic community spots!
+              </p>
+            </div>
+          ) : (
+            <div className="grid-cards">
+              {locals.map((l) => (
+                <div key={l.user_id} className="glass-panel" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
+                    <div>
+                      <h4 style={{ fontSize: '1.15rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        {l.name}
+                      </h4>
+                      <div style={{ fontSize: '0.8rem', color: '#10b981', fontWeight: 600, marginTop: '2px' }}>
+                        Resident & Host &bull; {l.home_city || dest.name}
+                      </div>
+                    </div>
+                    <span className="badge badge-local" style={{ fontSize: '0.72rem' }}>
+                      Local Insider
+                    </span>
+                  </div>
+
+                  {l.bio && (
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '0.85rem' }}>
+                      "{l.bio}"
+                    </p>
+                  )}
+
+                  {l.interest_tags && (
+                    <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                      {l.interest_tags.split(',').map((tag, i) => (
+                        <span key={i} className="badge" style={{ background: 'rgba(16,185,129,0.12)', color: '#34d399', border: '1px solid rgba(16,185,129,0.2)' }}>
+                          {tag.trim()}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <div style={{ marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid var(--border-glass)' }}>
+                    <button
+                      className="btn btn-outline-primary btn-sm"
+                      style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
+                      onClick={() => {
+                        if (!user) {
+                          onOpenAuth('login');
+                        } else {
+                          setConnectModalUser(l);
+                        }
+                      }}
+                    >
+                      <HeartHandshake size={15} /> Connect with Local Host
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Post Travel Dates & Interest Modal (Tourists signing up for compatible buddies) */}
+      {showPostInterestModal && (
+        <div className="modal-overlay" onClick={() => setShowPostInterestModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '480px' }}>
+            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.35rem' }}>Post Travel Dates for {dest.name}</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
+              Publish your upcoming visit to match with compatible travelers and explore {dest.name} together.
+            </p>
+
+            {postInterestSuccess && (
+              <div style={{ background: 'rgba(16,185,129,0.15)', color: '#34d399', padding: '0.75rem', borderRadius: 'var(--radius-sm)', marginBottom: '1rem', fontSize: '0.85rem' }}>
+                {postInterestSuccess}
+              </div>
+            )}
+
+            <form onSubmit={handlePostTravelInterest} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>
+                    Start Date
+                  </label>
+                  <input
+                    type="date"
+                    required
+                    className="input-field"
+                    value={postTravelStart}
+                    onChange={(e) => setPostTravelStart(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>
+                    End Date
+                  </label>
+                  <input
+                    type="date"
+                    required
+                    className="input-field"
+                    value={postTravelEnd}
+                    onChange={(e) => setPostTravelEnd(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>
+                  Interests & Vibes (comma-separated)
+                </label>
+                <input
+                  type="text"
+                  className="input-field"
+                  placeholder="e.g. trekking, sunsets, food trails, photography"
+                  value={postTags}
+                  onChange={(e) => setPostTags(e.target.value)}
+                />
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>
+                  Trip Note for Buddies
+                </label>
+                <textarea
+                  className="input-field"
+                  rows={3}
+                  placeholder="e.g. Planning a weekend exploration and looking for fellow travelers to share rides or hikes!"
+                  value={postNote}
+                  onChange={(e) => setPostNote(e.target.value)}
+                />
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem', marginTop: '0.5rem' }}>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() => setShowPostInterestModal(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={postingInterest}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                >
+                  <Send size={14} /> {postingInterest ? 'Posting...' : 'Post Travel Plan'}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       )}
 

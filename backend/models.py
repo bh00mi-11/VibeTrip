@@ -75,6 +75,7 @@ class User(Base):
     role = Column(String, default="tourist") # tourist / local / admin
     is_active = Column(Boolean, default=True)
     is_demo = Column(Boolean, default=False)
+    is_verified = Column(Boolean, default=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
     profile = relationship("TravelerProfile", back_populates="user_rel", uselist=False, cascade="all, delete-orphan")
