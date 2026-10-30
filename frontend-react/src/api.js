@@ -124,6 +124,19 @@ export async function recommendDestinations(targetDims, queryText = '') {
   });
 }
 
+export async function searchDestinationsByImage(imageFile, queryText = '') {
+  const formData = new FormData();
+  formData.append('photo', imageFile);
+  if (queryText) {
+    formData.append('query_text', queryText);
+  }
+  return request('/api/search-by-image', {
+    method: 'POST',
+    body: formData,
+    contentType: false, // Let browser set multipart boundary
+  });
+}
+
 export async function getDestination(name) {
   return request(`/api/destination/${encodeURIComponent(name)}`);
 }

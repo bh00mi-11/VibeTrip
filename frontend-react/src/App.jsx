@@ -9,7 +9,7 @@ import InboxView from './components/InboxView';
 import ContributorView from './components/ContributorView';
 import AdminPortalView from './components/AdminPortalView';
 import SubmitPlaceModal from './components/SubmitPlaceModal';
-import { getUser, logout, recommendDestinations } from './api';
+import { getUser, logout, recommendDestinations, searchDestinationsByImage } from './api';
 import { Sparkles, MapPin, Compass, Search, Calendar, Trees, Building2, Palmtree, Mountain } from 'lucide-react';
 
 export default function App() {
@@ -33,6 +33,10 @@ export default function App() {
   const [queryText, setQueryText] = useState('');
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  // Multimodal Image Search state
+  const [activeImage, setActiveImage] = useState(null);
+  const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
 
   // Modals
   const [authModal, setAuthModal] = useState({ open: false, tab: 'login' });
@@ -64,6 +68,37 @@ export default function App() {
     }
   };
 
+  const handleImageUpload = async (file) => {
+    try {
+      setLoading(true);
+      setActiveImage(file);
+      const preview = URL.createObjectURL(file);
+      setImagePreviewUrl(preview);
+
+      const res = await searchDestinationsByImage(file, queryText);
+      if (res.recommendations) {
+        setRecommendations(res.recommendations);
+      }
+      if (res.recommended_sliders) {
+        setVibes(res.recommended_sliders);
+      }
+    } catch (err) {
+      console.error('Image search failed:', err);
+      alert('Visual search failed: ' + (err.message || 'Please check backend logs.'));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleClearImage = () => {
+    if (imagePreviewUrl) {
+      URL.revokeObjectURL(imagePreviewUrl);
+    }
+    setActiveImage(null);
+    setImagePreviewUrl(null);
+    fetchRecommendations(vibes, queryText);
+  };
+
   const handleVibeChange = (newVibes) => {
     setVibes(newVibes);
   };
@@ -74,7 +109,11 @@ export default function App() {
   };
 
   const handleSearch = () => {
-    fetchRecommendations(vibes, queryText);
+    if (activeImage) {
+      handleImageUpload(activeImage);
+    } else {
+      fetchRecommendations(vibes, queryText);
+    }
   };
 
   const handleSelectDestination = (name) => {
@@ -282,6 +321,10 @@ export default function App() {
               onQueryChange={setQueryText}
               onSearch={handleSearch}
               loading={loading}
+              activeImage={activeImage}
+              imagePreviewUrl={imagePreviewUrl}
+              onImageUpload={handleImageUpload}
+              onClearImage={handleClearImage}
             />
 
             {/* Recommendations Grid */}

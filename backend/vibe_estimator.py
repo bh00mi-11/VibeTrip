@@ -138,3 +138,28 @@ def build_fused_embedding(text_input: str, image_paths: list):
 
     fused_emb = np.concatenate([text_emb, vis_emb], axis=1)
     return fused_emb, text_emb, vis_emb
+
+
+def estimate_image_vibe_scores(image_paths: list, text_hint: str = "") -> dict:
+    """
+    Given one or more user-uploaded images (and optional text query hint),
+    uses CLIP ViT-B/32 image encoder + Sentence-BERT to build the 896D fused representation
+    and predict the 5-dimensional vibe scores.
+    Also computes the recommended target level ('high', 'medium', 'low') for each dimension.
+    """
+    scores = estimate_vibe_scores(text_hint, image_paths)
+    
+    # Map raw 0-100 scores to target slider levels for matching
+    slider_levels = {}
+    for dim, val in scores.items():
+        if val >= 65.0:
+            slider_levels[dim] = "high"
+        elif val <= 38.0:
+            slider_levels[dim] = "low"
+        else:
+            slider_levels[dim] = "medium"
+            
+    return {
+        "scores": scores,
+        "recommended_vibes": slider_levels
+    }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trees, Mountain, Feather, Users, Sparkles, SlidersHorizontal, ChevronDown, ChevronUp, Search, X } from 'lucide-react';
+import { Trees, Mountain, Feather, Users, Sparkles, SlidersHorizontal, ChevronDown, ChevronUp, Search, X, Camera } from 'lucide-react';
 
 const VIBE_DIMS = [
   { key: 'nature', label: 'Nature & Scenery', icon: Trees, color: 'var(--vibe-nature)', desc: 'Lush landscapes, hills & greenery' },
@@ -35,7 +35,11 @@ export default function VibeControls({
   queryText,
   onQueryChange,
   onSearch,
-  loading
+  loading,
+  activeImage,
+  imagePreviewUrl,
+  onImageUpload,
+  onClearImage
 }) {
   const [showDetailedSliders, setShowDetailedSliders] = useState(false);
 
@@ -123,21 +127,120 @@ export default function VibeControls({
           )}
         </div>
 
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={onSearch}
-          disabled={loading}
-          style={{
-            height: '46px',
-            padding: '0 1.5rem',
-            fontWeight: 700,
-            whiteSpace: 'nowrap'
-          }}
-        >
-          {loading ? 'Searching...' : 'Search Filters'}
-        </button>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <label
+            htmlFor="vibe-image-upload"
+            className="btn btn-secondary"
+            title="Upload an aesthetic photo (mountains, beaches, culture, cafes) to search by Deep Learning visual vibe!"
+            style={{
+              height: '46px',
+              padding: '0 1rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.45rem',
+              cursor: loading ? 'not-allowed' : 'pointer',
+              fontWeight: 600,
+              fontSize: '0.88rem',
+              background: activeImage ? '#f0fdf4' : '#f8fafc',
+              borderColor: activeImage ? '#86efac' : '#cbd5e1',
+              color: activeImage ? '#166534' : '#334155'
+            }}
+          >
+            <Camera size={18} color={activeImage ? '#16a34a' : '#475569'} />
+            <span>{activeImage ? 'Photo Attached' : 'Photo Search'}</span>
+            <input
+              id="vibe-image-upload"
+              type="file"
+              accept="image/*"
+              style={{ display: 'none' }}
+              disabled={loading}
+              onChange={(e) => {
+                if (e.target.files && e.target.files[0]) {
+                  onImageUpload(e.target.files[0]);
+                }
+              }}
+            />
+          </label>
+
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={onSearch}
+            disabled={loading}
+            style={{
+              height: '46px',
+              padding: '0 1.5rem',
+              fontWeight: 700,
+              whiteSpace: 'nowrap'
+            }}
+          >
+            {loading ? 'Searching...' : 'Search Filters'}
+          </button>
+        </div>
       </div>
+
+      {/* Active Photo Visual Search Banner */}
+      {activeImage && (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          background: 'linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)',
+          border: '1.5px solid #86efac',
+          borderRadius: 'var(--radius-md)',
+          padding: '0.65rem 1rem',
+          marginBottom: '1.25rem'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            {imagePreviewUrl && (
+              <img
+                src={imagePreviewUrl}
+                alt="Uploaded moodboard"
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  borderRadius: '6px',
+                  objectFit: 'cover',
+                  border: '1px solid #bbf7d0',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+                }}
+              />
+            )}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#166534' }}>
+                  CLIP Visual Vibe Active:
+                </span>
+                <span style={{ fontSize: '0.82rem', color: '#15803d' }}>
+                  {activeImage.name}
+                </span>
+              </div>
+              <p style={{ margin: 0, fontSize: '0.75rem', color: '#16a34a' }}>
+                Extracted visual aesthetic features using OpenAI CLIP ViT-B/32 & matched against all destinations.
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={onClearImage}
+            style={{
+              background: '#ffffff',
+              border: '1px solid #bbf7d0',
+              borderRadius: '6px',
+              padding: '0.3rem 0.6rem',
+              fontSize: '0.78rem',
+              color: '#dc2626',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.3rem'
+            }}
+          >
+            <X size={14} /> Remove Photo
+          </button>
+        </div>
+      )}
 
       {/* Preset Travel Styles & Filter Toggle */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>

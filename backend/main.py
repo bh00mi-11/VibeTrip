@@ -442,6 +442,108 @@ def recommend(req: RecommendRequest, db: Session = Depends(get_db)):
     results.sort(key=lambda x: x["overall_match_score"], reverse=True)
     return {"recommendations": results[:10]}
 
+
+@app.post("/api/search-by-image")
+async def search_by_image(
+    photo: UploadFile = File(...),
+    query_text: Optional[str] = Form(""),
+    db: Session = Depends(get_db)
+):
+    """
+    Multimodal visual search: Tourist uploads a travel photo (scenery, moodboard, aesthetic).
+    The system extracts CLIP ViT-B/32 visual embeddings, estimates the 5D vibe scores,
+    and returns matching destinations along with the estimated vibe scores.
+    """
+    content = await photo.read()
+    if len(content) > 10 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Photo exceeds 10 MB size limit.")
+
+    temp_dir = Path(__file__).resolve().parent.parent / "images" / "_temp_searches"
+    os.makedirs(temp_dir, exist_ok=True)
+    temp_filename = f"search_{uuid.uuid4().hex[:8]}.jpg"
+    temp_path = temp_dir / temp_filename
+
+    with open(temp_path, "wb") as f:
+        f.write(content)
+
+    try:
+        with Image.open(temp_path) as img:
+            img = img.convert("RGB")
+            img.save(temp_path, "JPEG", quality=90)
+    except Exception as e:
+        if temp_path.exists():
+            temp_path.unlink()
+        raise HTTPException(status_code=400, detail=f"Invalid image format: {e}")
+
+    try:
+        from .vibe_estimator import estimate_image_vibe_scores
+        vibe_result = estimate_image_vibe_scores([str(temp_path)], text_hint=query_text or "")
+        inferred_scores = vibe_result["scores"]
+        recommended_vibes = vibe_result["recommended_vibes"]
+
+        # Now perform recommendation matching against destinations using the inferred vibe profile
+        dests = db.query(Destination).filter(Destination.status == "published").all()
+        query_sims = get_tfidf_similarity(query_text, dests) if query_text else {}
+        results = []
+
+        for d in dests:
+            vb = d.vibe_score
+            if not vb:
+                continue
+            scores = {
+                "nature": vb.nature,
+                "adventure": vb.adventure,
+                "peacefulness": vb.peacefulness,
+                "crowd_match": vb.crowd_match,
+                "visual_atmosphere": vb.visual_atmosphere
+            }
+
+            # Euclidean similarity in 5D vibe space: 100 - (distance / max_dist) * 100
+            sq_diffs = sum((scores[k] - inferred_scores.get(k, 50.0)) ** 2 for k in scores)
+            dist = sq_diffs ** 0.5
+            # Max possible distance across 5 dimensions [0, 100] is sqrt(5 * 100^2) ≈ 223.6
+            vibe_sim = max(0.0, 100.0 - (dist / 223.6) * 100.0)
+
+            if query_text and d.name in query_sims:
+                text_sim = query_sims[d.name]
+                overall_score = 0.65 * vibe_sim + 0.35 * text_sim
+            else:
+                overall_score = vibe_sim
+
+            p_obj = db.query(Photo).filter(Photo.destination == d.name).first()
+            photo_filename = p_obj.filename if p_obj else "photo_01.jpg"
+            photo_url = f"/images/{d.name}/{photo_filename}"
+
+            base_explanation = f"<strong>Visual Vibe Match:</strong> Matches {vibe_sim:.1f}% of the uploaded photo's visual aesthetics."
+            results.append({
+                "name": d.name,
+                "state": d.state or "",
+                "region": d.region or "",
+                "category": d.category or "",
+                "overall_match_score": round(overall_score, 1),
+                "scores": scores,
+                "photo_url": photo_url,
+                "score_source": vb.score_source,
+                "is_ai_estimated": vb.score_source in ("model_inference", "admin_override"),
+                "explanation": base_explanation
+            })
+
+        results.sort(key=lambda x: x["overall_match_score"], reverse=True)
+
+        return {
+            "inferred_vibes": inferred_scores,
+            "recommended_sliders": recommended_vibes,
+            "recommendations": results[:10]
+        }
+    finally:
+        # Clean up temporary search photo
+        try:
+            if temp_path.exists():
+                temp_path.unlink()
+        except Exception:
+            pass
+
+
 @app.get("/api/destination/{name}")
 def get_destination(name: str, db: Session = Depends(get_db)):
     d = db.query(Destination).filter(Destination.name == name).first()
