@@ -4,6 +4,113 @@ VibeTrip is a multi-user web application and travel recommendation engine that p
 
 ---
 
+## 📌 Problem Statement
+
+Traditional travel recommendation and planning platforms rely heavily on rigid keywords, generic star ratings, or basic location filters. This leads to critical drawbacks:
+1. **Lack of Nuanced Vibe Understanding**: A destination may match a search term like *"nature"* but differ radically in sensory feel—ranging from tranquil solitude to high-adrenaline trekking or crowded tourist hubs.
+2. **Disconnected Planning & Companion Discovery**: Travelers typically use separate tools for destination search, day-to-day itinerary planning, local insider discovery, and finding compatible travel buddies.
+3. **No Direct Local & Guide Collaboration**: Certified local guides and regional hosts often lack simple direct-contact channels with tourists who share similar travel styles and dates.
+
+**VibeTrip solves this** by leveraging multi-modal deep learning (CLIP visual features + Sentence-Transformers textual embeddings) to quantify destination vibes across 5 dimensions (*Nature, Adventure, Peacefulness, Crowd Level, Visual Atmosphere*), auto-generating day-wise itineraries with real geographic routing, and matching travelers with compatible buddies, verified local hosts, and certified guides.
+
+---
+
+## 🚀 Key Features Implemented
+
+- **🧠 Multi-Modal Vibe Recommendation**: 5D vibe regression using fused CLIP image representations and Sentence-Transformers text embeddings with ridge regression.
+- **🗺️ Interactive Place Discovery & Real OSM Points**: Real OpenStreetMap places (cafes, viewpoints, attractions, heritage stays) plotted dynamically with Leaflet maps.
+- **📅 Day-Wise Vibe-Aware Itinerary Engine**: Auto-generates balanced multi-day plans categorized by morning, afternoon, and evening activities with real geo-coordinates and transit advisories.
+- **👥 Role-Based Authentication & Tailored Experiences**:
+  - **Tourists**: Multi-modal vibe search, trip saving, compatible traveler discovery, and date posting.
+  - **Locals**: Dedicated community portal to submit hidden gems, review submission statuses, and receive tourist inquiries.
+  - **Certified Guides**: Dedicated management of guided trek routes and tours, license badges, and direct inquiry inbox.
+  - **Administrators**: Moderation queues, user verification, destination authoring with live AI inference, and Deep Learning metrics dashboard.
+- **🤝 Compatible Traveler & Local Host Matching**:
+  - **Compatible Travelers Tab**: Multi-factor compatibility matching combining vibe similarity, shared interest tags (Jaccard similarity), and travel date sync.
+  - **Locals & Community Hosts Tab**: Direct access to local residents and neighborhood hosts living in each destination.
+  - **Post Travel Dates**: Tourists can publish upcoming travel dates and notes to find companions visiting at the same time.
+- **🔒 Privacy-Preserving Mutual Connections**:
+  - Contact information is strictly protected until mutual connection requests are accepted.
+  - Built-in user reporting and blocking mechanism.
+- **📊 Deep Learning & ML Metrics Dashboard**:
+  - Multiseed stability metrics (10 seeds), ablation studies, cross-validation R² analyses, and residual audits.
+
+---
+
+## 🏗️ System Architecture
+
+### 1. High-Level System Architecture
+```mermaid
+graph TD
+    subgraph Client Layer
+        Web[React 19 + Vite Web App]
+        Mobile[React Native Expo Mobile App]
+    end
+
+    subgraph API & Service Layer
+        FastAPI[FastAPI Backend Server :8081]
+        AuthService[JWT Authentication & Role Guard]
+        Router[REST API Endpoints]
+    end
+
+    subgraph AI & ML Engine
+        CLIP[CLIP Vision Transformer - Image Embeddings]
+        ST[Sentence-Transformers - Text Embeddings]
+        Fusion[Late Fusion Concatenation]
+        Ridge[5x Ridge Regressors - 5D Vibe Prediction]
+        Matcher[Traveler Compatibility Scoring Engine]
+    end
+
+    subgraph External & Storage Layer
+        OSM[OpenStreetMap Overpass API]
+        SQLite[(SQLite Database - vibetrip.db)]
+        Artifacts[ML Evaluation Artifacts]
+    end
+
+    Web -->|HTTP / JSON| FastAPI
+    Mobile -->|HTTP / JSON| FastAPI
+    FastAPI --> AuthService
+    FastAPI --> Router
+    Router --> Matcher
+    Router --> Fusion
+    Fusion --> CLIP
+    Fusion --> ST
+    Fusion --> Ridge
+    Router --> OSM
+    Router --> SQLite
+    Router --> Artifacts
+```
+
+### 2. Multi-Modal Vibe Regression Pipeline
+```mermaid
+flowchart LR
+    A[Destination Photos] -->|ViT-B/32| B[CLIP 512d Image Embedding]
+    C[Descriptions & Tags] -->|all-MiniLM-L6-v2| D[Text 384d Embedding]
+    B & D -->|Concatenate| E[Fused Feature Vector 896d]
+    E --> F[Ridge Regressor Nature]
+    E --> G[Ridge Regressor Adventure]
+    E --> H[Ridge Regressor Peacefulness]
+    E --> I[Ridge Regressor Crowd Match]
+    E --> J[Ridge Regressor Visual Atmosphere]
+    F & G & H & I & J --> K[Normalized 5D Destination Vibe Score]
+```
+
+### 3. Traveler & Buddy Compatibility Matching Pipeline
+```mermaid
+flowchart TD
+    User[User Vibe Preferences & Travel Dates] --> Engine[Compatibility Engine]
+    Buddy[Candidate Traveler / Local Host] --> Engine
+    
+    Engine --> VibeSim[Vibe Distance Similarity - 50% Weight]
+    Engine --> TagSim[Interest Tag Jaccard Overlap - 30% Weight]
+    Engine --> DateSim[Calendar Overlap / Window - 20% Weight]
+    
+    VibeSim & TagSim & DateSim --> Score[Final Compatibility Score 0-100%]
+    Score --> Output[Ranked Travelers & Community Hosts List]
+```
+
+---
+
 ## 1. Quickstart & Installation
 
 ### Step 1: Install Dependencies
