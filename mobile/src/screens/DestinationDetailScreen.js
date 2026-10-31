@@ -363,6 +363,73 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
                     </View>
                   );
                 })()}
+
+                {/* VERIFIED CAB, SCOOTY RENTALS & TRANSIT HUBS */}
+                <View style={[styles.card, { marginTop: 14, backgroundColor: '#F8FAFC', borderColor: '#CBD5E1' }]}>
+                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+                    <Ionicons name="car" size={18} color="#0284C7" />
+                    <Text style={[styles.cardTitle, { color: '#0F172A', fontSize: 15 }]}>
+                      Verified Cab & Transit Hubs
+                    </Text>
+                  </View>
+                  <Text style={[styles.descText, { fontSize: 12, marginBottom: 10 }]}>
+                    Local sightseeing cabs, taxi stands, and self-drive scooty rentals in {dest.name}:
+                  </Text>
+
+                  {[
+                    {
+                      type: 'Private Sightseeing Cab (Sedan / SUV)',
+                      provider: 'Central Taxi Union Stand',
+                      rate: '₹1,800 - ₹3,200 / day',
+                      desc: '8 hrs / 80 km local sightseeing, AC, verified commercial license.',
+                      icon: 'car-sport-outline'
+                    },
+                    {
+                      type: 'Self-Drive Scooty / Bike Rental',
+                      provider: 'Royal Brothers & Local Hubs',
+                      rate: '₹500 - ₹900 / day',
+                      desc: 'Helmet included, zero security deposit with DL, fuel extra.',
+                      icon: 'bicycle-outline'
+                    },
+                    {
+                      type: 'Intercity Outstation Taxi',
+                      provider: 'State Tourist Taxi Union',
+                      rate: '₹12 - ₹16 / km',
+                      desc: 'Airport / Railway transfer & multi-day outstation circuits.',
+                      icon: 'navigate-outline'
+                    }
+                  ].map((hub, hIdx) => (
+                    <View
+                      key={hIdx}
+                      style={{
+                        backgroundColor: '#FFFFFF',
+                        borderRadius: 8,
+                        padding: 10,
+                        marginBottom: 8,
+                        borderWidth: 1,
+                        borderColor: '#E2E8F0',
+                      }}
+                    >
+                      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 5, flex: 1 }}>
+                          <Ionicons name={hub.icon} size={15} color="#0284C7" />
+                          <Text style={{ fontSize: 13, fontWeight: '700', color: '#0F172A' }} numberOfLines={1}>
+                            {hub.type}
+                          </Text>
+                        </View>
+                        <Text style={{ fontSize: 11, fontWeight: '700', color: '#0284C7' }}>
+                          {hub.rate}
+                        </Text>
+                      </View>
+                      <Text style={{ fontSize: 11, color: '#64748B', lineHeight: 15 }}>
+                        {hub.desc}
+                      </Text>
+                      <Text style={{ fontSize: 10, fontWeight: '600', color: '#059669', marginTop: 3 }}>
+                        Provider: {hub.provider} (Walk-in or Booking Desk)
+                      </Text>
+                    </View>
+                  ))}
+                </View>
               </>
             ) : (
               <TouchableOpacity style={styles.actionBtnLarge} onPress={loadPlan}>

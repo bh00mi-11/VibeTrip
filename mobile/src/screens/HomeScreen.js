@@ -3,8 +3,9 @@ import { View, Text, StyleSheet, FlatList, RefreshControl, ActivityIndicator, To
 import { THEME } from '../theme';
 import VibeSelector from '../components/VibeSelector';
 import DestinationCard from '../components/DestinationCard';
-import { recommendDestinations } from '../api';
+import { recommendDestinations, searchDestinationsByImage } from '../api';
 import { Ionicons } from '@expo/vector-icons';
+import * as ImagePicker from 'expo-image-picker';
 
 export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
   const [vibes, setVibes] = useState({
@@ -18,6 +19,7 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
   const [destinations, setDestinations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  const [activePhoto, setActivePhoto] = useState(null);
 
   useEffect(() => {
     loadDestinations(vibes, query);
@@ -36,6 +38,60 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
     }
   };
 
+  const handlePickImage = async () => {
+    try {
+      const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+      if (!permission.granted) {
+        alert('Permission to access photo gallery is required for visual vibe search.');
+        return;
+      }
+
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ['images'],
+        allowsEditing: true,
+        quality: 0.8,
+      });
+
+      if (!result.canceled && result.assets && result.assets[0]) {
+        const asset = result.assets[0];
+        setActivePhoto(asset);
+        setLoading(true);
+
+        const formData = new FormData();
+        const filename = asset.uri.split('/').pop() || 'photo.jpg';
+        const match = /\.(\w+)$/.exec(filename);
+        const type = match ? `image/${match[1]}` : `image/jpeg`;
+
+        formData.append('photo', {
+          uri: asset.uri,
+          name: filename,
+          type: type,
+        });
+        if (query) {
+          formData.append('query_text', query);
+        }
+
+        const res = await searchDestinationsByImage(formData);
+        if (res.recommendations) {
+          setDestinations(res.recommendations);
+        }
+        if (res.recommended_sliders) {
+          setVibes(res.recommended_sliders);
+        }
+      }
+    } catch (err) {
+      console.error('Visual vibe search error:', err);
+      alert('Photo search failed: ' + (err.message || 'Please check backend connection.'));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleClearPhoto = () => {
+    setActivePhoto(null);
+    loadDestinations(vibes, query);
+  };
+
   const handleVibeChange = (newVibes) => {
     setVibes(newVibes);
     loadDestinations(newVibes, query);
@@ -47,7 +103,11 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
 
   const handleRefresh = () => {
     setRefreshing(true);
-    loadDestinations(vibes, query);
+    if (activePhoto) {
+      handlePickImage();
+    } else {
+      loadDestinations(vibes, query);
+    }
   };
 
   return (
@@ -87,6 +147,9 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
               onQueryChange={setQuery}
               onSearch={handleSearch}
               loading={loading}
+              activePhoto={activePhoto}
+              onPickImage={handlePickImage}
+              onClearPhoto={handleClearPhoto}
             />
             <View style={styles.sectionHeader}>
               <Text style={styles.sectionTitle}>Curated Destinations</Text>

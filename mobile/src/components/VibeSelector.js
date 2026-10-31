@@ -18,7 +18,17 @@ const PRESETS = [
   { name: '🧘 Calm Solitude', vibes: { nature: 'high', adventure: 'medium', peacefulness: 'high', crowd_match: 'low', visual_atmosphere: 'high' } },
 ];
 
-export default function VibeSelector({ vibes, onChange, query, onQueryChange, onSearch, loading }) {
+export default function VibeSelector({
+  vibes,
+  onChange,
+  query,
+  onQueryChange,
+  onSearch,
+  loading,
+  activePhoto,
+  onPickImage,
+  onClearPhoto
+}) {
   const setLevel = (dim, level) => {
     onChange({ ...vibes, [dim]: level });
   };
@@ -31,12 +41,12 @@ export default function VibeSelector({ vibes, onChange, query, onQueryChange, on
         <Text style={styles.cardTitle}>Find Destinations by Vibe & Search</Text>
       </View>
 
-      {/* Prominent Search Bar with Clear & Search Button */}
+      {/* Prominent Search Bar with Clear & Photo Search Button */}
       <View style={styles.searchRow}>
         <Ionicons name="search" size={18} color={THEME.colors.primary} style={styles.searchIcon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search place name, activity (e.g. Goa, rafting)..."
+          placeholder="Search place, activity, or pick photo..."
           placeholderTextColor={THEME.colors.textMuted}
           value={query}
           onChangeText={onQueryChange}
@@ -48,7 +58,27 @@ export default function VibeSelector({ vibes, onChange, query, onQueryChange, on
             <Ionicons name="close-circle" size={16} color={THEME.colors.textMuted} />
           </TouchableOpacity>
         )}
+        <TouchableOpacity
+          onPress={onPickImage}
+          style={[styles.photoBtn, activePhoto && styles.photoBtnActive]}
+          title="Search by Photo (CLIP visual vibe)"
+        >
+          <Ionicons name="camera" size={18} color={activePhoto ? '#15803D' : THEME.colors.primary} />
+        </TouchableOpacity>
       </View>
+
+      {/* Active Photo Visual Vibe Banner */}
+      {activePhoto && (
+        <View style={styles.activePhotoBanner}>
+          <Ionicons name="sparkles" size={16} color="#15803D" />
+          <Text style={styles.activePhotoText} numberOfLines={1}>
+            Visual Vibe Active: Photo Analyzed with CLIP
+          </Text>
+          <TouchableOpacity onPress={onClearPhoto} style={styles.clearPhotoBtn}>
+            <Ionicons name="close" size={14} color="#DC2626" />
+          </TouchableOpacity>
+        </View>
+      )}
 
       {/* Preset Chips */}
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.presetScroll}>
@@ -164,6 +194,36 @@ const styles = StyleSheet.create({
   },
   clearBtn: {
     padding: 4,
+  },
+  photoBtn: {
+    padding: 6,
+    marginLeft: 6,
+    borderRadius: 8,
+    backgroundColor: '#EFF6FF',
+  },
+  photoBtnActive: {
+    backgroundColor: '#DCFCE7',
+  },
+  activePhotoBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F0FDF4',
+    borderWidth: 1,
+    borderColor: '#86EFAC',
+    borderRadius: THEME.radius.md,
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    marginBottom: 12,
+    gap: 6,
+  },
+  activePhotoText: {
+    flex: 1,
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#15803D',
+  },
+  clearPhotoBtn: {
+    padding: 2,
   },
   presetScroll: {
     marginBottom: 14,
