@@ -1,5 +1,5 @@
 // Default to your machine's LAN IP so physical phones running Expo Go connect immediately
-let API_BASE = 'http://10.230.105.56:8005';
+let API_BASE = 'http://10.111.210.56:8005';
 let authToken = null;
 let currentUser = null;
 
