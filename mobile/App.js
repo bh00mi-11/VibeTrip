@@ -82,67 +82,84 @@ export default function App() {
         </View>
 
         {/* Bottom Tab Bar (hidden when drill down into destination detail) */}
+        {/* Bottom Tab Bar (Role-Tailored) */}
         {!selectedDest && (
           <View style={styles.tabBar}>
-            <TouchableOpacity
-              style={styles.tabItem}
-              onPress={() => setActiveTab('home')}
-            >
-              <Ionicons
-                name={activeTab === 'home' ? 'compass' : 'compass-outline'}
-                size={22}
-                color={activeTab === 'home' ? THEME.colors.primary : THEME.colors.textMuted}
-              />
-              <Text style={[styles.tabLabel, activeTab === 'home' && styles.tabLabelActive]}>Explore</Text>
-            </TouchableOpacity>
+            {/* Guide & Local View: prioritize Requests / Guided Spots */}
+            {user?.role === 'guide' ? (
+              <>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('inbox')}>
+                  <Ionicons name={activeTab === 'inbox' ? 'mail' : 'mail-outline'} size={22} color={activeTab === 'inbox' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'inbox' && styles.tabLabelActive]}>Requests</Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.tabItem}
-              onPress={() => setActiveTab('trips')}
-            >
-              <Ionicons
-                name={activeTab === 'trips' ? 'bookmark' : 'bookmark-outline'}
-                size={22}
-                color={activeTab === 'trips' ? THEME.colors.primary : THEME.colors.textMuted}
-              />
-              <Text style={[styles.tabLabel, activeTab === 'trips' && styles.tabLabelActive]}>Trips</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('contribute')}>
+                  <Ionicons name={activeTab === 'contribute' ? 'map' : 'map-outline'} size={22} color={activeTab === 'contribute' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'contribute' && styles.tabLabelActive]}>Guided Spots</Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.tabItem}
-              onPress={() => setActiveTab('inbox')}
-            >
-              <Ionicons
-                name={activeTab === 'inbox' ? 'mail' : 'mail-outline'}
-                size={22}
-                color={activeTab === 'inbox' ? THEME.colors.primary : THEME.colors.textMuted}
-              />
-              <Text style={[styles.tabLabel, activeTab === 'inbox' && styles.tabLabelActive]}>Inbox</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('home')}>
+                  <Ionicons name={activeTab === 'home' ? 'compass' : 'compass-outline'} size={22} color={activeTab === 'home' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'home' && styles.tabLabelActive]}>Destinations</Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.tabItem}
-              onPress={() => setActiveTab('contribute')}
-            >
-              <Ionicons
-                name={activeTab === 'contribute' ? 'add-circle' : 'add-circle-outline'}
-                size={22}
-                color={activeTab === 'contribute' ? THEME.colors.primary : THEME.colors.textMuted}
-              />
-              <Text style={[styles.tabLabel, activeTab === 'contribute' && styles.tabLabelActive]}>Submit</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('profile')}>
+                  <Ionicons name={activeTab === 'profile' ? 'person' : 'person-outline'} size={22} color={activeTab === 'profile' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'profile' && styles.tabLabelActive]}>Guide Profile</Text>
+                </TouchableOpacity>
+              </>
+            ) : user?.role === 'local' ? (
+              <>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('inbox')}>
+                  <Ionicons name={activeTab === 'inbox' ? 'mail' : 'mail-outline'} size={22} color={activeTab === 'inbox' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'inbox' && styles.tabLabelActive]}>Connects</Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.tabItem}
-              onPress={() => setActiveTab('profile')}
-            >
-              <Ionicons
-                name={activeTab === 'profile' ? 'person' : 'person-outline'}
-                size={22}
-                color={activeTab === 'profile' ? THEME.colors.primary : THEME.colors.textMuted}
-              />
-              <Text style={[styles.tabLabel, activeTab === 'profile' && styles.tabLabelActive]}>Profile</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('contribute')}>
+                  <Ionicons name={activeTab === 'contribute' ? 'add-circle' : 'add-circle-outline'} size={22} color={activeTab === 'contribute' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'contribute' && styles.tabLabelActive]}>My Local Spots</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('home')}>
+                  <Ionicons name={activeTab === 'home' ? 'compass' : 'compass-outline'} size={22} color={activeTab === 'home' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'home' && styles.tabLabelActive]}>Places</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('profile')}>
+                  <Ionicons name={activeTab === 'profile' ? 'person' : 'person-outline'} size={22} color={activeTab === 'profile' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'profile' && styles.tabLabelActive]}>Host Profile</Text>
+                </TouchableOpacity>
+              </>
+            ) : (
+              <>
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('home')}>
+                  <Ionicons name={activeTab === 'home' ? 'compass' : 'compass-outline'} size={22} color={activeTab === 'home' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'home' && styles.tabLabelActive]}>Explore</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('trips')}>
+                  <Ionicons name={activeTab === 'trips' ? 'bookmark' : 'bookmark-outline'} size={22} color={activeTab === 'trips' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'trips' && styles.tabLabelActive]}>Trips</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('inbox')}>
+                  <Ionicons name={activeTab === 'inbox' ? 'mail' : 'mail-outline'} size={22} color={activeTab === 'inbox' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'inbox' && styles.tabLabelActive]}>Inbox</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('contribute')}>
+                  <Ionicons name={activeTab === 'contribute' ? 'add-circle' : 'add-circle-outline'} size={22} color={activeTab === 'contribute' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'contribute' && styles.tabLabelActive]}>Submit Spot</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.tabItem} onPress={() => setActiveTab('profile')}>
+                  <Ionicons name={activeTab === 'profile' ? 'person' : 'person-outline'} size={22} color={activeTab === 'profile' ? THEME.colors.primary : THEME.colors.textMuted} />
+                  <Text style={[styles.tabLabel, activeTab === 'profile' && styles.tabLabelActive]}>
+                    {user?.role === 'admin' ? 'Admin / DL' : 'Profile'}
+                  </Text>
+                </TouchableOpacity>
+              </>
+            )}
           </View>
         )}
 

@@ -72,11 +72,22 @@ export default function ContributeScreen({ user, onOpenAuth }) {
     );
   }
 
+  const isGuide = user?.role === 'guide';
+  const isLocal = user?.role === 'local';
+
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Contribute a Spot</Text>
-        <Text style={styles.headerSub}>Help travelers discover authentic hidden gems</Text>
+        <Text style={styles.headerTitle}>
+          {isGuide ? 'Guide Portfolio & Tour Spots' : isLocal ? 'My Local Spots Submission' : 'Contribute a Spot'}
+        </Text>
+        <Text style={styles.headerSub}>
+          {isGuide
+            ? 'Publish specialized guided spots, trails, and cultural tours for tourists'
+            : isLocal
+            ? 'Share authentic community secrets, viewpoints, and neighborhood gems'
+            : 'Help travelers discover authentic hidden gems across India'}
+        </Text>
       </View>
 
       <View style={styles.formCard}>

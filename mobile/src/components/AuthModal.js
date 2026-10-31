@@ -6,9 +6,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 const DEMO_ACCOUNTS = [
   { label: 'Demo Tourist', email: 'tourist.demo@vibetrip.com', pass: 'DemoTourist2026!', badge: 'Tourist', color: '#0284c7' },
-  { label: "Rohan (Goa)", email: 'rohan.goa@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Goa Host', color: '#059669' },
-  { label: 'Sunita (Manali)', email: 'sunita.manali@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Manali Guide', color: '#7c3aed' },
-  { label: 'Vikram (Rishikesh)', email: 'vikram.rishikesh@vibetrip.com', pass: 'DemoLocal2026!', badge: 'Rishikesh Host', color: '#ea580c' },
+  { label: 'Pro Guide (Aarav)', email: 'guide1@vibetrip.com', pass: 'DemoPass2026!', badge: 'Pro Guide', color: '#7c3aed' },
+  { label: "Rohan (Goa Host)", email: 'local1@vibetrip.com', pass: 'DemoPass2026!', badge: 'Goa Host', color: '#059669' },
   { label: 'Demo Admin', email: 'admin@vibetrip.internal', pass: 'AdminSuperPass2026!', badge: 'Admin Portal', color: '#dc2626' }
 ];
 

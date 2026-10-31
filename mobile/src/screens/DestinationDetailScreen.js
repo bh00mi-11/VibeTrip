@@ -6,7 +6,7 @@ import {
 import { THEME } from '../theme';
 import {
   getDestination, generateTripPlan, saveTrip, getLocalExperiences,
-  getBuddies, sendBuddyRequest, getImageUrl
+  getBuddies, sendBuddyRequest, getLocals, getImageUrl
 } from '../api';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -31,6 +31,10 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
   const [connectModalUser, setConnectModalUser] = useState(null);
   const [connectNote, setConnectNote] = useState('');
 
+  // Locals & Hosts state
+  const [locals, setLocals] = useState([]);
+  const [localsLoading, setLocalsLoading] = useState(false);
+
   useEffect(() => {
     loadDest();
   }, [destinationName]);
@@ -39,6 +43,7 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
     if (activeTab === 'plan' && !plan && dest) loadPlan();
     if (activeTab === 'places' && dest) loadPlaces();
     if (activeTab === 'travelers' && dest) loadTravelers();
+    if (activeTab === 'locals' && dest) loadLocals();
   }, [activeTab, dest]);
 
   const loadDest = async () => {
@@ -102,6 +107,18 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
       console.error(err);
     } finally {
       setTravelersLoading(false);
+    }
+  };
+
+  const loadLocals = async () => {
+    try {
+      setLocalsLoading(true);
+      const res = await getLocals(destinationName);
+      setLocals(res.locals || []);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLocalsLoading(false);
     }
   };
 
@@ -205,6 +222,7 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
             { id: 'overview', label: 'Overview' },
             { id: 'plan', label: '3-Day Plan' },
             { id: 'places', label: 'Local Places' },
+            { id: 'locals', label: 'Locals & Hosts' },
             { id: 'travelers', label: 'Travelers' },
           ].map((tab) => (
             <TouchableOpacity
@@ -381,7 +399,66 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
           </View>
         )}
 
-        {/* TAB 4: TRAVELERS */}
+        {/* TAB 4: LOCALS & COMMUNITY HOSTS */}
+        {activeTab === 'locals' && (
+          <View style={styles.tabContent}>
+            {localsLoading ? (
+              <ActivityIndicator color={THEME.colors.primary} style={{ marginTop: 20 }} />
+            ) : locals.length === 0 ? (
+              <View style={styles.card}>
+                <Text style={styles.cardTitle}>No registered local hosts yet</Text>
+                <Text style={styles.descText}>Local hosts and verified guides for {dest.name} will appear here.</Text>
+              </View>
+            ) : (
+              locals.map((l) => (
+                <View key={l.user_id} style={styles.travelerCard}>
+                  <View style={styles.travelerHeader}>
+                    <View>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                        <Text style={styles.travelerName}>{l.name}</Text>
+                        <View style={[
+                          styles.matchPill,
+                          { backgroundColor: l.role === 'guide' ? '#EDE9FE' : '#D1FAE5' }
+                        ]}>
+                          <Text style={[
+                            styles.matchPillText,
+                            { color: l.role === 'guide' ? '#7C3AED' : '#059669' }
+                          ]}>
+                            {l.role === 'guide' ? 'PRO GUIDE' : 'LOCAL HOST'}
+                          </Text>
+                        </View>
+                      </View>
+                      <Text style={styles.travelerCity}>{l.home_city || dest.name}</Text>
+                    </View>
+                  </View>
+
+                  {l.bio ? <Text style={styles.travelerBio}>"{l.bio}"</Text> : null}
+
+                  {l.contact_info ? (
+                    <Text style={[styles.placeContact, { marginTop: 6 }]}>
+                      Direct Payout / Contact: {l.contact_info}
+                    </Text>
+                  ) : null}
+
+                  <TouchableOpacity
+                    style={[styles.connectBtn, { backgroundColor: l.role === 'guide' ? '#7C3AED' : '#059669' }]}
+                    onPress={() => {
+                      if (!user) onOpenAuth('login');
+                      else setConnectModalUser(l);
+                    }}
+                  >
+                    <Ionicons name="chatbubbles" size={14} color="#fff" />
+                    <Text style={styles.connectBtnText}>
+                      {l.role === 'guide' ? 'Book Guide / Request Tour' : 'Connect with Local Host'}
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              ))
+            )}
+          </View>
+        )}
+
+        {/* TAB 5: TRAVELERS */}
         {activeTab === 'travelers' && (
           <View style={styles.tabContent}>
             {travelersLoading ? (

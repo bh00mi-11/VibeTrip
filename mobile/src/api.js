@@ -204,8 +204,24 @@ export async function getAdminUsers() {
   return request('/api/admin/users');
 }
 
-export async function toggleAdminUserActive(userId) {
-  return request(`/api/admin/users/${userId}/toggle-active`, { method: 'PATCH' });
+export async function getLocals(destination) {
+  return request(`/api/locals/${encodeURIComponent(destination)}`);
+}
+
+export async function getAdminMlEvalComparison() {
+  return request('/api/admin/ml/evaluation-comparison');
+}
+
+export async function getAdminMlStatus() {
+  return request('/api/admin/ml/status');
+}
+
+export async function searchDestinationsByImage(formData) {
+  return request('/api/search-by-image', {
+    method: 'POST',
+    body: formData,
+    contentType: false,
+  });
 }
 
 export function getImageUrl(path) {
