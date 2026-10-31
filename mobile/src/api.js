@@ -209,7 +209,7 @@ export async function getLocals(destination) {
 }
 
 export async function getAdminMlEvalComparison() {
-  return request('/api/admin/ml/evaluation-comparison');
+  return request('/api/admin/ml/eval-comparison');
 }
 
 export async function getAdminMlStatus() {
