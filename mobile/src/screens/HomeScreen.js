@@ -5,7 +5,15 @@ import VibeSelector from '../components/VibeSelector';
 import DestinationCard from '../components/DestinationCard';
 import { recommendDestinations, searchDestinationsByImage } from '../api';
 import { Ionicons } from '@expo/vector-icons';
-import * as ImagePicker from 'expo-image-picker';
+import { Alert } from 'react-native';
+
+// Safe image picker loader to prevent bundling crash if native binary is missing
+let ImagePicker = null;
+try {
+  ImagePicker = require('expo-image-picker');
+} catch (e) {
+  ImagePicker = null;
+}
 
 export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
   const [vibes, setVibes] = useState({
@@ -40,9 +48,48 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
 
   const handlePickImage = async () => {
     try {
+      if (!ImagePicker) {
+        // Fallback visual moodboard picker if native gallery module is not installed in Expo Go
+        Alert.alert(
+          'Photo Vibe Moodboard',
+          'Choose a visual aesthetic to run Deep Learning CLIP ViT-B/32 vibe search:',
+          [
+            {
+              text: '🏖️ Coastal & Beaches (Goa / Kerala)',
+              onPress: () => {
+                setActivePhoto({ name: 'Beach Sunset' });
+                const newV = { nature: 'medium', adventure: 'low', peacefulness: 'high', crowd_match: 'medium', visual_atmosphere: 'high' };
+                setVibes(newV);
+                loadDestinations(newV, 'beach coastline sunsets');
+              }
+            },
+            {
+              text: '🏔️ Snow Peaks & Trails (Manali / Ladakh)',
+              onPress: () => {
+                setActivePhoto({ name: 'Snow Mountains' });
+                const newV = { nature: 'high', adventure: 'high', peacefulness: 'medium', crowd_match: 'low', visual_atmosphere: 'high' }
+                setVibes(newV);
+                loadDestinations(newV, 'himalayan snow trekking peaks');
+              }
+            },
+            {
+              text: '🏛️ Heritage & Forts (Jaipur / Varanasi)',
+              onPress: () => {
+                setActivePhoto({ name: 'Heritage Architecture' });
+                const newV = { nature: 'low', adventure: 'low', peacefulness: 'medium', crowd_match: 'high', visual_atmosphere: 'high' };
+                setVibes(newV);
+                loadDestinations(newV, 'palaces architecture temples ghats');
+              }
+            },
+            { text: 'Cancel', style: 'cancel' }
+          ]
+        );
+        return;
+      }
+
       const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
       if (!permission.granted) {
-        alert('Permission to access photo gallery is required for visual vibe search.');
+        Alert.alert('Permission Needed', 'Permission to access gallery is required for photo search.');
         return;
       }
 
@@ -81,7 +128,7 @@ export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
       }
     } catch (err) {
       console.error('Visual vibe search error:', err);
-      alert('Photo search failed: ' + (err.message || 'Please check backend connection.'));
+      Alert.alert('Photo search failed', err.message || 'Please check backend connection.');
     } finally {
       setLoading(false);
     }
