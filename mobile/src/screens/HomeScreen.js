@@ -7,13 +7,8 @@ import { recommendDestinations, searchDestinationsByImage } from '../api';
 import { Ionicons } from '@expo/vector-icons';
 import { Alert } from 'react-native';
 
-// Safe image picker loader to prevent bundling crash if native binary is missing
-let ImagePicker = null;
-try {
-  ImagePicker = require('expo-image-picker');
-} catch (e) {
-  ImagePicker = null;
-}
+// Image picker fallback for Expo Go without native binary
+const ImagePicker = null;
 
 export default function HomeScreen({ user, onSelectDestination, onOpenAuth }) {
   const [vibes, setVibes] = useState({

@@ -221,7 +221,8 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
           {[
             { id: 'overview', label: 'Overview' },
             { id: 'plan', label: '3-Day Plan' },
-            { id: 'places', label: 'Local Places' },
+            { id: 'travel', label: '🚖 Cabs & Transit' },
+            { id: 'places', label: 'Nearby Places' },
             { id: 'locals', label: 'Locals & Hosts' },
             { id: 'travelers', label: 'Travelers' },
           ].map((tab) => (
@@ -436,6 +437,115 @@ export default function DestinationDetailScreen({ destinationName, user, onBack,
                 <Text style={styles.actionBtnLargeText}>Generate 3-Day Plan</Text>
               </TouchableOpacity>
             )}
+          </View>
+        )}
+
+        {/* TAB: CABS & COMMUTE FACILITIES (Matching Webapp Travel Tab) */}
+        {activeTab === 'travel' && (
+          <View style={styles.tabContent}>
+            <View style={[styles.card, { backgroundColor: '#F0F9FF', borderColor: '#BAE6FD' }]}>
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <Ionicons name="car" size={22} color="#0284C7" />
+                <View>
+                  <Text style={[styles.cardTitle, { color: '#0F172A', fontSize: 16 }]}>
+                    Transit & Commute Facilities
+                  </Text>
+                  <Text style={{ fontSize: 11, color: '#0369A1', fontWeight: '600' }}>
+                    Local Terrain & Cab Booking Hubs for {dest.name}
+                  </Text>
+                </View>
+              </View>
+              <Text style={[styles.descText, { fontSize: 12, lineHeight: 16, marginTop: 4 }]}>
+                Verified rental desks, tourist taxi unions, and self-drive vehicle stations available in {dest.name}:
+              </Text>
+            </View>
+
+            {[
+              {
+                type: 'Private Sightseeing Cab (Sedan / SUV)',
+                provider: 'Central Taxi Union Stand',
+                rate: '₹1,800 - ₹3,200 / day',
+                highlights: '8 hrs / 80 km sightseeing, dedicated verified driver, AC included.',
+                contact: 'Taxi Union Kiosk & Booking Desk',
+                badge: 'Popular for Families',
+                icon: 'car-sport'
+              },
+              {
+                type: 'Self-Drive Scooty / Bike Rental',
+                provider: 'Royal Brothers & Local Hubs',
+                rate: '₹500 - ₹900 / day',
+                highlights: 'Twin helmets provided, zero security deposit with valid DL, fuel extra.',
+                contact: 'Direct Rental Hub & App',
+                badge: 'Best for Solo / Couples',
+                icon: 'bicycle'
+              },
+              {
+                type: 'Intercity Outstation Taxi',
+                provider: 'State Tourist Taxi Union',
+                rate: '₹12 - ₹16 / km',
+                highlights: 'Airport transfers, railway station pick-drop & multi-city circuits.',
+                contact: 'State Tourist Desk & Kiosk',
+                badge: 'Intercity & Airport',
+                icon: 'navigate'
+              },
+              {
+                type: 'Eco Commute & Bicycle Rentals',
+                provider: 'Green Wheel Hub / Local Stands',
+                rate: '₹150 - ₹300 / day (₹50/hr)',
+                highlights: 'Geared mountain bikes or cruisers for neighborhood and lake exploration.',
+                contact: 'Walk-in Rental Stalls',
+                badge: 'Eco Friendly',
+                icon: 'leaf'
+              }
+            ].map((hub, idx) => (
+              <View
+                key={idx}
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  borderRadius: 10,
+                  padding: 14,
+                  marginBottom: 12,
+                  borderWidth: 1,
+                  borderColor: '#E2E8F0',
+                  shadowColor: '#000',
+                  shadowOffset: { width: 0, height: 1 },
+                  shadowOpacity: 0.05,
+                  shadowRadius: 3,
+                  elevation: 2,
+                }}
+              >
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6 }}>
+                  <View style={{ flex: 1, paddingRight: 8 }}>
+                    <Text style={{ fontSize: 14, fontWeight: '700', color: '#0F172A' }}>
+                      {hub.type}
+                    </Text>
+                    <Text style={{ fontSize: 11, fontWeight: '600', color: '#0284C7', marginTop: 2 }}>
+                      Verified Partner: {hub.provider}
+                    </Text>
+                  </View>
+                  <View style={{ backgroundColor: '#E0F2FE', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6 }}>
+                    <Text style={{ fontSize: 11, fontWeight: '700', color: '#0369A1' }}>
+                      {hub.rate}
+                    </Text>
+                  </View>
+                </View>
+
+                <Text style={{ fontSize: 12, color: '#475569', lineHeight: 16, marginBottom: 8 }}>
+                  ✓ {hub.highlights}
+                </Text>
+
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 8, borderTopWidth: 1, borderTopColor: '#F1F5F9' }}>
+                  <Text style={{ fontSize: 11, color: '#64748B' }}>
+                    Booking: <Text style={{ fontWeight: '600', color: '#334155' }}>{hub.contact}</Text>
+                  </Text>
+                  <View style={{ backgroundColor: '#F1F5F9', paddingHorizontal: 7, paddingVertical: 3, borderRadius: 4 }}>
+                    <Text style={{ fontSize: 10, fontWeight: '600', color: '#475569' }}>
+                      {hub.badge}
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            ))}
           </View>
         )}
 
